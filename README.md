@@ -2,6 +2,8 @@
 
 An early prototype of a 3D dungeon-crawler RPG built in Godot with C#. It is inspired by the visuals and gameplay of old-school RPGs, with a retro look created through pixelation and dithering shaders.
 
+**Download the latest build on itch.io:** [Adventurim](https://darthadox.itch.io/adventurim)
+
 > This is a work in progress. Some features described below, such as levelling up and dungeon loot, are planned but not yet in the current build.
 
 ## Gameplay Loop

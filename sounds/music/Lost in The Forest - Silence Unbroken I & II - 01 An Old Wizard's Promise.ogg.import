@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://xcpnw7722geg"
+path="res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 01 An Old Wizard's Promise.ogg-d32fe341da2a1baa6ea255112d16329a.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/music/Lost in The Forest - Silence Unbroken I & II - 01 An Old Wizard's Promise.ogg"
+dest_files=["res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 01 An Old Wizard's Promise.ogg-d32fe341da2a1baa6ea255112d16329a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

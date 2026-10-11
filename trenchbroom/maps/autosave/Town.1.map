@@ -1,0 +1,44 @@
+// Game: TrenchBroom Tutorial
+// Format: Valve
+// entity 0
+{
+"mapversion" "220"
+"wad" ""
+"classname" "worldspawn"
+// brush 0
+{
+( -1280 -1088 -16 ) ( -1296 1520 -16 ) ( -1296 1520 16 ) Set4All/CobbleStone/Cobblestones_01_Orange_1 [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -1280 -1088 16 ) ( 1152 -1088 16 ) ( 1152 -1088 -16 ) Set4All/CobbleStone/Cobblestones_01_Orange_1 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -1280 -1088 -16 ) ( 1152 -1088 -16 ) ( 1136 1520 -16 ) Set4All/CobbleStone/Cobblestones_01_Orange_1 [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 1136 1520 16 ) ( 1152 -1088 16 ) ( -1280 -1088 16 ) Set4All/CobbleStone/Cobblestones_01_Orange_1 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 1136 1520 -16 ) ( 1136 1520 16 ) ( -1296 1520 16 ) Set4All/CobbleStone/Cobblestones_01_Orange_1 [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 1152 -1088 -16 ) ( 1152 -1088 16 ) ( 1136 1520 16 ) Set4All/CobbleStone/Cobblestones_01_Orange_1 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 1
+{
+( 1008 16 24 ) ( 1008 0 24 ) ( 1008 0 16 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 0.5 0.5
+( 1008 0 24 ) ( 1072 0 24 ) ( 1072 0 16 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 0.5 0.5
+( 1072 0 16 ) ( 1072 16 16 ) ( 1008 16 16 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 0.5 0.5
+( 1008 16 24 ) ( 1072 16 24 ) ( 1072 0 24 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 0.5 0.5
+( 1072 16 16 ) ( 1072 16 24 ) ( 1008 16 24 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 0.5 0.5
+( 1072 0 24 ) ( 1072 16 24 ) ( 1072 16 16 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 0.5 0.5
+}
+// brush 2
+{
+( 1008 0 32 ) ( 1008 -24 32 ) ( 1008 -24 16 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 0.5 0.5
+( 1008 -24 32 ) ( 1072 -24 32 ) ( 1072 -24 16 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 0.5 0.5
+( 1072 -24 16 ) ( 1072 0 16 ) ( 1008 0 16 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 0.5 0.5
+( 1008 0 32 ) ( 1072 0 32 ) ( 1072 -24 32 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 0.5 0.5
+( 1072 0 16 ) ( 1072 0 32 ) ( 1008 0 32 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 0.5 0.5
+( 1072 -24 32 ) ( 1072 0 32 ) ( 1072 0 16 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 0.5 0.5
+}
+// brush 3
+{
+( 896 -24 32 ) ( 896 -96 32 ) ( 896 -96 16 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 896 -96 32 ) ( 1136 -96 32 ) ( 1136 -96 16 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 1136 -96 16 ) ( 1136 -24 16 ) ( 896 -24 16 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 896 -24 32 ) ( 1136 -24 32 ) ( 1136 -96 32 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 1136 -24 16 ) ( 1136 -24 32 ) ( 896 -24 32 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 1136 -96 32 ) ( 1136 -24 32 ) ( 1136 -24 16 ) Set4All/Concrete/Concrete_02_Orange_Square_2 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}

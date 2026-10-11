@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1uj6bsxhk2k0"]
+
+[ext_resource type="PackedScene" uid="uid://0aylgnf63v5d" path="res://addons/Wand/Wand01.fbx" id="1_f3i04"]
+[ext_resource type="Script" uid="uid://dumoq2dahbfyj" path="res://Scenes/Weapons/Weapon.cs" id="2_5twc2"]
+[ext_resource type="Texture2D" uid="uid://35yq3xtxbkq4" path="res://addons/Wand/Wand01_d.tga" id="2_wpt81"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5twc2"]
+albedo_texture = ExtResource("2_wpt81")
+normal_enabled = true
+
+[node name="Wand01" instance=ExtResource("1_f3i04")]
+script = ExtResource("2_5twc2")
+
+[node name="Wand01_LOD0" parent="." index="0"]
+transform = Transform3D(0.299332, -0.00681151, 0.0188127, 0.0126693, 0.28285, -0.0991722, -0.0154856, 0.0997459, 0.282508, 0.0505867, -0.0573188, -0.0362695)
+surface_material_override/0 = SubResource("StandardMaterial3D_5twc2")
+
+[node name="Wand01_LOD1" parent="." index="1"]
+visible = false
+
+[node name="Wand01_LOD2" parent="." index="2"]
+visible = false

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=4 format=3 uid="uid://rlt1qbjmu1c3"]
+
+[ext_resource type="PackedScene" uid="uid://bqygxb6qx5ih5" path="res://Scenes/Weapons/Dagger.tscn" id="1_h41x4"]
+[ext_resource type="Texture2D" uid="uid://bi64c7egglv5l" path="res://addons/UI addons/craftpix/Pixel Art Weapon Icons Pack 2/Dagger/icon_2_13.png" id="2_dkopa"]
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="2_h41x4"]
+
+[resource]
+script = ExtResource("2_h41x4")
+Name = "Silver Dagger"
+Type = "Weapon"
+WeaponType = "Dagger"
+ArmorType = ""
+SpeedDebuff = 0
+ConsumableType = ""
+Effect = 0
+Value = 0
+SpawnChance = 0
+Texture = ExtResource("2_dkopa")
+Scene = ExtResource("1_h41x4")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

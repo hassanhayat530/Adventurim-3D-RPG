@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://dcu1kiex0gjta"]
+
+[ext_resource type="Texture2D" uid="uid://cufmjmrdiqbju" path="res://addons/UI addons/craftpix/pixelart armor icons 5/iron/Icons_6_11.png" id="1_ymcdd"]
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="2_1v44n"]
+
+[resource]
+script = ExtResource("2_1v44n")
+Name = "Iron Cuirass"
+Type = "Armor"
+WeaponType = ""
+ArmorType = "Chest"
+SpeedDebuff = 5
+ConsumableType = ""
+Effect = 7
+Value = 120
+SpawnChance = 40
+Texture = ExtResource("1_ymcdd")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

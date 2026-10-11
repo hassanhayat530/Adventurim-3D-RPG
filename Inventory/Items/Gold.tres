@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://dmpiw6mlf1scp"]
+
+[ext_resource type="Texture2D" uid="uid://cgrakippu11xv" path="res://addons/UI addons/craftpix/Things for RPG Game 32×32 Pixel Art/icons_30_06.png" id="1_mil3l"]
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="1_n4hsm"]
+
+[resource]
+script = ExtResource("1_n4hsm")
+Name = "Gold"
+Type = ""
+WeaponType = ""
+ArmorType = ""
+SpeedDebuff = 0
+ConsumableType = ""
+Effect = 0
+Value = 1
+SpawnChance = 0
+Texture = ExtResource("1_mil3l")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

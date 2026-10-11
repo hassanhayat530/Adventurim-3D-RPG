@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://hnaed3yr7xa7"]
+
+[ext_resource type="Texture2D" uid="uid://dblpqii1a4d1m" path="res://addons/UI addons/craftpix/pixelart armor icons 5/iron/Icons_6_21.png" id="1_cj1ax"]
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="2_ubspx"]
+
+[resource]
+script = ExtResource("2_ubspx")
+Name = "Iron Gauntlets"
+Type = "Armor"
+WeaponType = ""
+ArmorType = "Hands"
+SpeedDebuff = 3
+ConsumableType = ""
+Effect = 4
+Value = 70
+SpawnChance = 60
+Texture = ExtResource("1_cj1ax")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

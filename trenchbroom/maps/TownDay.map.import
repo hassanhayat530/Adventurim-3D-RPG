@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://sfbffb1buv6a"
+path="res://.godot/imported/TownDay.map-75746b961db7727206457487cbde2ce7.tres"
+
+[deps]
+
+source_file="res://trenchbroom/maps/TownDay.map"
+dest_files=["res://.godot/imported/TownDay.map-75746b961db7727206457487cbde2ce7.tres"]
+
+[params]
+

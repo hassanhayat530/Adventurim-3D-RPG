@@ -1,0 +1,160 @@
+[gd_scene load_steps=22 format=3 uid="uid://0v6m5fm0cbv1"]
+
+[ext_resource type="Script" uid="uid://b420fr07h7wo0" path="res://Inventory/InvUISlot.cs" id="1_qvsgw"]
+[ext_resource type="Texture2D" uid="uid://diy5dtavn6c52" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/5 Holders/7.png" id="2_absto"]
+[ext_resource type="Texture2D" uid="uid://4vgir281bjy3" path="res://addons/UI addons/craftpix/pixelart armor icons 5/leather/icons_6_2_12.png" id="3_7l436"]
+[ext_resource type="FontFile" uid="uid://cidrwvvpb4g0j" path="res://fonts/MyDearestBit.ttf" id="3_absto"]
+[ext_resource type="FontFile" uid="uid://d4drnk6af7833" path="res://fonts/alagard.ttf" id="3_fqa0o"]
+[ext_resource type="Script" uid="uid://cilj6vr3n3kof" path="res://Scripts/ToolTipInteract.cs" id="4_607b1"]
+[ext_resource type="AudioStream" uid="uid://disaietroy3in" path="res://sounds/sfx/interface/interface6.wav" id="4_d4rv7"]
+[ext_resource type="AudioStream" uid="uid://bn8i423ds8gs3" path="res://sounds/sfx/inventory/metal-small1.wav" id="5_6e1m0"]
+[ext_resource type="AudioStream" uid="uid://rr1kje1l4hs5" path="res://sounds/sfx/inventory/chainmail1.wav" id="6_607b1"]
+[ext_resource type="Texture2D" uid="uid://t7sr553qgm4v" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/6 Highlighter/1.png" id="6_a63rs"]
+[ext_resource type="AudioStream" uid="uid://eftvtlhj61hb" path="res://sounds/sfx/interface/interface1.wav" id="6_grfg7"]
+[ext_resource type="Texture2D" uid="uid://caolofs4fyj1j" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/6 Highlighter/2.png" id="7_7l436"]
+[ext_resource type="AudioStream" uid="uid://dkosnmpghwe8w" path="res://sounds/sfx/inventory/metal-ringing.wav" id="7_grfg7"]
+[ext_resource type="PackedScene" uid="uid://dsqbeyyp55evt" path="res://Scenes/prefabs/Tooltip.tscn" id="8_6e1m0"]
+[ext_resource type="Texture2D" uid="uid://07ngredrtgk3" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/6 Highlighter/3.png" id="8_f436i"]
+[ext_resource type="Texture2D" uid="uid://pdivinxx04ob" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/6 Highlighter/4.png" id="9_01ggf"]
+[ext_resource type="Texture2D" uid="uid://bqjdqnj5w3cbn" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/2 Icons/1.png" id="10_7l436"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a63rs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7l436"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sco2t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fqa0o"]
+
+[node name="InvUISlot" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(39, 39)
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 44.0
+offset_bottom = 45.0
+script = ExtResource("1_qvsgw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("2_absto")
+centered = false
+region_rect = Rect2(857.954, 1007.59, 95.3344, 96.7363)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(39, 39)
+layout_mode = 0
+offset_right = 39.0
+offset_bottom = 39.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="ItemDisplay" type="Sprite2D" parent="CenterContainer/Panel"]
+visible = false
+position = Vector2(3, 0.500001)
+scale = Vector2(0.759999, 0.759999)
+texture = ExtResource("3_7l436")
+
+[node name="Label" type="Label" parent="CenterContainer/Panel"]
+custom_minimum_size = Vector2(19, 23)
+layout_mode = 0
+offset_left = -3.0
+offset_top = 11.0
+offset_right = 16.0
+offset_bottom = 34.0
+scale = Vector2(0.8, 0.8)
+theme_override_colors/font_color = Color(0.176471, 0.243137, 0.313726, 1)
+theme_override_fonts/font = ExtResource("3_absto")
+horizontal_alignment = 2
+
+[node name="Label2" type="Label" parent="CenterContainer/Panel"]
+visible = false
+custom_minimum_size = Vector2(10, 15)
+layout_mode = 0
+offset_left = 5.0
+offset_top = -14.0
+offset_right = 15.0
+offset_bottom = 1.0
+theme_override_colors/font_color = Color(0.176471, 0.243137, 0.313726, 1)
+theme_override_fonts/font = ExtResource("3_fqa0o")
+text = "E"
+horizontal_alignment = 2
+
+[node name="Highlighter" type="Control" parent="CenterContainer/Panel"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CenterContainer/Panel/Highlighter"]
+position = Vector2(-18, -18)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("6_a63rs")
+
+[node name="Sprite2D2" type="Sprite2D" parent="CenterContainer/Panel/Highlighter"]
+position = Vector2(21, -18)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("7_7l436")
+
+[node name="Sprite2D3" type="Sprite2D" parent="CenterContainer/Panel/Highlighter"]
+position = Vector2(21, 21)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("8_f436i")
+
+[node name="Sprite2D4" type="Sprite2D" parent="CenterContainer/Panel/Highlighter"]
+position = Vector2(-18, 21)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("9_01ggf")
+
+[node name="EquipSign" type="Sprite2D" parent="CenterContainer/Panel"]
+visible = false
+position = Vector2(-13, 15)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("10_7l436")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_a63rs")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7l436")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_sco2t")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fqa0o")
+script = ExtResource("4_607b1")
+ControlNodeType = "Button"
+
+[node name="Tooltip" parent="Button" instance=ExtResource("8_6e1m0")]
+visible = false
+layout_mode = 0
+offset_left = 36.0
+offset_top = 26.0
+offset_right = 88.0
+offset_bottom = 61.0
+
+[node name="HoverPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_grfg7")
+bus = &"UI"
+
+[node name="WeaponEquipSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_6e1m0")
+bus = &"UI"
+
+[node name="ArmorEquipSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_607b1")
+bus = &"UI"
+
+[node name="RingEquipSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_grfg7")
+bus = &"UI"
+
+[node name="DenySound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_d4rv7")
+bus = &"UI"
+
+[connection signal="mouse_entered" from="Button" to="." method="onMouseEntered"]
+[connection signal="mouse_entered" from="Button" to="HoverPlayer" method="play"]
+[connection signal="mouse_exited" from="Button" to="." method="onMouseExited"]
+[connection signal="pressed" from="Button" to="." method="OnButtonPressed"]

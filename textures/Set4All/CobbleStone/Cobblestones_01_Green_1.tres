@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dgm7lxlyemn8"]
+
+[ext_resource type="Texture2D" uid="uid://duvtuoio7g3md" path="res://textures/Set4All/CobbleStone/Cobblestones_01_Green_1.png" id="1_o7c8w"]
+
+[resource]
+albedo_texture = ExtResource("1_o7c8w")
+metallic_specular = 0.0
+texture_filter = 2

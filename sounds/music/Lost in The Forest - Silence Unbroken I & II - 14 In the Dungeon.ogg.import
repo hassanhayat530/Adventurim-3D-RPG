@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://2fvwswdnhwt4"
+path="res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 14 In the Dungeon.ogg-4b2dda1fa6a5ce2f35602d2d9bdbdfd1.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/music/Lost in The Forest - Silence Unbroken I & II - 14 In the Dungeon.ogg"
+dest_files=["res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 14 In the Dungeon.ogg-4b2dda1fa6a5ce2f35602d2d9bdbdfd1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

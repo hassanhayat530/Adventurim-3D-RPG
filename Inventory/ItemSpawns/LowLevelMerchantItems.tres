@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemSpawn" load_steps=13 format=3 uid="uid://bkr68muwbhf6r"]
+
+[ext_resource type="Script" uid="uid://bgquqh7yg28j7" path="res://Inventory/ItemSpawn.cs" id="1_4gygk"]
+[ext_resource type="Resource" uid="uid://cwnkpv2khddvl" path="res://Inventory/Items/Weapons/Daggers/IronDagger.tres" id="2_4ilam"]
+[ext_resource type="Resource" uid="uid://c8talepl2m2fl" path="res://Inventory/Items/Weapons/Wands/WoodenWand.tres" id="3_0mcgh"]
+[ext_resource type="Resource" uid="uid://7rfismmurs7k" path="res://Inventory/Items/Weapons/Swords/IronSword.tres" id="4_yp4xd"]
+[ext_resource type="Resource" uid="uid://dcu1kiex0gjta" path="res://Inventory/Items/Armors/IronArmor/IronCuirass.tres" id="5_xiuq5"]
+[ext_resource type="Resource" uid="uid://hnaed3yr7xa7" path="res://Inventory/Items/Armors/IronArmor/IronGauntlets.tres" id="6_cexnh"]
+[ext_resource type="Resource" uid="uid://bwa1nf65s7mxu" path="res://Inventory/Items/Armors/IronArmor/IronHelmet.tres" id="7_wox2d"]
+[ext_resource type="Resource" uid="uid://csxd5wifi1udg" path="res://Inventory/Items/Armors/IronArmor/IronLegs.tres" id="8_grjfa"]
+[ext_resource type="Resource" uid="uid://3fj5nybeh4w" path="res://Inventory/Items/Armors/LeatherArmor/LeatherCuirass.tres" id="9_5o3p1"]
+[ext_resource type="Resource" uid="uid://b5w640b2plhku" path="res://Inventory/Items/Armors/LeatherArmor/LeatherGauntlets.tres" id="10_xbxyq"]
+[ext_resource type="Resource" uid="uid://domw4sdwb1vk7" path="res://Inventory/Items/Armors/LeatherArmor/LeatherHood.tres" id="11_rps2w"]
+[ext_resource type="Resource" uid="uid://ii6idhog8oxf" path="res://Inventory/Items/Armors/LeatherArmor/LeatherLegs.tres" id="12_svm6f"]
+
+[resource]
+script = ExtResource("1_4gygk")
+items = Array[Object]([ExtResource("5_xiuq5"), ExtResource("6_cexnh"), ExtResource("7_wox2d"), ExtResource("8_grjfa"), ExtResource("9_5o3p1"), ExtResource("10_xbxyq"), ExtResource("11_rps2w"), ExtResource("12_svm6f"), ExtResource("2_4ilam"), ExtResource("3_0mcgh"), ExtResource("4_yp4xd")])
+metadata/_custom_type_script = "uid://bgquqh7yg28j7"

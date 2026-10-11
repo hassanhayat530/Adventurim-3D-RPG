@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=4 format=3 uid="uid://4njwh6dhk5u1"]
+
+[ext_resource type="Texture2D" uid="uid://2h522syqef17" path="res://images/inventory/Swords/glass_sword.png" id="1_3a6ri"]
+[ext_resource type="PackedScene" uid="uid://bge0rd6a8dj6i" path="res://Scenes/Weapons/ShortSword.tscn" id="1_370bd"]
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="2_370bd"]
+
+[resource]
+script = ExtResource("2_370bd")
+Name = "Emerald Sword"
+Type = "Weapon"
+WeaponType = "Sword"
+ArmorType = ""
+SpeedDebuff = 0
+ConsumableType = ""
+Effect = 0
+Value = 0
+SpawnChance = 0
+Texture = ExtResource("1_3a6ri")
+Scene = ExtResource("1_370bd")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

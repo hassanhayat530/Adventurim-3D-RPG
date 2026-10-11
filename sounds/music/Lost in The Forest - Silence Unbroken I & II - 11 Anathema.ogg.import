@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cy2o8d2j3oi2w"
+path="res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 11 Anathema.ogg-65afc1f88454f07df1685b1e367cba9f.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/music/Lost in The Forest - Silence Unbroken I & II - 11 Anathema.ogg"
+dest_files=["res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 11 Anathema.ogg-65afc1f88454f07df1685b1e367cba9f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

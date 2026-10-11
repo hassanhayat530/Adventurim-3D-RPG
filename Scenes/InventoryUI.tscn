@@ -1,0 +1,555 @@
+[gd_scene load_steps=68 format=3 uid="uid://d34yo8v1xpeoh"]
+
+[ext_resource type="Script" uid="uid://c5i3mdytqu50l" path="res://Inventory/InventoryUi.cs" id="1_lm8dl"]
+[ext_resource type="Texture2D" uid="uid://cbrcpxi3ipi6n" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/SpriteSheet/Inventory Book SpriteSheet.png" id="2_ji7tt"]
+[ext_resource type="Texture2D" uid="uid://cepohdrixcyre" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/1.png" id="3_13el3"]
+[ext_resource type="Texture2D" uid="uid://ki0fnj4tu3sc" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Adventure Book/Sprites/Adventure Book/Book Open & Close/Simple Book/Open/1.png" id="3_l0kw2"]
+[ext_resource type="PackedScene" uid="uid://0v6m5fm0cbv1" path="res://Scenes/InvUISlot.tscn" id="3_ut0it"]
+[ext_resource type="Texture2D" uid="uid://crmot1n1d7atx" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/2.png" id="4_esbnp"]
+[ext_resource type="Script" uid="uid://davfn0nxvvudm" path="res://Scenes/InventoryProperties.cs" id="4_ji7tt"]
+[ext_resource type="Texture2D" uid="uid://cqubg3ei83ptk" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Adventure Book/Sprites/Adventure Book/Book Open & Close/Simple Book/Open/2.png" id="4_rri6t"]
+[ext_resource type="Texture2D" uid="uid://byawuys2d77qx" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Adventure Book/Sprites/Adventure Book/Book Open & Close/Simple Book/Open/3.png" id="5_2vk2k"]
+[ext_resource type="Texture2D" uid="uid://bbf02chvy2flq" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/3.png" id="5_wkjx0"]
+[ext_resource type="Texture2D" uid="uid://dnjj5brf26nu6" path="res://images/inventory/EquipmentSlots/helmet_slot.png" id="6_5ngkl"]
+[ext_resource type="Texture2D" uid="uid://drs37mtbb85dm" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/4.png" id="6_7nspc"]
+[ext_resource type="PackedScene" uid="uid://cig0auntyst8c" path="res://Scenes/EquipmentSlot.tscn" id="6_adfqm"]
+[ext_resource type="Texture2D" uid="uid://feac0ljnafy7" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Adventure Book/Sprites/Adventure Book/Book Open & Close/Simple Book/Open/4.png" id="6_rsk0j"]
+[ext_resource type="Texture2D" uid="uid://dsmbvrv751wcw" path="res://images/inventory/EquipmentSlots/chest_slot.png" id="7_lef5l"]
+[ext_resource type="Texture2D" uid="uid://bd1di061k5vef" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Adventure Book/Sprites/Adventure Book/Book Open & Close/Simple Book/Open/5.png" id="7_q768q"]
+[ext_resource type="Texture2D" uid="uid://bqvsiqi1vhmao" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/5.png" id="7_slaxl"]
+[ext_resource type="Texture2D" uid="uid://brhuhvy40lqnm" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/6.png" id="8_ia2ym"]
+[ext_resource type="Texture2D" uid="uid://crgf1g4ccv2go" path="res://images/inventory/EquipmentSlots/greaves_slot.png" id="8_qc5xd"]
+[ext_resource type="Texture2D" uid="uid://c5v1v8wivh0x0" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Adventure Book/Sprites/Adventure Book/Book Open & Close/Simple Book/Open/6.png" id="8_yurmh"]
+[ext_resource type="Texture2D" uid="uid://bllqnwtfl0nwd" path="res://images/inventory/EquipmentSlots/gauntlets_slot.png" id="9_en4go"]
+[ext_resource type="Texture2D" uid="uid://d3rcov64wbusd" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/7.png" id="9_l0kw2"]
+[ext_resource type="Texture2D" uid="uid://q4a6gdv8kiqg" path="res://images/inventory/EquipmentSlots/ring_slot.png" id="10_lef5l"]
+[ext_resource type="Texture2D" uid="uid://dkfimb6c5dhwg" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/8.png" id="10_rri6t"]
+[ext_resource type="Texture2D" uid="uid://7004ihnr3bvl" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/9.png" id="11_2vk2k"]
+[ext_resource type="Texture2D" uid="uid://yryj27tuyw5w" path="res://images/inventory/EquipmentSlots/sword_slot.png" id="11_qc5xd"]
+[ext_resource type="AudioStream" uid="uid://cbb0500tlio4r" path="res://sounds/sfx/inventory/cloth-heavy.wav" id="12_qc5xd"]
+[ext_resource type="Texture2D" uid="uid://c13gdwhs3l1dx" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/10.png" id="12_rsk0j"]
+[ext_resource type="Texture2D" uid="uid://ccxurlq7vnqho" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/11.png" id="13_q768q"]
+[ext_resource type="Texture2D" uid="uid://cryj6mqwc6gtb" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/12.png" id="14_yurmh"]
+[ext_resource type="Texture2D" uid="uid://dnvma54s4akhe" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/13.png" id="15_x1so5"]
+[ext_resource type="Texture2D" uid="uid://lk3u6ojm2nkv" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/14.png" id="16_caxef"]
+[ext_resource type="Texture2D" uid="uid://cj7x8acavsrok" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/15.png" id="17_yr7tb"]
+[ext_resource type="Texture2D" uid="uid://bx6fk4emfynry" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/16.png" id="18_qa7bg"]
+[ext_resource type="Texture2D" uid="uid://dixk64igfk185" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/17.png" id="19_7qsu6"]
+[ext_resource type="Texture2D" uid="uid://dabpooxj7s6gg" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/18.png" id="20_om4s5"]
+[ext_resource type="Texture2D" uid="uid://dw4pe1p6gl55f" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/19.png" id="21_7ya0t"]
+[ext_resource type="Texture2D" uid="uid://cnqtlmm2f6w82" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/20.png" id="22_udo7a"]
+[ext_resource type="Texture2D" uid="uid://b3y6lrgq0gp0j" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/21.png" id="23_o12mo"]
+[ext_resource type="Texture2D" uid="uid://bvaacbbgambw0" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/22.png" id="24_pieb8"]
+[ext_resource type="Texture2D" uid="uid://24sfsd158ew6" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/23.png" id="25_pf43h"]
+[ext_resource type="Texture2D" uid="uid://byhnbb6mmotyi" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/24.png" id="26_p1d73"]
+[ext_resource type="Texture2D" uid="uid://dfqrbpob485sy" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/25.png" id="27_c0hca"]
+[ext_resource type="Texture2D" uid="uid://cadk72khab0x1" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/26.png" id="28_3ximw"]
+[ext_resource type="Texture2D" uid="uid://c7bd5cm2rj4on" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/27.png" id="29_yott2"]
+[ext_resource type="Texture2D" uid="uid://bm5ukm3laiacy" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/28.png" id="30_3jjqj"]
+[ext_resource type="Texture2D" uid="uid://cm7lq8u8go2l1" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/29.png" id="31_hhjri"]
+[ext_resource type="Texture2D" uid="uid://cf26w4g72o748" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/30.png" id="32_q3ax4"]
+[ext_resource type="Texture2D" uid="uid://bqelw3rlns2b8" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/31.png" id="33_yxbed"]
+[ext_resource type="Texture2D" uid="uid://cuamp5jsb1xtp" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/32.png" id="34_ncm4c"]
+[ext_resource type="Texture2D" uid="uid://1lfk7j4eotuf" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/33.png" id="35_3bptb"]
+[ext_resource type="Texture2D" uid="uid://d1vb1h67wdmqo" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/34.png" id="36_0xxsx"]
+[ext_resource type="Texture2D" uid="uid://blbs008t22of2" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/35.png" id="37_occj7"]
+[ext_resource type="Texture2D" uid="uid://b3v2wk2gmwwfh" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Inventory Book/Book Content Appear/Style 1/36.png" id="38_tc48f"]
+[ext_resource type="FontFile" uid="uid://c7emfww7qsd0w" path="res://fonts/antiquity-print.ttf" id="47_ia2ym"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bs8e8"]
+atlas = ExtResource("2_ji7tt")
+region = Rect2(0, 0, 830, 726)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1wlou"]
+atlas = ExtResource("2_ji7tt")
+region = Rect2(830, 0, 830, 726)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lqv8i"]
+atlas = ExtResource("2_ji7tt")
+region = Rect2(1660, 0, 830, 726)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ysaou"]
+atlas = ExtResource("2_ji7tt")
+region = Rect2(2490, 0, 830, 726)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2hr5f"]
+atlas = ExtResource("2_ji7tt")
+region = Rect2(3320, 0, 830, 726)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ug56f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bs8e8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1wlou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lqv8i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ysaou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2hr5f")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_l0kw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rri6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2vk2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rsk0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_q768q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_yurmh")
+}],
+"loop": false,
+"name": &"new_animation",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h4vga"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_13el3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_esbnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wkjx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7nspc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_slaxl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ia2ym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_l0kw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_rri6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2vk2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_rsk0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_q768q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_yurmh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_x1so5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_caxef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_yr7tb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qa7bg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_7qsu6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_om4s5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_7ya0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_udo7a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_o12mo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_pieb8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_pf43h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_p1d73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_c0hca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_3ximw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_yott2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_3jjqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_hhjri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_q3ax4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_yxbed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ncm4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_3bptb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_0xxsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_occj7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_tc48f")
+}],
+"loop": false,
+"name": &"default",
+"speed": 35.0
+}]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ji7tt"]
+region_rect = Rect2(79.073, 1472.36, 657.433, 404.843)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lwel6"]
+
+[sub_resource type="Animation" id="Animation_qc5xd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_lef5l"]
+resource_name = "open"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1918, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_en4go"]
+_data = {
+&"RESET": SubResource("Animation_qc5xd"),
+&"open": SubResource("Animation_lef5l")
+}
+
+[node name="InventoryUI" type="Control"]
+custom_minimum_size = Vector2(1283, 782)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -637.0
+offset_bottom = -298.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lm8dl")
+
+[node name="BookSprite" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1038, 431)
+scale = Vector2(1.6, 1.6)
+sprite_frames = SubResource("SpriteFrames_ug56f")
+frame = 4
+frame_progress = 1.0
+
+[node name="BookAppear" type="AnimatedSprite2D" parent="BookSprite"]
+top_level = true
+position = Vector2(995, 443)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_h4vga")
+frame = 35
+frame_progress = 1.0
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 635.0
+offset_bottom = 295.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ji7tt")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+offset_left = 504.0
+offset_top = 182.0
+offset_right = 732.0
+offset_bottom = 545.0
+scale = Vector2(2, 1.64)
+region_rect = Rect2(527.032, 912.865, 108.993, 94.5739)
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.6019
+offset_top = -123.5
+offset_right = 100.398
+offset_bottom = 145.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.857078, 1)
+theme_override_constants/h_separation = 7
+theme_override_constants/v_separation = 7
+columns = 4
+script = ExtResource("4_ji7tt")
+slotsType = "Player Inventory"
+
+[node name="InvUISlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 1
+
+[node name="InvUISlot2" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 2
+
+[node name="InvUISlot3" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 3
+
+[node name="InvUISlot4" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 4
+
+[node name="InvUISlot5" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 5
+
+[node name="InvUISlot6" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 6
+
+[node name="InvUISlot7" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 7
+
+[node name="InvUISlot8" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 8
+
+[node name="InvUISlot9" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 9
+
+[node name="InvUISlot10" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 10
+
+[node name="InvUISlot11" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 11
+
+[node name="InvUISlot12" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 12
+
+[node name="InvUISlot13" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 13
+
+[node name="InvUISlot14" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 14
+
+[node name="InvUISlot15" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 15
+
+[node name="InvUISlot16" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 16
+
+[node name="InvUISlot17" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 17
+
+[node name="InvUISlot18" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 18
+
+[node name="InvUISlot19" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 19
+
+[node name="InvUISlot20" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 20
+
+[node name="InvUISlot21" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 21
+
+[node name="InvUISlot22" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 22
+
+[node name="InvUISlot23" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 23
+
+[node name="InvUISlot24" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
+layout_mode = 2
+number = 24
+
+[node name="Label" type="Label" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 46.5
+offset_top = 19.5122
+offset_right = 150.5
+offset_bottom = 42.9122
+scale = Vector2(1.3, 1.3)
+theme_override_colors/font_color = Color(0.176471, 0.243137, 0.313726, 1)
+theme_override_fonts/font = ExtResource("47_ia2ym")
+text = "Inventory"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NinePatchRect"]
+position = Vector2(0, 0.717361)
+sprite_frames = SubResource("SpriteFrames_lwel6")
+
+[node name="Equipment" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 566.0
+offset_top = 214.0
+offset_right = 606.0
+offset_bottom = 254.0
+scale = Vector2(0.5, 0.5)
+
+[node name="HeadSlot" parent="Equipment" instance=ExtResource("6_adfqm")]
+layout_mode = 0
+offset_left = 1325.0
+offset_top = 186.0
+offset_right = 1500.0
+offset_bottom = 361.0
+equipmentType = "Head"
+nullTexture = ExtResource("6_5ngkl")
+
+[node name="ChestSlot" parent="Equipment" instance=ExtResource("6_adfqm")]
+layout_mode = 0
+offset_left = 1325.0
+offset_top = 453.0
+offset_right = 1500.0
+offset_bottom = 628.0
+equipmentType = "Chest"
+nullTexture = ExtResource("7_lef5l")
+
+[node name="HandsSlot" parent="Equipment" instance=ExtResource("6_adfqm")]
+layout_mode = 0
+offset_left = 1039.0
+offset_top = 453.0
+offset_right = 1214.0
+offset_bottom = 628.0
+equipmentType = "Hands"
+nullTexture = ExtResource("9_en4go")
+
+[node name="WeaponSlot" parent="Equipment" instance=ExtResource("6_adfqm")]
+layout_mode = 0
+offset_left = 1606.0
+offset_top = 453.0
+offset_right = 1781.0
+offset_bottom = 628.0
+equipmentType = "Weapon"
+nullTexture = ExtResource("11_qc5xd")
+
+[node name="LegsSlot" parent="Equipment" instance=ExtResource("6_adfqm")]
+layout_mode = 0
+offset_left = 1325.0
+offset_top = 741.0
+offset_right = 1500.0
+offset_bottom = 916.0
+equipmentType = "Legs"
+nullTexture = ExtResource("8_qc5xd")
+
+[node name="Ring1Slot" parent="Equipment" instance=ExtResource("6_adfqm")]
+layout_mode = 0
+offset_left = 1039.0
+offset_top = 741.0
+offset_right = 1214.0
+offset_bottom = 916.0
+equipmentType = "Ring1"
+nullTexture = ExtResource("10_lef5l")
+
+[node name="Ring2Slot" parent="Equipment" instance=ExtResource("6_adfqm")]
+layout_mode = 0
+offset_left = 1606.0
+offset_top = 741.0
+offset_right = 1781.0
+offset_bottom = 916.0
+equipmentType = "Ring2"
+nullTexture = ExtResource("10_lef5l")
+
+[node name="Label2" type="Label" parent="Equipment"]
+layout_mode = 0
+offset_left = 1154.0
+offset_right = 1258.0
+offset_bottom = 23.4
+scale = Vector2(5, 5)
+theme_override_colors/font_color = Color(0.176471, 0.243137, 0.313726, 1)
+theme_override_fonts/font = ExtResource("47_ia2ym")
+text = "Equipment"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_en4go")
+}
+
+[node name="OpenSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_qc5xd")
+attenuation = 2.47878e-05

@@ -1,0 +1,17 @@
+// Game: TrenchBroom Tutorial
+// Format: Valve
+// entity 0
+{
+"mapversion" "220"
+"wad" ""
+"classname" "worldspawn"
+// brush 0
+{
+( -256 256 16 ) ( -256 -256 16 ) ( -256 -256 -16 ) Set4All/Concrete/s2_Concrete_Squares_2_Grey [ 0 -1 0 0 ] [ 0 0 -1 0 ] 180 1 1
+( -256 -256 16 ) ( 256 -256 16 ) ( 256 -256 -16 ) Set4All/Concrete/s2_Concrete_Squares_2_Grey [ 1 0 0 0 ] [ 0 0 -1 0 ] 180 1 1
+( 256 -256 -16 ) ( 256 256 -16 ) ( -256 256 -16 ) Set4All/Concrete/s2_Concrete_Squares_2_Grey [ -1 0 0 0 ] [ 0 -1 0 0 ] 180 1 1
+( -256 256 16 ) ( 256 256 16 ) ( 256 -256 16 ) Set4All/Concrete/s2_Concrete_Squares_2_Grey [ 1 0 0 0 ] [ 0 -1 0 0 ] 180 1 1
+( 256 256 -16 ) ( 256 256 16 ) ( -256 256 16 ) Set4All/Concrete/s2_Concrete_Squares_2_Grey [ -1 0 0 0 ] [ 0 0 -1 0 ] 180 1 1
+( 256 -256 16 ) ( 256 256 16 ) ( 256 256 -16 ) Set4All/Concrete/s2_Concrete_Squares_2_Grey [ 0 1 0 0 ] [ 0 0 -1 0 ] 180 1 1
+}
+}

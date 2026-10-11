@@ -1,0 +1,208 @@
+[gd_scene load_steps=21 format=3 uid="uid://c7g8ytmqhhjk"]
+
+[ext_resource type="Script" uid="uid://mchacdkpjcjt" path="res://Scripts/MainMenu.cs" id="1_koqhg"]
+[ext_resource type="Texture2D" uid="uid://c7a8mlsru30kg" path="res://images/backgrounds/main_menu_bg.jpg" id="2_koqhg"]
+[ext_resource type="FontFile" uid="uid://cidrwvvpb4g0j" path="res://fonts/MyDearestBit.ttf" id="3_loo7a"]
+[ext_resource type="FontFile" uid="uid://d4drnk6af7833" path="res://fonts/alagard.ttf" id="4_if7li"]
+[ext_resource type="AudioStream" uid="uid://cyh6ylqfigae6" path="res://sounds/music/Lost in The Forest - Silence Unbroken I & II - 04 Dark Magic.ogg" id="5_rrcx7"]
+[ext_resource type="AudioStream" uid="uid://eftvtlhj61hb" path="res://sounds/sfx/interface/interface1.wav" id="6_fh7cp"]
+[ext_resource type="AudioStream" uid="uid://disaietroy3in" path="res://sounds/sfx/interface/interface6.wav" id="7_8e205"]
+[ext_resource type="PackedScene" uid="uid://bcckj8xpuaoxk" path="res://Scenes/SceneTransition.tscn" id="8_7467j"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ce3w2"]
+texture = ExtResource("2_koqhg")
+expand_margin_left = 114.0
+expand_margin_top = 93.0
+expand_margin_right = 93.0
+expand_margin_bottom = 93.0
+modulate_color = Color(0.95158, 0.95158, 0.95158, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ce3w2"]
+content_margin_bottom = 7.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yhxw7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n45e2"]
+content_margin_top = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_trj04"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_16hvj"]
+content_margin_bottom = 7.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vtepg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_opfnp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vr1f0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t1dhk"]
+content_margin_bottom = 7.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5egv6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cp0ys"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_koqhg")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 116.0
+offset_top = 105.0
+offset_right = -224.0
+offset_bottom = -166.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.08, 1.08)
+theme_override_styles/panel = SubResource("StyleBoxTexture_ce3w2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -689.0
+offset_top = -151.0
+offset_right = -290.0
+offset_bottom = 97.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.76, 1)
+theme_override_constants/separation = 30
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_color = Color(0.995961, 0.717269, 0.418538, 1)
+theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_loo7a")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ce3w2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yhxw7")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_n45e2")
+text = "New Game"
+
+[node name="Button4" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_color = Color(0.995961, 0.717269, 0.418538, 1)
+theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_loo7a")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ce3w2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yhxw7")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_n45e2")
+text = "Continue"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_color = Color(0.995961, 0.717269, 0.418538, 1)
+theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_loo7a")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_trj04")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_16hvj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vtepg")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_opfnp")
+text = "Options"
+
+[node name="Button5" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_color = Color(0.995961, 0.717269, 0.418538, 1)
+theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_loo7a")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vr1f0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_t1dhk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5egv6")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cp0ys")
+text = "Scenario   Generation"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_color = Color(0.995961, 0.717269, 0.418538, 1)
+theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_loo7a")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vr1f0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_t1dhk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5egv6")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cp0ys")
+text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -272.0
+offset_top = -373.0
+offset_right = 272.0
+offset_bottom = -260.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.995961, 0.717269, 0.418538, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 10
+theme_override_fonts/font = ExtResource("4_if7li")
+theme_override_font_sizes/font_size = 100
+text = "Adventurim"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BGPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_rrcx7")
+autoplay = true
+
+[node name="HoverPLayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_fh7cp")
+bus = &"UI"
+
+[node name="PressPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_8e205")
+
+[node name="SceneTransition" parent="." instance=ExtResource("8_7467j")]
+visible = false
+
+[connection signal="mouse_entered" from="VBoxContainer/Button" to="HoverPLayer" method="play"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="OnStartPressed"]
+[connection signal="pressed" from="VBoxContainer/Button" to="PressPlayer" method="play"]
+[connection signal="mouse_entered" from="VBoxContainer/Button4" to="HoverPLayer" method="play"]
+[connection signal="pressed" from="VBoxContainer/Button4" to="." method="OnContinuePressed"]
+[connection signal="pressed" from="VBoxContainer/Button4" to="PressPlayer" method="play"]
+[connection signal="mouse_entered" from="VBoxContainer/Button2" to="HoverPLayer" method="play"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="OnSettingsPressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="PressPlayer" method="play"]
+[connection signal="mouse_entered" from="VBoxContainer/Button5" to="HoverPLayer" method="play"]
+[connection signal="pressed" from="VBoxContainer/Button5" to="." method="OnScenarioGenerationPressed"]
+[connection signal="pressed" from="VBoxContainer/Button5" to="PressPlayer" method="play"]
+[connection signal="mouse_entered" from="VBoxContainer/Button3" to="HoverPLayer" method="play"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="OnExitPressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="PressPlayer" method="play"]

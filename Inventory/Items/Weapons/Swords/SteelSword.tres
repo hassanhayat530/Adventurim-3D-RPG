@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=4 format=3 uid="uid://bel660y1jmekb"]
+
+[ext_resource type="PackedScene" uid="uid://bge0rd6a8dj6i" path="res://Scenes/Weapons/ShortSword.tscn" id="1_5idwi"]
+[ext_resource type="Texture2D" uid="uid://dmq44kxoohlcg" path="res://images/inventory/Swords/steel_sword.png" id="1_d4eh8"]
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="2_s32s0"]
+
+[resource]
+script = ExtResource("2_s32s0")
+Name = "Steel Sword"
+Type = "Weapon"
+WeaponType = "Sword"
+ArmorType = ""
+SpeedDebuff = 0
+ConsumableType = ""
+Effect = 0
+Value = 0
+SpawnChance = 0
+Texture = ExtResource("1_d4eh8")
+Scene = ExtResource("1_5idwi")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

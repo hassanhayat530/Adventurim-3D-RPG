@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://dgsaf83a1ps1e"
+path="res://.godot/imported/stone_wall2.map-e602dc53bfc7279951187840f86fb59a.tres"
+
+[deps]
+
+source_file="res://trenchbroom/maps/stone_wall2.map"
+dest_files=["res://.godot/imported/stone_wall2.map-e602dc53bfc7279951187840f86fb59a.tres"]
+
+[params]
+

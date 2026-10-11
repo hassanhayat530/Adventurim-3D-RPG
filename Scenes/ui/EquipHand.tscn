@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://obedfuflnpht"]
+
+[ext_resource type="Texture2D" uid="uid://bjd3gy26edurf" path="res://addons/UI addons/Borders/Border All 7.png" id="1_384sx"]
+[ext_resource type="Script" uid="uid://blslngm7875gx" path="res://Scripts/FPSUI/EquipHand.cs" id="2_384sx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tpr04"]
+texture = ExtResource("1_384sx")
+region_rect = Rect2(384, 64, 64, 65)
+
+[node name="equip1" type="Panel"]
+offset_left = 1464.0
+offset_top = 868.0
+offset_right = 1504.0
+offset_bottom = 908.0
+scale = Vector2(4.44184, 4.44184)
+theme_override_styles/panel = SubResource("StyleBoxTexture_tpr04")
+script = ExtResource("2_384sx")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="ItemDisplay" type="Sprite2D" parent="CenterContainer/Panel"]
+position = Vector2(-0.0758181, 0.225138)
+scale = Vector2(0.907562, 0.916895)

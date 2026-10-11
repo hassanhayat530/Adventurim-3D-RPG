@@ -1,0 +1,14 @@
+[gd_resource type="Environment" load_steps=4 format=3 uid="uid://bke3iu1adukqw"]
+
+[ext_resource type="Texture2D" uid="uid://b3vypd3pyvpq5" path="res://skyboxes/Painterly Sky BGs (161).png" id="1_74ya2"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_n5c68"]
+panorama = ExtResource("1_74ya2")
+
+[sub_resource type="Sky" id="Sky_tfajj"]
+sky_material = SubResource("PanoramaSkyMaterial_n5c68")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_tfajj")
+sky_rotation = Vector3(-0.872665, 0, 0)

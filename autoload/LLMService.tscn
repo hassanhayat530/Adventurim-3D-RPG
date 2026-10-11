@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://frovmsb0ad64"]
+
+[ext_resource type="Script" uid="uid://dsvujhgd6ed44" path="res://Scripts/LLMService/LLMService.cs" id="1_iak5w"]
+
+[node name="LLMService" type="Node"]
+script = ExtResource("1_iak5w")
+
+[node name="HttpRequest" type="HTTPRequest" parent="."]

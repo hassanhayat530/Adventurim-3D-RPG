@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://cig0auntyst8c"]
+
+[ext_resource type="Script" uid="uid://qq3s4ppico4n" path="res://Inventory/EquipmentSlot.cs" id="1_7uml2"]
+[ext_resource type="Texture2D" uid="uid://dnjj5brf26nu6" path="res://images/inventory/EquipmentSlots/helmet_slot.png" id="1_i7ckq"]
+[ext_resource type="Texture2D" uid="uid://hfbmclfx237m" path="res://images/inventory/EquipmentSlots/equip_background.png" id="3_mj7oj"]
+[ext_resource type="Texture2D" uid="uid://15fasu6iq1sn" path="res://addons/UI addons/craftpix/Pixel Art Weapon Icons Pack 2/Sword/icon_2_02.png" id="4_mj7oj"]
+
+[node name="EquipmentSlot" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 175.0
+offset_bottom = 175.0
+script = ExtResource("1_7uml2")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_right = 175.0
+offset_bottom = 170.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="NullDisplay" type="Sprite2D" parent="CenterContainer/Panel"]
+position = Vector2(0.5, 2.50001)
+scale = Vector2(0.323475, 0.333333)
+texture = ExtResource("1_i7ckq")
+region_rect = Rect2(0, 0, 1024, 1560)
+
+[node name="Background" type="Sprite2D" parent="CenterContainer/Panel"]
+visible = false
+position = Vector2(0.5, 2.5)
+scale = Vector2(0.323, 0.333333)
+texture = ExtResource("3_mj7oj")
+
+[node name="ItemDisplay" type="Sprite2D" parent="CenterContainer/Panel"]
+visible = false
+position = Vector2(0.999997, 0.499997)
+scale = Vector2(3.96, 3.96)
+texture = ExtResource("4_mj7oj")

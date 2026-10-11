@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://dt04be4umk8jd"]
+
+[ext_resource type="Shader" uid="uid://ds2k6djd11sr2" path="res://Shaders/dungeon_level_1.gdshader" id="1_tqa87"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_71yn0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tqa87"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m2to2"]
+shader = ExtResource("1_tqa87")
+shader_parameter/texture_mode = 0
+shader_parameter/alpha_mode = 0
+shader_parameter/quantize_size = 1
+shader_parameter/snap_to_world = false
+shader_parameter/limit_subpixels = true
+shader_parameter/dither_enabled = false
+shader_parameter/dither_pattern = 1
+shader_parameter/levels = 0
+shader_parameter/contrast = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/average = 0.0
+shader_parameter/palette_mode = 0
+
+[sub_resource type="QuadMesh" id="QuadMesh_ha6r5"]
+material = SubResource("ShaderMaterial_m2to2")
+flip_faces = true
+
+[node name="Level1" type="Node3D"]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Level" type="Node3D" parent="SubViewportContainer/SubViewport"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewportContainer/SubViewport/Level"]
+
+[node name="Floor" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/Level"]
+transform = Transform3D(6.5, 0, 0, 0, 0.05, 0, 0, 0, 6.5, 0, 0, 0)
+mesh = SubResource("BoxMesh_71yn0")
+skeleton = NodePath("../WorldEnvironment")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SubViewportContainer/SubViewport/Level/Floor"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SubViewportContainer/SubViewport/Level/Floor/StaticBody3D"]
+shape = SubResource("BoxShape3D_tqa87")
+
+[node name="Node3D" type="Node3D" parent="SubViewportContainer/SubViewport/Level"]
+transform = Transform3D(0.707107, 0.683013, -0.183013, 0, 0.258819, 0.965926, 0.707107, -0.683013, 0.183013, 0, 10, 180)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport/Level/Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(0.587785, -0.289926, 0.755282, 0, 0.93358, 0.358368, -0.809017, -0.210643, 0.548745, 7.5, 3.5, 5.5)
+projection = 1
+current = true
+size = 10.0
+far = 97.0
+
+[node name="PostProcessing" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/Camera3D"]
+mesh = SubResource("QuadMesh_ha6r5")

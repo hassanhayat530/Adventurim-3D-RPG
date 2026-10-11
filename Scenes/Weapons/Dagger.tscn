@@ -1,0 +1,23 @@
+[gd_scene load_steps=8 format=3 uid="uid://bqygxb6qx5ih5"]
+
+[ext_resource type="PackedScene" uid="uid://css2equ6deskt" path="res://addons/MedievalWeapons/Dagger_2/Dagger_2.fbx" id="1_2d2m1"]
+[ext_resource type="Texture2D" uid="uid://bmosi3sqjagc4" path="res://addons/MedievalWeapons/Dagger_2/Maps/Dagger_2_Dagger_2_BaseColor.png" id="2_k1xwy"]
+[ext_resource type="Script" uid="uid://dumoq2dahbfyj" path="res://Scenes/Weapons/Weapon.cs" id="2_vq8jr"]
+[ext_resource type="Texture2D" uid="uid://hp0uv6x22g4w" path="res://addons/MedievalWeapons/Dagger_2/Maps/Dagger_2_Dagger_2_Metallic.png" id="3_vq8jr"]
+[ext_resource type="Texture2D" uid="uid://buelwoqoc1xon" path="res://addons/MedievalWeapons/Dagger_2/Maps/Dagger_2_Dagger_2_Normal.png" id="4_rix3g"]
+[ext_resource type="Texture2D" uid="uid://wg42j1qfw4gv" path="res://addons/MedievalWeapons/Dagger_2/Maps/Dagger_2_Dagger_2_Roughness.png" id="5_j7go6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_flqku"]
+albedo_texture = ExtResource("2_k1xwy")
+metallic = 1.0
+metallic_texture = ExtResource("3_vq8jr")
+roughness_texture = ExtResource("5_j7go6")
+normal_enabled = true
+normal_texture = ExtResource("4_rix3g")
+
+[node name="Dagger_2" instance=ExtResource("1_2d2m1")]
+script = ExtResource("2_vq8jr")
+
+[node name="Dagger_V14" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, -0.78992, 0.61321, 0, -0.61321, -0.78992, 0.0490397, -0.0353596, -0.101799)
+surface_material_override/0 = SubResource("StandardMaterial3D_flqku")

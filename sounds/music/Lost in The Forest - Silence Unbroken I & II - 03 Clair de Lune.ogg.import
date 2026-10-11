@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://1w1bephxpj3j"
+path="res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 03 Clair de Lune.ogg-b3d2a7ff07c77e6ee87f41985d4c551a.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/music/Lost in The Forest - Silence Unbroken I & II - 03 Clair de Lune.ogg"
+dest_files=["res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 03 Clair de Lune.ogg-b3d2a7ff07c77e6ee87f41985d4c551a.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

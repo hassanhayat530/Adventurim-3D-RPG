@@ -1,0 +1,196 @@
+[gd_scene load_steps=16 format=3 uid="uid://b516t4nadjirc"]
+
+[ext_resource type="Shader" uid="uid://dc5ef8q1n77l" path="res://Shaders/PauseMenu.gdshader" id="1_1och7"]
+[ext_resource type="Script" uid="uid://dt4kn5lkr26nu" path="res://Scripts/PauseMenu.cs" id="2_bpi0q"]
+[ext_resource type="Texture2D" uid="uid://nubekmlahdcu" path="res://addons/UI addons/CrimsonFantasyGUI/CrimsonFantasyGUI/Inventory.png" id="2_myy0f"]
+[ext_resource type="FontFile" uid="uid://d4drnk6af7833" path="res://fonts/alagard.ttf" id="3_vmyb1"]
+[ext_resource type="AudioStream" uid="uid://eftvtlhj61hb" path="res://sounds/sfx/interface/interface1.wav" id="5_myy0f"]
+[ext_resource type="AudioStream" uid="uid://disaietroy3in" path="res://sounds/sfx/interface/interface6.wav" id="6_myy0f"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_myy0f"]
+shader = ExtResource("1_1och7")
+shader_parameter/lod = 0.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_myy0f"]
+texture = ExtResource("2_myy0f")
+region_rect = Rect2(16, 48, 48, 48)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bpi0q"]
+content_margin_bottom = 7.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vmyb1"]
+content_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_myy0f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sjs17"]
+
+[sub_resource type="Animation" id="Animation_0fi7f"]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.839]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PanelContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_524vl"]
+resource_name = "blur"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.839]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PanelContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uscpe"]
+_data = {
+&"RESET": SubResource("Animation_0fi7f"),
+&"blur": SubResource("Animation_524vl")
+}
+
+[node name="PauseMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_myy0f")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(16.2, 20.32)
+pivot_offset = Vector2(20, 20)
+theme_override_styles/panel = SubResource("StyleBoxTexture_myy0f")
+script = ExtResource("2_bpi0q")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 9
+
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.176471, 0.243137, 0.313726, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.176471, 0.243137, 0.313726, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_vmyb1")
+theme_override_font_sizes/font_size = 3
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bpi0q")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vmyb1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_myy0f")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sjs17")
+text = "Resume"
+
+[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.176471, 0.243137, 0.313726, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.176471, 0.243137, 0.313726, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_vmyb1")
+theme_override_font_sizes/font_size = 3
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bpi0q")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vmyb1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_myy0f")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sjs17")
+text = "Options"
+
+[node name="Button3" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.176471, 0.243137, 0.313726, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.995961, 0.717269, 0.418538, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_vmyb1")
+theme_override_font_sizes/font_size = 3
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bpi0q")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vmyb1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_myy0f")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sjs17")
+text = "Exit"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_uscpe")
+}
+
+[node name="HoverPlayer" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(636, 255.52)
+scale = Vector2(16.2, 20.32)
+stream = ExtResource("5_myy0f")
+bus = &"UI"
+
+[node name="PressPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_myy0f")
+bus = &"UI"
+
+[connection signal="focus_entered" from="PanelContainer/VBoxContainer/Button" to="HoverPlayer" method="play"]
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/Button" to="HoverPlayer" method="play"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Button" to="PanelContainer" method="OnResumePressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Button" to="PressPlayer" method="play"]
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/Button2" to="HoverPlayer" method="play"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Button2" to="PressPlayer" method="play"]
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/Button3" to="HoverPlayer" method="play"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Button3" to="PanelContainer" method="onExitPressed"]

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=4 format=3 uid="uid://jkahk85jnrg7"]
+
+[ext_resource type="Texture2D" uid="uid://dw6w2s4hd3xdq" path="res://images/inventory/Daggers/legendary_dagger.png" id="1_b7wis"]
+[ext_resource type="PackedScene" uid="uid://bqygxb6qx5ih5" path="res://Scenes/Weapons/Dagger.tscn" id="1_m5t6q"]
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="2_m5t6q"]
+
+[resource]
+script = ExtResource("2_m5t6q")
+Name = "Legendary Dagger"
+Type = "Weapon"
+WeaponType = "Dagger"
+ArmorType = ""
+SpeedDebuff = 0
+ConsumableType = ""
+Effect = 0
+Value = 0
+SpawnChance = 0
+Texture = ExtResource("1_b7wis")
+Scene = ExtResource("1_m5t6q")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

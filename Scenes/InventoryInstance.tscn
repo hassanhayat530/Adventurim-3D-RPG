@@ -1,0 +1,170 @@
+[gd_scene load_steps=7 format=3 uid="uid://dvx3o81np4p64"]
+
+[ext_resource type="Script" uid="uid://c0erxsb5yr3au" path="res://Inventory/InventoryInstance.cs" id="1_pqn7c"]
+[ext_resource type="Resource" uid="uid://4hjp5qs0jerd" path="res://Inventory/PlayerInventory.tres" id="2_6e36m"]
+[ext_resource type="PackedScene" uid="uid://0v6m5fm0cbv1" path="res://Scenes/InvUISlot.tscn" id="3_6e36m"]
+[ext_resource type="Texture2D" uid="uid://dthdtktp7epfc" path="res://addons/UI addons/Humble Gift v1.0 - Paper UI/SpriteSheet/Paper UI SpriteSheet.png" id="3_tn3ef"]
+[ext_resource type="Script" uid="uid://davfn0nxvvudm" path="res://Scenes/InventoryProperties.cs" id="4_6e36m"]
+[ext_resource type="FontFile" uid="uid://c7emfww7qsd0w" path="res://fonts/antiquity-print.ttf" id="6_6it8k"]
+
+[node name="InventoryInstance" type="Control"]
+custom_minimum_size = Vector2(687, 894)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1233.0
+offset_bottom = -186.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pqn7c")
+inventory = ExtResource("2_6e36m")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+offset_right = 228.0
+offset_bottom = 363.0
+scale = Vector2(2.99808, 2.45835)
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="NinePatchRect"]
+position = Vector2(114.74, 205.829)
+scale = Vector2(0.365034, 0.815168)
+texture = ExtResource("3_tn3ef")
+region_enabled = true
+region_rect = Rect2(158.122, 747.403, 625.57, 504.449)
+
+[node name="Sprite2D" type="Sprite2D" parent="NinePatchRect/Sprite2D"]
+position = Vector2(2.28439, -4.49103)
+scale = Vector2(3.17091, 2.94269)
+texture = ExtResource("3_tn3ef")
+region_enabled = true
+region_rect = Rect2(3354.91, 1724.35, 168.021, 136.603)
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.6019
+offset_top = -106.653
+offset_right = 100.398
+offset_bottom = 162.347
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.857078, 1)
+theme_override_constants/h_separation = 7
+theme_override_constants/v_separation = 7
+columns = 4
+script = ExtResource("4_6e36m")
+
+[node name="InvUISlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 1
+
+[node name="InvUISlot2" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 2
+
+[node name="InvUISlot3" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 3
+
+[node name="InvUISlot4" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 4
+
+[node name="InvUISlot5" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 5
+
+[node name="InvUISlot6" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 6
+
+[node name="InvUISlot7" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 7
+
+[node name="InvUISlot8" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 8
+
+[node name="InvUISlot9" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 9
+
+[node name="InvUISlot10" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 10
+
+[node name="InvUISlot11" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 11
+
+[node name="InvUISlot12" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 12
+
+[node name="InvUISlot13" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 13
+
+[node name="InvUISlot14" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 14
+
+[node name="InvUISlot15" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 15
+
+[node name="InvUISlot16" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 16
+
+[node name="InvUISlot17" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 17
+
+[node name="InvUISlot18" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 18
+
+[node name="InvUISlot19" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 19
+
+[node name="InvUISlot20" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 20
+
+[node name="InvUISlot21" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 21
+
+[node name="InvUISlot22" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 22
+
+[node name="InvUISlot23" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 23
+
+[node name="InvUISlot24" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
+layout_mode = 2
+number = 24
+
+[node name="Label" type="Label" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 62.7068
+offset_top = 38.6438
+offset_right = 166.707
+offset_bottom = 62.0438
+theme_override_colors/font_color = Color(0.176471, 0.243137, 0.313726, 1)
+theme_override_fonts/font = ExtResource("6_6it8k")
+text = "Inventory"

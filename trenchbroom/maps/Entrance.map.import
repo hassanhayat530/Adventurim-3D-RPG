@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://dwaf2bb0enrbk"
+path="res://.godot/imported/Entrance.map-cca4be7e8798945f4054560eef5a3dec.tres"
+
+[deps]
+
+source_file="res://trenchbroom/maps/Entrance.map"
+dest_files=["res://.godot/imported/Entrance.map-cca4be7e8798945f4054560eef5a3dec.tres"]
+
+[params]
+

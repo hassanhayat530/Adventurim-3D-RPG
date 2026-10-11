@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=4 format=3 uid="uid://iyg3vujgf70r"]
+
+[ext_resource type="PackedScene" uid="uid://d1uj6bsxhk2k0" path="res://Scenes/Weapons/Wand.tscn" id="1_o6voo"]
+[ext_resource type="Texture2D" uid="uid://dql8rbyeb0033" path="res://addons/UI addons/craftpix/Magic Wand and Book Icon Pack/1 Wands/Icons_13_23.png" id="2_7clsw"]
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="3_dlccm"]
+
+[resource]
+script = ExtResource("3_dlccm")
+Name = "Emerald Wand"
+Type = "Weapon"
+WeaponType = "Staff"
+ArmorType = ""
+SpeedDebuff = 0
+ConsumableType = ""
+Effect = 0
+Value = 0
+SpawnChance = 0
+Texture = ExtResource("2_7clsw")
+Scene = ExtResource("1_o6voo")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

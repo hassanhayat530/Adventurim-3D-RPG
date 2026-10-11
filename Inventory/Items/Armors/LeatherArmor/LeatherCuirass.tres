@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://3fj5nybeh4w"]
+
+[ext_resource type="Texture2D" uid="uid://bdxygvgwg7d3j" path="res://addons/UI addons/craftpix/pixelart armor icons 5/leather/Icons_6_51.png" id="1_2kfr0"]
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="2_4mc2s"]
+
+[resource]
+script = ExtResource("2_4mc2s")
+Name = "Leather Cuirass"
+Type = "Armor"
+WeaponType = ""
+ArmorType = "Chest"
+SpeedDebuff = 3
+ConsumableType = ""
+Effect = 5
+Value = 100
+SpawnChance = 50
+Texture = ExtResource("1_2kfr0")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

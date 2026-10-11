@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c28l2db7wuamj"
+path="res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 09 An Uneasy Journey.ogg-6c156b719245b87352b6979980f6f8ef.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/music/Lost in The Forest - Silence Unbroken I & II - 09 An Uneasy Journey.ogg"
+dest_files=["res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 09 An Uneasy Journey.ogg-6c156b719245b87352b6979980f6f8ef.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

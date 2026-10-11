@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bhsklyuj6skrl"
+path="res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 13 Consolation No. 3.ogg-15abf2ed04f6c6c12ec474df0a1396db.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/music/Lost in The Forest - Silence Unbroken I & II - 13 Consolation No. 3.ogg"
+dest_files=["res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 13 Consolation No. 3.ogg-15abf2ed04f6c6c12ec474df0a1396db.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://r5hv04qwe3g4"]
+
+[ext_resource type="Texture2D" uid="uid://c8bhq3yoyneeo" path="res://textures/Set4All/Windows/Window02/Window_Old_Single_3.png" id="1_6cby5"]
+
+[resource]
+albedo_texture = ExtResource("1_6cby5")
+metallic_specular = 0.0
+texture_filter = 2

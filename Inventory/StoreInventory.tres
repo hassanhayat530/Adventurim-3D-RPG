@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="Inventory" load_steps=13 format=3 uid="uid://dh1bmfv7b1ps7"]
+
+[ext_resource type="Script" uid="uid://o7vn7m7fwt1n" path="res://Inventory/Inventory.cs" id="1_nt32d"]
+[ext_resource type="Resource" uid="uid://wgccugibmmqg" path="res://Inventory/Items/Consumables/HealingPotions/SmallHealingPotion.tres" id="2_bv3mg"]
+[ext_resource type="Script" uid="uid://bjqpiubtg54cy" path="res://Inventory/InventorySlot.cs" id="3_vpc0q"]
+[ext_resource type="Resource" uid="uid://cb3khummqslfw" path="res://Inventory/Items/Consumables/ManaPotions/SmallManaPotion.tres" id="4_6b2og"]
+
+[sub_resource type="Resource" id="Resource_sthdg"]
+script = ExtResource("3_vpc0q")
+item = ExtResource("2_bv3mg")
+amount = 10
+equipped = false
+metadata/_custom_type_script = "uid://bjqpiubtg54cy"
+
+[sub_resource type="Resource" id="Resource_2epi2"]
+script = ExtResource("3_vpc0q")
+item = ExtResource("4_6b2og")
+amount = 10
+equipped = false
+metadata/_custom_type_script = "uid://bjqpiubtg54cy"
+
+[sub_resource type="Resource" id="Resource_oe3p1"]
+script = ExtResource("3_vpc0q")
+amount = 0
+equipped = false
+metadata/_custom_type_script = "uid://bjqpiubtg54cy"
+
+[sub_resource type="Resource" id="Resource_822g6"]
+script = ExtResource("3_vpc0q")
+amount = 0
+equipped = false
+metadata/_custom_type_script = "uid://bjqpiubtg54cy"
+
+[sub_resource type="Resource" id="Resource_vb2i3"]
+script = ExtResource("3_vpc0q")
+amount = 0
+equipped = false
+metadata/_custom_type_script = "uid://bjqpiubtg54cy"
+
+[sub_resource type="Resource" id="Resource_rsobn"]
+script = ExtResource("3_vpc0q")
+amount = 0
+equipped = false
+metadata/_custom_type_script = "uid://bjqpiubtg54cy"
+
+[sub_resource type="Resource" id="Resource_uxtuq"]
+script = ExtResource("3_vpc0q")
+amount = 0
+equipped = false
+metadata/_custom_type_script = "uid://bjqpiubtg54cy"
+
+[sub_resource type="Resource" id="Resource_sogpa"]
+script = ExtResource("3_vpc0q")
+amount = 0
+equipped = false
+metadata/_custom_type_script = "uid://bjqpiubtg54cy"
+
+[resource]
+script = ExtResource("1_nt32d")
+slots = Array[Object]([SubResource("Resource_sthdg"), SubResource("Resource_2epi2"), SubResource("Resource_oe3p1"), SubResource("Resource_822g6"), SubResource("Resource_vb2i3"), SubResource("Resource_rsobn"), SubResource("Resource_uxtuq"), SubResource("Resource_sogpa")])
+metadata/_custom_type_script = "uid://o7vn7m7fwt1n"

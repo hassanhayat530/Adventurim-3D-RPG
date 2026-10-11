@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bjupymp22doih"
+path="res://.godot/imported/mnstr11.wav-aa94851c2b6619af34b3028bc3d549e5.sample"
+
+[deps]
+
+source_file="res://sounds/sfx/NPC/gutteral beast/mnstr11.wav"
+dest_files=["res://.godot/imported/mnstr11.wav-aa94851c2b6619af34b3028bc3d549e5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

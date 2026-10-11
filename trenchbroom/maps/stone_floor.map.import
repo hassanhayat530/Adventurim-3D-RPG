@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://dag1lq0an3m3"
+path="res://.godot/imported/stone_floor.map-457ce072c7f9918f6d0f95d6f8f42cc7.tres"
+
+[deps]
+
+source_file="res://trenchbroom/maps/stone_floor.map"
+dest_files=["res://.godot/imported/stone_floor.map-457ce072c7f9918f6d0f95d6f8f42cc7.tres"]
+
+[params]
+

@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://rd3so74socq8"
+path="res://.godot/imported/wooden_ceiling.map-31896f89513d362d1b29adf6e7bd8ada.tres"
+
+[deps]
+
+source_file="res://trenchbroom/maps/wooden_ceiling.map"
+dest_files=["res://.godot/imported/wooden_ceiling.map-31896f89513d362d1b29adf6e7bd8ada.tres"]
+
+[params]
+

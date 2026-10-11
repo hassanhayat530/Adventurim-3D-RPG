@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://cllg5ehbuj743"
+path="res://.godot/imported/Hallway.map-cfc2d347a32ff770da129ac9f27a9fa5.tres"
+
+[deps]
+
+source_file="res://trenchbroom/maps/Hallway.map"
+dest_files=["res://.godot/imported/Hallway.map-cfc2d347a32ff770da129ac9f27a9fa5.tres"]
+
+[params]
+

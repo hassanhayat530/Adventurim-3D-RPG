@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=4 format=3 uid="uid://cwnkpv2khddvl"]
+
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="1_1kkgc"]
+[ext_resource type="PackedScene" uid="uid://bqygxb6qx5ih5" path="res://Scenes/Weapons/Dagger.tscn" id="1_k5wl2"]
+[ext_resource type="Texture2D" uid="uid://wsa5ynom7mwe" path="res://addons/UI addons/craftpix/Pixel Art Weapon Icons Pack 2/Dagger/icon_2_12.png" id="2_k5wl2"]
+
+[resource]
+script = ExtResource("1_1kkgc")
+Name = "Iron Dagger"
+Type = "Weapon"
+WeaponType = "Dagger"
+ArmorType = ""
+SpeedDebuff = 0
+ConsumableType = ""
+Effect = 0
+Value = 40
+SpawnChance = 50
+Texture = ExtResource("2_k5wl2")
+Scene = ExtResource("1_k5wl2")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

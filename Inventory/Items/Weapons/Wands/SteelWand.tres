@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=4 format=3 uid="uid://bcvqexmlfgjro"]
+
+[ext_resource type="PackedScene" uid="uid://d1uj6bsxhk2k0" path="res://Scenes/Weapons/Wand.tscn" id="1_fy6qs"]
+[ext_resource type="Texture2D" uid="uid://cu3fnal7x2o37" path="res://addons/UI addons/craftpix/Magic Wand and Book Icon Pack/1 Wands/Icons_13_28.png" id="2_yxnou"]
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="3_f1gkg"]
+
+[resource]
+script = ExtResource("3_f1gkg")
+Name = "Steel Wand"
+Type = "Weapon"
+WeaponType = "Staff"
+ArmorType = ""
+SpeedDebuff = 0
+ConsumableType = ""
+Effect = 0
+Value = 0
+SpawnChance = 0
+Texture = ExtResource("2_yxnou")
+Scene = ExtResource("1_fy6qs")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

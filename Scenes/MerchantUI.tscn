@@ -1,0 +1,295 @@
+[gd_scene load_steps=24 format=3 uid="uid://v3lp6kmc0u6b"]
+
+[ext_resource type="PackedScene" uid="uid://dvx3o81np4p64" path="res://Scenes/InventoryInstance.tscn" id="1_emo0s"]
+[ext_resource type="Script" uid="uid://bkevtslp7o03" path="res://Scenes/MerchantUi.cs" id="1_g5nrw"]
+[ext_resource type="Texture2D" uid="uid://dwxfqpuq2a8l3" path="res://images/backgrounds/merchant_bg.jpg" id="2_rv6l7"]
+[ext_resource type="PackedScene" uid="uid://bgi67l84fpgc1" path="res://Scenes/StoreInstance.tscn" id="3_aykl5"]
+[ext_resource type="FontFile" uid="uid://d4drnk6af7833" path="res://fonts/alagard.ttf" id="4_aynj1"]
+[ext_resource type="AudioStream" uid="uid://1w1bephxpj3j" path="res://sounds/music/Lost in The Forest - Silence Unbroken I & II - 03 Clair de Lune.ogg" id="7_8sn1v"]
+[ext_resource type="Texture2D" uid="uid://crpl1t7b8j26m" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/4 Buttons/10.png" id="7_rv6l7"]
+[ext_resource type="Texture2D" uid="uid://buh1h30pcmfdl" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/4 Buttons/11.png" id="8_8f6u2"]
+[ext_resource type="PackedScene" uid="uid://bcckj8xpuaoxk" path="res://Scenes/SceneTransition.tscn" id="8_y42eh"]
+[ext_resource type="Texture2D" uid="uid://cix3b0e3crani" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/4 Buttons/12.png" id="9_8f6u2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aykl5"]
+texture = ExtResource("2_rv6l7")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8f6u2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_53vbu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4s601"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uyxol"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5nlhv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_43huh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ssb48"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_874nd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rv6l7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ktgi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v4joo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q2rfc"]
+
+[node name="MerchantUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g5nrw")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_aykl5")
+
+[node name="InventoryInstance" parent="." instance=ExtResource("1_emo0s")]
+visible = false
+layout_mode = 1
+offset_left = 112.0
+offset_top = 110.0
+offset_right = -1121.0
+offset_bottom = -76.0
+slotsType = "Player Shop"
+
+[node name="StoreInstance" parent="." instance=ExtResource("3_aykl5")]
+visible = false
+layout_mode = 1
+offset_left = 998.0
+offset_top = 110.0
+offset_right = 1682.0
+offset_bottom = 110.0
+slotsType = "Merchant"
+
+[node name="MenuButtons" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 760.0
+offset_top = 765.0
+offset_right = 1160.0
+offset_bottom = 927.0
+
+[node name="Browse" type="Button" parent="MenuButtons"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -81.0
+offset_right = 200.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_color = Color(0.176471, 0.243137, 0.313726, 1)
+theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_aynj1")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8f6u2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_53vbu")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4s601")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_uyxol")
+text = "Show me your wares"
+
+[node name="Sprite2D" type="Sprite2D" parent="MenuButtons/Browse"]
+show_behind_parent = true
+position = Vector2(28, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("7_rv6l7")
+
+[node name="Sprite2D2" type="Sprite2D" parent="MenuButtons/Browse"]
+show_behind_parent = true
+position = Vector2(85, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="MenuButtons/Browse"]
+show_behind_parent = true
+position = Vector2(142, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D4" type="Sprite2D" parent="MenuButtons/Browse"]
+show_behind_parent = true
+position = Vector2(199, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D5" type="Sprite2D" parent="MenuButtons/Browse"]
+show_behind_parent = true
+position = Vector2(256, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D6" type="Sprite2D" parent="MenuButtons/Browse"]
+show_behind_parent = true
+position = Vector2(313, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D7" type="Sprite2D" parent="MenuButtons/Browse"]
+show_behind_parent = true
+position = Vector2(370, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("9_8f6u2")
+
+[node name="Leave" type="Button" parent="MenuButtons"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = 5.5
+offset_right = 200.0
+offset_bottom = 80.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_color = Color(0.176471, 0.243137, 0.313726, 1)
+theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_aynj1")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5nlhv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_43huh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ssb48")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_874nd")
+text = "[Leave]"
+
+[node name="Sprite2D8" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(28, 46.1)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("7_rv6l7")
+
+[node name="Sprite2D9" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(85, 46.1)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D10" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(142, 46.1)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D11" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(199, 46.1)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D12" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(256, 46.1)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D13" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(313, 46.1)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D14" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(370, 46.1)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("9_8f6u2")
+
+[node name="Back" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 190.0
+offset_top = 64.0
+offset_right = 590.0
+offset_bottom = 139.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_aynj1")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rv6l7")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1ktgi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v4joo")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_q2rfc")
+text = "[Back]"
+
+[node name="Sprite2D" type="Sprite2D" parent="Back"]
+show_behind_parent = true
+position = Vector2(28, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("7_rv6l7")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Back"]
+show_behind_parent = true
+position = Vector2(85, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Back"]
+show_behind_parent = true
+position = Vector2(142, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Back"]
+show_behind_parent = true
+position = Vector2(199, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Back"]
+show_behind_parent = true
+position = Vector2(256, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Back"]
+show_behind_parent = true
+position = Vector2(313, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_8f6u2")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Back"]
+show_behind_parent = true
+position = Vector2(370, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("9_8f6u2")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_8sn1v")
+autoplay = true
+
+[node name="SceneTransition" parent="." instance=ExtResource("8_y42eh")]
+visible = false
+
+[connection signal="pressed" from="MenuButtons/Browse" to="." method="OnBrowsePressed"]
+[connection signal="pressed" from="MenuButtons/Leave" to="." method="OnLeavePressed"]
+[connection signal="pressed" from="Back" to="." method="OnBackPressed"]

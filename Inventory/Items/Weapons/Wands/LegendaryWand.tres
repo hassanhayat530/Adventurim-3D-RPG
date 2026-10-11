@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=4 format=3 uid="uid://cdgop8x4ke1nv"]
+
+[ext_resource type="PackedScene" uid="uid://d1uj6bsxhk2k0" path="res://Scenes/Weapons/Wand.tscn" id="1_8nw7u"]
+[ext_resource type="Texture2D" uid="uid://bvaosh8s57kac" path="res://addons/UI addons/craftpix/Magic Wand and Book Icon Pack/1 Wands/Icons_13_39.png" id="2_puqgr"]
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="3_bs38t"]
+
+[resource]
+script = ExtResource("3_bs38t")
+Name = "Legendary Wand"
+Type = "Weapon"
+WeaponType = "Staff"
+ArmorType = ""
+SpeedDebuff = 0
+ConsumableType = ""
+Effect = 0
+Value = 0
+SpawnChance = 0
+Texture = ExtResource("2_puqgr")
+Scene = ExtResource("1_8nw7u")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

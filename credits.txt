@@ -1,0 +1,28 @@
+- Tiny Texture Pack 1: https://screamingbrainstudios.itch.io/tiny-texture-pack
+- Arbitrary Color Reduction and Palette Ordered Dithering: https://godotshaders.com/shader/arbitrary-color-reduction-ordered-dithering
+- 900+ Pixel Art Texture - 256x256: https://flakdeau19.itch.io/pixel-art-texture-pack-256x256
+- voidpix skybox - https://abhishta.itch.io/voidpix-skybox-pack
+- Alagard font by Hewett Tsoi: https://www.dafont.com/hewett-tsoi.d4888
+- My Dearest Bit font by Hyohnoo: https://hyohnoo.itch.io/mydearestbit
+- SimpleDungeons and SimpleFPSController by majikayogames: https://github.com/majikayogames
+- Soliloquy by Mathew Pablo: https://opengameart.org/users/matthew-pablo
+- Silence Unbroken I & II by Lost in The Forest: https://lostintheforest.bandcamp.com
+- SFX sounds by artisticdude: https://opengameart.org/users/artisticdude
+- PSX Dungeon by Goblinatron: https://goblinatron.itch.io/psx-dungeon
+- Brackeys' VFX Bundle: https://brackeysgames.itch.io/brackeys-vfx-bundle
+- func_godot plugin: https://github.com/func-godot
+- Medieval Street Lantern by Alexey.inc: https://sketchfab.com/3d-models/medieval-street-lantern-1a38842082494b0cb62f74e630a00043
+- Lantern by VladimirKrysenko: https://sketchfab.com/3d-models/lantern-b96cffa4485449b1b9d53afe26b1e4b8
+- Texture Pack: Leather and Metal by JulioVII : https://juliovii.itch.io/ftp-leather-metal
+- Medieval Weapons Asset Pack by Wildenza : https://wildenza.itch.io/medieval-weapons-asset-pack
+- PSX first person arms by Drillimpact : https://drillimpact.itch.io/psx-first-person-arms-free
+- PSX - Dark fantasy Medieval Pack by Wildenza: https://wildenza.itch.io/psx-medieval-pack
+- Izchak's Torches by cemkalyoncu: https://opengameart.org/content/izchaks-torches
+- 25 Pixel Art Portraits by MedievalMore: https://medievalmore.itch.io/25-pixel-art-portraits-1
+- Custom Border and Panels Menu All Part by BDragon1727: https://bdragon1727.itch.io/custom-border-and-panels-menu-all-part
+- COMPLETE UI BOOK STYLES PACK LICENSE - By Crusenho Agus Hennihuno: https://crusenho.itch.io/complete-ui-book-styles-pack
+- Crimson Fantasy User Interface by Androx: https://byandrox.itch.io/crimson-fantasy-gui
+- Health Bar Asset Pack 2 by Adwit Rahman: https://adwitr.itch.io/pixel-health-bar-asset-pack-2
+- Humble Gift v1.1 : Player UI by Humble Pixel: https://humblepixel.itch.io/pocket-inventory-series-5-player-status/devlog/955031/-humble-gift-v11-player-ui-
+- Super Asset Bundle #2 : Adventure Time: https://humblepixel.itch.io/super-asset-bundle-2-adventure-time
+- Wand by Vulpes Software: https://vulpessoftware.itch.io/asset-wand

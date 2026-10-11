@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://domw4sdwb1vk7"]
+
+[ext_resource type="Texture2D" uid="uid://c78axn7gsbxha" path="res://addons/UI addons/craftpix/pixelart armor icons 5/leather/Icons_6_41.png" id="1_kaixf"]
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="2_7iehg"]
+
+[resource]
+script = ExtResource("2_7iehg")
+Name = "Leather Hood"
+Type = "Armor"
+WeaponType = ""
+ArmorType = "Head"
+SpeedDebuff = 1
+ConsumableType = ""
+Effect = 2
+Value = 50
+SpawnChance = 70
+Texture = ExtResource("1_kaixf")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

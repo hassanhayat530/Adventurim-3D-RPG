@@ -1,0 +1,117 @@
+[gd_scene load_steps=12 format=3 uid="uid://c7k0t5klpl16n"]
+
+[ext_resource type="Script" uid="uid://c8tqhwce31yap" path="res://Scripts/InnUi.cs" id="1_nvnmu"]
+[ext_resource type="FontFile" uid="uid://d4drnk6af7833" path="res://fonts/alagard.ttf" id="2_nvnmu"]
+[ext_resource type="Texture2D" uid="uid://djmvyfujogdqq" path="res://images/backgrounds/inn_bg.png" id="2_ovloh"]
+[ext_resource type="Texture2D" uid="uid://btv5bedshff75" path="res://images/inventory/inventory_bar.png" id="3_ovloh"]
+[ext_resource type="PackedScene" uid="uid://bcckj8xpuaoxk" path="res://Scenes/SceneTransition.tscn" id="4_180ql"]
+[ext_resource type="AudioStream" uid="uid://djenv86m1763e" path="res://sounds/music/NES_TheOldTowerInn.mp3" id="6_ovloh"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f4goi"]
+texture = ExtResource("2_ovloh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vdsj7"]
+content_margin_bottom = 4.0
+texture = ExtResource("3_ovloh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gnlfw"]
+content_margin_bottom = 4.0
+texture = ExtResource("3_ovloh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3lsm0"]
+texture = ExtResource("3_ovloh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j8coo"]
+texture = ExtResource("3_ovloh")
+
+[node name="InnUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nvnmu")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_f4goi")
+
+[node name="MenuButtons" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -198.0
+offset_top = 225.0
+offset_right = 202.0
+offset_bottom = 387.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NextDay" type="Button" parent="MenuButtons"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -81.0
+offset_right = 200.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_nvnmu")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxTexture_vdsj7")
+theme_override_styles/hover = SubResource("StyleBoxTexture_gnlfw")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_3lsm0")
+theme_override_styles/normal = SubResource("StyleBoxTexture_j8coo")
+text = "Spend the night"
+
+[node name="Leave" type="Button" parent="MenuButtons"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = 5.5
+offset_right = 200.0
+offset_bottom = 80.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_nvnmu")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxTexture_vdsj7")
+theme_override_styles/hover = SubResource("StyleBoxTexture_gnlfw")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_3lsm0")
+theme_override_styles/normal = SubResource("StyleBoxTexture_j8coo")
+text = "[Leave]"
+
+[node name="SceneTransition" parent="." instance=ExtResource("4_180ql")]
+visible = false
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_ovloh")
+autoplay = true
+
+[connection signal="pressed" from="MenuButtons/NextDay" to="." method="OnNextDayPressed"]
+[connection signal="pressed" from="MenuButtons/Leave" to="." method="OnLeavePressed"]

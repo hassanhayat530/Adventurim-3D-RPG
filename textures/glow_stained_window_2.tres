@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://lhqlxo1mpxcp"]
+
+[ext_resource type="Texture2D" uid="uid://cro0leyko8rfa" path="res://textures/glow_stained_window_2.jpg" id="1_gr8x4"]
+
+[resource]
+albedo_texture = ExtResource("1_gr8x4")
+metallic_specular = 0.0
+texture_filter = 2

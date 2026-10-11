@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://d0cr8pvm3hx2n"
+path="res://.godot/imported/Stairs2.map-253c107adcb5f25a29a9e5260cb13449.tres"
+
+[deps]
+
+source_file="res://trenchbroom/maps/Stairs2.map"
+dest_files=["res://.godot/imported/Stairs2.map-253c107adcb5f25a29a9e5260cb13449.tres"]
+
+[params]
+

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ciygf346klqq0"
+path="res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 06 Searching for Lost Souls.ogg-6582f51cea8774b7cd4558a27d094554.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/music/Lost in The Forest - Silence Unbroken I & II - 06 Searching for Lost Souls.ogg"
+dest_files=["res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 06 Searching for Lost Souls.ogg-6582f51cea8774b7cd4558a27d094554.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

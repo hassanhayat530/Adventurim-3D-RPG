@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://bwa1nf65s7mxu"]
+
+[ext_resource type="Texture2D" uid="uid://yqebvybtugf8" path="res://addons/UI addons/craftpix/pixelart armor icons 5/iron/Icons_6_01.png" id="1_7d2av"]
+[ext_resource type="Script" uid="uid://sh8w2yfvlsb5" path="res://Inventory/InventoryItem.cs" id="2_peqc8"]
+
+[resource]
+script = ExtResource("2_peqc8")
+Name = "Iron Helmet"
+Type = "Armor"
+WeaponType = ""
+ArmorType = "Head"
+SpeedDebuff = 2
+ConsumableType = ""
+Effect = 3
+Value = 70
+SpawnChance = 60
+Texture = ExtResource("1_7d2av")
+metadata/_custom_type_script = "uid://sh8w2yfvlsb5"

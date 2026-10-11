@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://cv2hj72f88s1t"
+path="res://.godot/imported/SpikePole.map-139ba977aaf3bca9a7d05af14831def2.tres"
+
+[deps]
+
+source_file="res://trenchbroom/maps/SpikePole.map"
+dest_files=["res://.godot/imported/SpikePole.map-139ba977aaf3bca9a7d05af14831def2.tres"]
+
+[params]
+

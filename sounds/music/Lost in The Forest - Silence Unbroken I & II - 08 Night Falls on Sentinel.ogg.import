@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dkunuaf0vq4it"
+path="res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 08 Night Falls on Sentinel.ogg-bb52be1b43f36c244a9e61a58b91d536.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/music/Lost in The Forest - Silence Unbroken I & II - 08 Night Falls on Sentinel.ogg"
+dest_files=["res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 08 Night Falls on Sentinel.ogg-bb52be1b43f36c244a9e61a58b91d536.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

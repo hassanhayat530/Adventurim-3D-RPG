@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://dsqbeyyp55evt"]
+
+[ext_resource type="Script" uid="uid://d3wivcktu8khu" path="res://Scripts/Tooltip.cs" id="1_e50qy"]
+[ext_resource type="Texture2D" uid="uid://ckrvwa4s56al3" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Paper Pack/SpriteSheet/Example.png" id="1_j2jxl"]
+[ext_resource type="FontFile" uid="uid://cidrwvvpb4g0j" path="res://fonts/MyDearestBit.ttf" id="2_fxgx8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ql7yp"]
+content_margin_left = 4.0
+content_margin_top = 5.0
+content_margin_right = 4.0
+content_margin_bottom = 5.0
+texture = ExtResource("1_j2jxl")
+region_rect = Rect2(422, 3537, 320, 157)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j2jxl"]
+content_margin_top = 6.0
+
+[node name="Tooltip" type="PanelContainer"]
+top_level = true
+offset_right = 55.0
+offset_bottom = 51.0
+scale = Vector2(5.02142, 3.81751)
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ql7yp")
+script = ExtResource("1_e50qy")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+clip_contents = false
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 3
+theme_override_fonts/normal_font = ExtResource("2_fxgx8")
+theme_override_font_sizes/normal_font_size = 5
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j2jxl")
+text = "bnbhj"
+scroll_active = false

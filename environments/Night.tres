@@ -1,0 +1,16 @@
+[gd_resource type="Environment" load_steps=4 format=3 uid="uid://vshp5w7htv5d"]
+
+[ext_resource type="Texture2D" uid="uid://bw6vm2olb1r7q" path="res://skyboxes/panorama_image (1).png" id="1_6yqsv"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_smgw0"]
+panorama = ExtResource("1_6yqsv")
+
+[sub_resource type="Sky" id="Sky_2ifng"]
+sky_material = SubResource("PanoramaSkyMaterial_smgw0")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_2ifng")
+sky_rotation = Vector3(1.54113, 0, 0)
+fog_light_color = Color(0.176471, 0.309804, 0.580392, 1)
+fog_sky_affect = 0.029

@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://dgr3jtq0xsf5n"
+path="res://.godot/imported/StoneFence.map-168889936e95698c735cb2fa241eb59c.tres"
+
+[deps]
+
+source_file="res://trenchbroom/maps/StoneFence.map"
+dest_files=["res://.godot/imported/StoneFence.map-168889936e95698c735cb2fa241eb59c.tres"]
+
+[params]
+

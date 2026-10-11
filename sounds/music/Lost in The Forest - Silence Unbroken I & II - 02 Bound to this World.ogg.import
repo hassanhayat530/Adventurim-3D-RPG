@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://hiixelt7lp6w"
+path="res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 02 Bound to this World.ogg-3358a658367ea7ca65181375d95dfdb1.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/music/Lost in The Forest - Silence Unbroken I & II - 02 Bound to this World.ogg"
+dest_files=["res://.godot/imported/Lost in The Forest - Silence Unbroken I & II - 02 Bound to this World.ogg-3358a658367ea7ca65181375d95dfdb1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -47,12 +47,15 @@ The inventory can be opened at any time except inside the inn or the merchant's 
 
 ## Running the Project
 
+The easiest way to play is the build on itch.io linked above.
+
+The `assets` folder is not included in this repository because some of the assets are paid and cannot be redistributed. To open the project in the Godot editor:
+
 1. Install the .NET version of [Godot 4.4](https://godotengine.org/download) and the .NET SDK. The project uses the Forward+ renderer.
 2. Clone the repository and import `project.godot` in the Godot project manager.
-3. Let Godot import the assets. The `.godot` cache folder is not stored in the repository, so the first import can take a moment.
-4. Build the C# solution (Build button in the editor) and press Play.
-
-All assets are stored in the `assets` folder in the root of the repository.
+3. Get the assets listed under Credits and place them in an `assets` folder in the root of the repository. Until they are in place, scenes will show missing resources.
+4. Let Godot import the assets. The `.godot` cache folder is not stored in the repository, so the first import can take a moment.
+5. Build the C# solution (Build button in the editor) and press Play.
 
 ## Technical Overview
 
@@ -76,7 +79,7 @@ All assets are stored in the `assets` folder in the root of the repository.
 
 ## Credits
 
-This project uses the following third-party assets and tools. All rights belong to their creators.
+This project uses the following third-party assets and tools. All rights belong to their creators. The assets are not included in this repository.
 
 ### Plugins, code, and shaders
 

@@ -6,7 +6,7 @@ using System.Linq;
 [GlobalClass]
 public partial class Inventory : Resource
 {
-    [Export] public InventorySlot[] slots { get; set; }
+    [Export] public InventorySlot[] Slots { get; set; }
     [Signal] public delegate void UpdateEventHandler();
     [Signal] public delegate void Update2EventHandler();
 
@@ -15,7 +15,7 @@ public partial class Inventory : Resource
         if (item == null) return;
 
         // Find slots that already have this item
-        var itemSlots = slots.Where(slot => slot.item == item).ToArray();
+        var itemSlots = Slots.Where(slot => slot.item == item).ToArray();
 
         if (itemSlots.Length > 0)
         {
@@ -24,7 +24,7 @@ public partial class Inventory : Resource
         else
         {
             // Find empty slots
-            var emptySlots = slots.Where(slot => slot.item == null).ToArray();
+            var emptySlots = Slots.Where(slot => slot.item == null).ToArray();
 
             if (emptySlots.Length > 0)
             {
@@ -36,26 +36,26 @@ public partial class Inventory : Resource
         EmitSignal(SignalName.Update);
     }
 
-    public void removeAt(int index, int amount = 1)
+    public void RemoveAt(int index, int amount = 1)
     {
-        if (slots[index].amount > 1)
+        if (Slots[index].amount > 1)
         {
-            slots[index].amount -= amount;
+            Slots[index].amount -= amount;
         }
         else
         {
-            slots[index].item = null;
+            Slots[index].item = null;
         }
 
         EmitSignal(SignalName.Update2);
     }
 
-    public void remove(InventoryItem item, int amount = 1)
+    public void Remove(InventoryItem item, int amount = 1)
     {
         if (item == null) return;
 
         // Find slots that already have this item
-        var itemSlots = slots.Where(slot => slot.item == item).ToArray();
+        var itemSlots = Slots.Where(slot => slot.item == item).ToArray();
 
         if (itemSlots.Length > 0)
         {

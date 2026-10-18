@@ -4,34 +4,34 @@ using System.Linq;
 
 public partial class InventoryInstance : Control
 {
-	[Export] public Inventory inventory;
-	[Export] public string slotsType { get; set; } = "";
-	private InventoryProperties inventoryProperties;
-    private InvUISlot[] slots;
+	[Export] public Inventory Inventory;
+	[Export] public string SlotsType { get; set; } = "";
+	private InventoryProperties _inventoryProperties;
+    private InvUISlot[] _slots;
 
 	public override void _Ready()
 	{
 		var gridContainer = GetNode<GridContainer>("NinePatchRect/GridContainer");
-		slots = gridContainer.GetChildren()
+		_slots = gridContainer.GetChildren()
 			.Select(child => child as InvUISlot)
 			.Where(slot => slot != null)
 			.ToArray();
 
-		inventory.Update2 += updateSlots;
-		updateSlots();
+		Inventory.Update2 += UpdateSlots;
+		UpdateSlots();
 		Visible = false;
 
-		inventoryProperties = gridContainer as InventoryProperties;
-		inventoryProperties.slotsType = slotsType;
-		inventoryProperties.updateProperties();
+		_inventoryProperties = gridContainer as InventoryProperties;
+		_inventoryProperties.slotsType = SlotsType;
+		_inventoryProperties.updateProperties();
 	}
 
-    public void updateSlots()
+    public void UpdateSlots()
 	{
-		int minSize = Math.Min(inventory.slots.Length, slots.Length);
+		int minSize = Math.Min(Inventory.Slots.Length, _slots.Length);
 		for (int i = 0; i < minSize; ++i)
 		{
-			slots[i].update(inventory.slots[i]);
+			_slots[i].UpdateSlot(Inventory.Slots[i]);
 		}
 	}
 }

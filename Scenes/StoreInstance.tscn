@@ -71,35 +71,27 @@ region_rect = Rect2(2394, 88, 176, 137)
 
 [node name="InvUISlot" parent="NinePatchRect/GridContainer" instance=ExtResource("4_8fr75")]
 layout_mode = 2
-number = 1
 
 [node name="InvUISlot2" parent="NinePatchRect/GridContainer" instance=ExtResource("4_8fr75")]
 layout_mode = 2
-number = 2
 
 [node name="InvUISlot3" parent="NinePatchRect/GridContainer" instance=ExtResource("4_8fr75")]
 layout_mode = 2
-number = 3
 
 [node name="InvUISlot4" parent="NinePatchRect/GridContainer" instance=ExtResource("4_8fr75")]
 layout_mode = 2
-number = 4
 
 [node name="InvUISlot5" parent="NinePatchRect/GridContainer" instance=ExtResource("4_8fr75")]
 layout_mode = 2
-number = 5
 
 [node name="InvUISlot6" parent="NinePatchRect/GridContainer" instance=ExtResource("4_8fr75")]
 layout_mode = 2
-number = 6
 
 [node name="InvUISlot7" parent="NinePatchRect/GridContainer" instance=ExtResource("4_8fr75")]
 layout_mode = 2
-number = 7
 
 [node name="InvUISlot8" parent="NinePatchRect/GridContainer" instance=ExtResource("4_8fr75")]
 layout_mode = 2
-number = 8
 
 [node name="Label" type="Label" parent="NinePatchRect"]
 layout_mode = 0

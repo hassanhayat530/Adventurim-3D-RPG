@@ -1,10 +1,12 @@
-[gd_scene load_steps=24 format=3 uid="uid://v3lp6kmc0u6b"]
+[gd_scene load_steps=26 format=3 uid="uid://v3lp6kmc0u6b"]
 
 [ext_resource type="PackedScene" uid="uid://dvx3o81np4p64" path="res://Scenes/InventoryInstance.tscn" id="1_emo0s"]
 [ext_resource type="Script" uid="uid://bkevtslp7o03" path="res://Scenes/MerchantUi.cs" id="1_g5nrw"]
 [ext_resource type="Texture2D" uid="uid://dwxfqpuq2a8l3" path="res://images/backgrounds/merchant_bg.jpg" id="2_rv6l7"]
 [ext_resource type="PackedScene" uid="uid://bgi67l84fpgc1" path="res://Scenes/StoreInstance.tscn" id="3_aykl5"]
+[ext_resource type="Resource" uid="uid://4hjp5qs0jerd" path="res://Inventory/PlayerInventory.tres" id="4_53vbu"]
 [ext_resource type="FontFile" uid="uid://d4drnk6af7833" path="res://fonts/alagard.ttf" id="4_aynj1"]
+[ext_resource type="Resource" uid="uid://dh1bmfv7b1ps7" path="res://Inventory/StoreInventory.tres" id="6_4s601"]
 [ext_resource type="AudioStream" uid="uid://1w1bephxpj3j" path="res://sounds/music/Lost in The Forest - Silence Unbroken I & II - 03 Clair de Lune.ogg" id="7_8sn1v"]
 [ext_resource type="Texture2D" uid="uid://crpl1t7b8j26m" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/4 Buttons/10.png" id="7_rv6l7"]
 [ext_resource type="Texture2D" uid="uid://buh1h30pcmfdl" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/4 Buttons/11.png" id="8_8f6u2"]
@@ -63,7 +65,8 @@ offset_left = 112.0
 offset_top = 110.0
 offset_right = -1121.0
 offset_bottom = -76.0
-slotsType = "Player Shop"
+Inventory = ExtResource("4_53vbu")
+SlotsType = "Player Shop"
 
 [node name="StoreInstance" parent="." instance=ExtResource("3_aykl5")]
 visible = false
@@ -72,7 +75,8 @@ offset_left = 998.0
 offset_top = 110.0
 offset_right = 1682.0
 offset_bottom = 110.0
-slotsType = "Merchant"
+Inventory = ExtResource("6_4s601")
+SlotsType = "Merchant"
 
 [node name="MenuButtons" type="Control" parent="."]
 anchors_preset = 0

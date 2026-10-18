@@ -33,9 +33,10 @@ public partial class ToolTipInteract : Control
 
     public void update()
     {
-        if (invUISlot.inventorySlot.item != null)
+        GD.Print("Update Tooltip called");
+        if (invUISlot._inventorySlot.item != null)
         {
-            InventoryItem item = invUISlot.inventorySlot.item;
+            InventoryItem item = invUISlot._inventorySlot.item;
             int itemValue;
 
             if (inventoryProperties.slotsType == "Merchant")

@@ -8,66 +8,66 @@ using System.Linq;
 public partial class InvUISlot : Panel
 {
 	[Signal] public delegate void UpdateEventHandler();
-	private Sprite2D itemVisual;
-	private Label amountText;
-	private Sprite2D equipSymbol;
-	private ToolTipInteract button;
-	private Inventory playerInventory = GlobalScript.Instance.PlayerInventory;
-	private Inventory merchantInventory = GlobalScript.Instance.MerchantInventory;
-	public InventorySlot inventorySlot = null;
-	private InventoryItem goldReference = GD.Load<InventoryItem>("res://Inventory/Items/Gold.tres");
-	private InvUISlot[] siblings;
-	[Export] public string slotType { get; set; } = "";
-	[Export] public int number;
-	private AudioStreamPlayer2D weaponEquipSound;
-	private AudioStreamPlayer2D armorEquipSound;
-	private AudioStreamPlayer2D ringEquipSound;
-	private AudioStreamPlayer2D denySound;
+	private Sprite2D _itemVisual;
+	private Label _amountText;
+	private Sprite2D _equipSymbol;
+	private ToolTipInteract _button;
+	private Inventory _playerInventory = GlobalScript.Instance.PlayerInventory;
+	private Inventory _merchantInventory = GlobalScript.Instance.MerchantInventory;
+	public InventorySlot _inventorySlot = null;
+	private InventoryItem _goldReference = GD.Load<InventoryItem>("res://Inventory/Items/Gold.tres");
+	private InvUISlot[] _siblings;
+	[Export] public string SlotType { get; set; } = "";
+	[Export] public int Number;
+	private AudioStreamPlayer2D _weaponEquipSound;
+	private AudioStreamPlayer2D _armorEquipSound;
+	private AudioStreamPlayer2D _ringEquipSound;
+	private AudioStreamPlayer2D _denySound;
 	public override void _Ready()
 	{
 
-		itemVisual = GetNode<Sprite2D>("CenterContainer/Panel/ItemDisplay");
-		amountText = GetNode<Label>("CenterContainer/Panel/Label");
-		equipSymbol = GetNode<Sprite2D>("CenterContainer/Panel/EquipSign");
-		button = GetNode<ToolTipInteract>("Button");
+		_itemVisual = GetNode<Sprite2D>("CenterContainer/Panel/ItemDisplay");
+		_amountText = GetNode<Label>("CenterContainer/Panel/Label");
+		_equipSymbol = GetNode<Sprite2D>("CenterContainer/Panel/EquipSign");
+		_button = GetNode<ToolTipInteract>("Button");
 
-		weaponEquipSound = GetNode<AudioStreamPlayer2D>("WeaponEquipSound");
-		armorEquipSound = GetNode<AudioStreamPlayer2D>("ArmorEquipSound");
-		ringEquipSound = GetNode<AudioStreamPlayer2D>("RingEquipSound");
-		denySound = GetNode<AudioStreamPlayer2D>("DenySound");
+		_weaponEquipSound = GetNode<AudioStreamPlayer2D>("WeaponEquipSound");
+		_armorEquipSound = GetNode<AudioStreamPlayer2D>("ArmorEquipSound");
+		_ringEquipSound = GetNode<AudioStreamPlayer2D>("RingEquipSound");
+		_denySound = GetNode<AudioStreamPlayer2D>("DenySound");
 
 		GridContainer parent = GetParent<GridContainer>();
-		siblings = parent.GetChildren()
+		_siblings = parent.GetChildren()
 				.Select(child => child as InvUISlot)
 				.Where(slot => slot != null)
 				.ToArray();
 
-		equipSymbol.Visible = false;
+		_equipSymbol.Visible = false;
 	}
 
-	public void update(InventorySlot slot)
+	public void UpdateSlot(InventorySlot slot)
 	{
-		inventorySlot = slot;
+		_inventorySlot = slot;
 		if (slot.item == null)
 		{
-			itemVisual.Visible = false;
-			amountText.Visible = false;
-			button.Visible = false;
+			_itemVisual.Visible = false;
+			_amountText.Visible = false;
+			_button.Visible = false;
 		}
 		else
 		{
-			itemVisual.Visible = true;
-			equipSymbol.Visible = slot.equipped;
-			itemVisual.Texture = slot.item.Texture;
-			amountText.Text = slot.amount.ToString();
-			button.Visible = true;
+			_itemVisual.Visible = true;
+			_equipSymbol.Visible = slot.equipped;
+			_itemVisual.Texture = slot.item.Texture;
+			_amountText.Text = slot.amount.ToString();
+			_button.Visible = true;
 			if (slot.amount > 1)
 			{
-				amountText.Visible = true;
+				_amountText.Visible = true;
 			}
 			else
 			{
-				amountText.Visible = false;
+				_amountText.Visible = false;
 			}
 		}
 
@@ -80,26 +80,26 @@ public partial class InvUISlot : Panel
 	/// <param name="equipType">The inventory item to unequip</param>
 	public void ResetEquipped(string equipType)
 	{
-		for (int i = 0; i < siblings.Length; ++i)
+		for (int i = 0; i < _siblings.Length; ++i)
 		{
-			if (siblings[i].inventorySlot != null &&
-			siblings[i].inventorySlot.item != null &&
-			siblings[i].inventorySlot.item.Type == equipType)
+			if (_siblings[i]._inventorySlot != null &&
+			_siblings[i]._inventorySlot.item != null &&
+			_siblings[i]._inventorySlot.item.Type == equipType)
 			{
-				siblings[i].equip(false);
+				_siblings[i].Equip(false);
 			}
 		}
 	}
 
-	private void equip(bool equipping)
+	private void Equip(bool equipping)
 	{
-		equipSymbol.Visible = equipping;
-		inventorySlot.equipped = equipping;
+		_equipSymbol.Visible = equipping;
+		_inventorySlot.equipped = equipping;
 	}
 
 	public void OnButtonPressed()
 	{
-		InventoryItem itemHeld = inventorySlot.item;
+		InventoryItem itemHeld = _inventorySlot.item;
 		if (itemHeld != null)
 		{
 			if (itemHeld.Type == "Head" ||
@@ -107,46 +107,46 @@ public partial class InvUISlot : Panel
 				itemHeld.Type == "Hands" ||
 				itemHeld.Type == "Legs")
 			{
-				armorEquipSound.Play();
+				_armorEquipSound.Play();
 			}
 			if (itemHeld.Type == "Weapon")
 			{
-				weaponEquipSound.Play();
+				_weaponEquipSound.Play();
 			}
 			if (itemHeld.Type == "Ring1" ||
 				itemHeld.Type == "Ring2")
 			{
-				ringEquipSound.Play();
+				_ringEquipSound.Play();
 			}
 
-			if (slotType == "Player Inventory")
+			if (SlotType == "Player Inventory")
 			{
-				playerInventoryFunctionality(itemHeld);
+				PlayerInventoryFunctionality(itemHeld);
 			}
 
-			if (slotType == "Player Shop")
+			if (SlotType == "Player Shop")
 			{
-				playerShopFunctionality(itemHeld);
+				PlayerShopFunctionality(itemHeld);
 			}
 
-			if (slotType == "Merchant")
+			if (SlotType == "Merchant")
 			{
-				merchantFunctionality(itemHeld);
+				MerchantFunctionality(itemHeld);
 			}
 		}
 	}
 
-	public void onMouseEntered()
+	public void OnMouseEntered()
 	{
 		GetNode<Control>("CenterContainer/Panel/Highlighter").Visible = true;
 	}
 
-	public void onMouseExited()
+	public void OnMouseExited()
 	{
 		GetNode<Control>("CenterContainer/Panel/Highlighter").Visible = false;
 	}
 
-	public void playerInventoryFunctionality(InventoryItem itemHeld)
+	public void PlayerInventoryFunctionality(InventoryItem itemHeld)
 	{
 		Control equipment = GetNode<Control>("../../../Equipment");  // Get Equipment slots parent node
 		EquipmentSlot[] equipmentSlots = equipment.GetChildren()  // Get list of equipment slots
@@ -161,33 +161,33 @@ public partial class InvUISlot : Panel
 		{
 			string type = itemHeld.Type == "Armor" ? itemHeld.ArmorType : itemHeld.Type;  // If the item is an armor piece,
 				                                                                          // get it's type, else general type
-			if (!equipSymbol.Visible)  // If Item is not already equipped
+			if (!_equipSymbol.Visible)  // If Item is not already equipped
 			{
 
 				ResetEquipped(type); // Unequip any other item with same type
 
 				GlobalScript.Instance.Equipment[type] = itemHeld;
-				equip(true);
+				Equip(true);
 
 				for (int i = 0; i < equipmentSlots.Length; ++i)
 				{
 					EquipmentSlot currEquipmentSlot = equipmentSlots[i];
-					if (currEquipmentSlot.equipmentType == type)
+					if (currEquipmentSlot.EquipmentType == type)
 					{
-						currEquipmentSlot.fill(GlobalScript.Instance.Equipment[currEquipmentSlot.equipmentType]);
+						currEquipmentSlot.Fill(GlobalScript.Instance.Equipment[currEquipmentSlot.EquipmentType]);
 					}
 				}
 			}
 			else
 			{
 				GlobalScript.Instance.Equipment[type] = null;
-				equip(false);
+				Equip(false);
 				for (int i = 0; i < equipmentSlots.Length; ++i)
 				{
 					EquipmentSlot currEquipmentSlot = equipmentSlots[i];
-					if (currEquipmentSlot.equipmentType == type)
+					if (currEquipmentSlot.EquipmentType == type)
 					{
-						currEquipmentSlot.empty();
+						currEquipmentSlot.Empty();
 					}
 				}
 			}
@@ -195,18 +195,18 @@ public partial class InvUISlot : Panel
 
 	}
 
-	public void playerShopFunctionality(InventoryItem item)
+	public void PlayerShopFunctionality(InventoryItem item)
 	{
-		if (item == goldReference)
+		if (item == _goldReference)
 		{
-			denySound.Play();
+			_denySound.Play();
 			return;
 		}
 
 		int saleValue = Convert.ToInt32(item.Value * GlobalScript.Instance.PlayerSellingRatio); 
 
-		playerInventory.Insert(goldReference, saleValue);
-		playerInventory.removeAt(number - 1);
+		_playerInventory.Insert(_goldReference, saleValue);
+		_playerInventory.RemoveAt(GetIndex());
 
 		// unequip sold item if it was equipped
 		foreach(KeyValuePair<string, InventoryItem> entry in GlobalScript.Instance.Equipment)
@@ -214,7 +214,7 @@ public partial class InvUISlot : Panel
 			if (entry.Value == item)
 			{
 				GlobalScript.Instance.Equipment[entry.Key] = null;
-				inventorySlot.equipped = false;
+				_inventorySlot.equipped = false;
 			}
 		}
 
@@ -223,20 +223,21 @@ public partial class InvUISlot : Panel
 		GlobalScript.Instance.PlayerGold += saleValue;
 	}
 
-	public void merchantFunctionality(InventoryItem item)
+	public void MerchantFunctionality(InventoryItem item)
 	{
 		int BuyingValue = Convert.ToInt32(item.Value * GlobalScript.Instance.PlayerBuyingRatio);
 		if (GlobalScript.Instance.PlayerGold >= BuyingValue)
 		{
-			merchantInventory.removeAt(number - 1);
-			playerInventory.Insert(item);
 
-			playerInventory.remove(goldReference, BuyingValue);
+			_merchantInventory.RemoveAt(GetIndex());
+			_playerInventory.Insert(item);
+
+			_playerInventory.Remove(_goldReference, BuyingValue);
 			GlobalScript.Instance.PlayerGold -= BuyingValue;
 		}
 		else
 		{
-			denySound.Play();
+			_denySound.Play();
 		}
 	}
 }

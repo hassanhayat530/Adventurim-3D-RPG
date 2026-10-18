@@ -5,68 +5,68 @@ using System.Threading.Tasks;
 
 public partial class InventoryUi : Control
 {
-    private Inventory inventory = GD.Load<Inventory>("res://Inventory/PlayerInventory.tres");
-    private NinePatchRect inventoryPanel;
-    private Control equipmentPanel;
-    private InvUISlot[] slots;
-    private EquipmentSlot[] equipmentSlots;
-    private AudioStreamPlayer2D openSound;
-    private AnimationPlayer player;
-    private AnimatedSprite2D bookSprite;
-    private AnimatedSprite2D bookAppear;
-    private bool isOpen = false;
+    private Inventory _inventory = GD.Load<Inventory>("res://Inventory/PlayerInventory.tres");
+    private NinePatchRect _inventoryPanel;
+    private Control _equipmentPanel;
+    private InvUISlot[] _slots;
+    private EquipmentSlot[] _equipmentSlots;
+    private AudioStreamPlayer2D _openSound;
+    private AnimationPlayer _player;
+    private AnimatedSprite2D _bookSprite;
+    private AnimatedSprite2D _bookAppear;
+    private bool _isOpen = false;
     [Signal] public delegate void UpdateEventHandler();
     
     public override void _Ready()
     {
-        inventoryPanel = GetNode<NinePatchRect>("NinePatchRect");
-        equipmentPanel = GetNode<Control>("Equipment");
-        inventoryPanel.Visible = false;
-        equipmentPanel.Visible = false;
+        _inventoryPanel = GetNode<NinePatchRect>("NinePatchRect");
+        _equipmentPanel = GetNode<Control>("Equipment");
+        _inventoryPanel.Visible = false;
+        _equipmentPanel.Visible = false;
 
         var gridContainer = GetNode<GridContainer>("NinePatchRect/GridContainer");
-        slots = gridContainer.GetChildren()
+        _slots = gridContainer.GetChildren()
             .Select(child => child as InvUISlot)
             .Where(slot => slot != null)
             .ToArray();
 
         Control equipment = GetNode<Control>("Equipment");
-        equipmentSlots = equipment.GetChildren()
+        _equipmentSlots = equipment.GetChildren()
                     .Select(child => child as EquipmentSlot)
                     .Where(slot => slot != null)
                     .ToArray();
 
-        openSound = GetNode<AudioStreamPlayer2D>("OpenSound");
+        _openSound = GetNode<AudioStreamPlayer2D>("OpenSound");
         // player = GetNode<AnimationPlayer>("AnimationPlayer");
         // player.Play("RESET");
 
-        bookSprite = GetNode<AnimatedSprite2D>("BookSprite");
-        bookAppear = GetNode<AnimatedSprite2D>("BookSprite/BookAppear");
-        bookSprite.PlayBackwards("default");
-        bookAppear.PlayBackwards("default");
-        bookAppear.Visible = false;
+        _bookSprite = GetNode<AnimatedSprite2D>("BookSprite");
+        _bookAppear = GetNode<AnimatedSprite2D>("BookSprite/BookAppear");
+        _bookSprite.PlayBackwards("default");
+        _bookAppear.PlayBackwards("default");
+        _bookAppear.Visible = false;
 
-        updateSlots();
+        UpdateSlots();
         Visible = false;
     }
 
-    public void updateSlots()
+    public void UpdateSlots()
     {
         // Update Inventory
-        int minSize = Math.Min(inventory.slots.Length, slots.Length);
+        int minSize = Math.Min(_inventory.Slots.Length, _slots.Length);
         for (int i = 0; i < minSize; ++i)
         {
-            slots[i].update(inventory.slots[i]);
+            _slots[i].UpdateSlot(_inventory.Slots[i]);
         }
 
         // Update Equipment
-        for (int i = 0; i < equipmentSlots.Length; ++i)
+        for (int i = 0; i < _equipmentSlots.Length; ++i)
         {
-            EquipmentSlot currEquipmentSlot = equipmentSlots[i];
-            InventoryItem currequipment = GlobalScript.Instance.Equipment[currEquipmentSlot.equipmentType];
+            EquipmentSlot currEquipmentSlot = _equipmentSlots[i];
+            InventoryItem currequipment = GlobalScript.Instance.Equipment[currEquipmentSlot.EquipmentType];
             if (currequipment != null)
             {
-                currEquipmentSlot.fill(currequipment);
+                currEquipmentSlot.Fill(currequipment);
             }
         }
     }
@@ -75,31 +75,31 @@ public partial class InventoryUi : Control
     {
         if (Input.IsActionJustPressed("i"))
         {
-            if (isOpen)
-                close();
+            if (_isOpen)
+                Close();
             else
-                open();
+                Open();
         }
     }
 
-	public async Task open()
+	public async Task Open()
 	{
-        openSound.Play();
-        inventory.Update += updateSlots;
+        _openSound.Play();
+        _inventory.Update += UpdateSlots;
 		Visible = true;
-		isOpen = true;
+		_isOpen = true;
 		// player.Play("open");
 
-        bookSprite.Play("default");
-        await ToSignal(bookSprite, "animation_finished");
-        inventoryPanel.Visible = true;
-        equipmentPanel.Visible = true;
+        _bookSprite.Play("default");
+        await ToSignal(_bookSprite, "animation_finished");
+        _inventoryPanel.Visible = true;
+        _equipmentPanel.Visible = true;
 
-        bookAppear.Visible = true;
-        bookAppear.Play("default");
-        await ToSignal(bookAppear, "animation_finished");
+        _bookAppear.Visible = true;
+        _bookAppear.Play("default");
+        await ToSignal(_bookAppear, "animation_finished");
 
-        updateSlots();
+        UpdateSlots();
 
 		Input.MouseMode = Input.MouseModeEnum.Visible;
 
@@ -110,23 +110,23 @@ public partial class InventoryUi : Control
 		GlobalScript.Instance.InInventory = true;
     }
 
-    public async void close()
+    public async void Close()
     {
-        openSound.Play();
-        inventory.Update -= updateSlots;
+        _openSound.Play();
+        _inventory.Update -= UpdateSlots;
         // player.PlayBackwards("open");
         // await ToSignal(player, "animation_finished");
-        bookAppear.PlayBackwards("default");
-        await ToSignal(bookAppear, "animation_finished");
-        inventoryPanel.Visible = false;
-        equipmentPanel.Visible = false;
-        bookAppear.Visible = false;
+        _bookAppear.PlayBackwards("default");
+        await ToSignal(_bookAppear, "animation_finished");
+        _inventoryPanel.Visible = false;
+        _equipmentPanel.Visible = false;
+        _bookAppear.Visible = false;
         
-        bookSprite.PlayBackwards("default");
-        await ToSignal(bookSprite, "animation_finished");
+        _bookSprite.PlayBackwards("default");
+        await ToSignal(_bookSprite, "animation_finished");
 
         Visible = false;
-        isOpen = false;
+        _isOpen = false;
         // GetTree().Paused = false;
         Input.MouseMode = Input.MouseModeEnum.Captured;
 

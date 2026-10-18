@@ -3,33 +3,33 @@ using System;
 
 public partial class EquipmentSlot : Panel
 {
-	[Export] public string equipmentType { get; set; }
-	[Export] public Texture2D nullTexture { get; set; }
-	private Sprite2D nullVisual;
-	private Sprite2D backgroundVisual;
-	private Sprite2D equipVisual;
+	[Export] public string EquipmentType { get; set; }
+	[Export] public Texture2D NullTexture { get; set; }
+	private Sprite2D _nullVisual;
+	private Sprite2D _backgroundVisual;
+	private Sprite2D _equipVisual;
 
 	public override void _Ready()
 	{
-		nullVisual = GetNode<Sprite2D>("CenterContainer/Panel/NullDisplay");
-		backgroundVisual = GetNode<Sprite2D>("CenterContainer/Panel/Background");
-		equipVisual = GetNode<Sprite2D>("CenterContainer/Panel/ItemDisplay");
+		_nullVisual = GetNode<Sprite2D>("CenterContainer/Panel/NullDisplay");
+		_backgroundVisual = GetNode<Sprite2D>("CenterContainer/Panel/Background");
+		_equipVisual = GetNode<Sprite2D>("CenterContainer/Panel/ItemDisplay");
 
-		nullVisual.Texture = nullTexture;
-		backgroundVisual.Visible = false;
-		equipVisual.Visible = false;
+		_nullVisual.Texture = NullTexture;
+		_backgroundVisual.Visible = false;
+		_equipVisual.Visible = false;
 	}
 
-	public void empty()
+	public void Empty()
 	{
-		backgroundVisual.Visible = false;
-		equipVisual.Visible = false;
+		_backgroundVisual.Visible = false;
+		_equipVisual.Visible = false;
 	}
 
-	public void fill(InventoryItem item)
+	public void Fill(InventoryItem item)
 	{
-		equipVisual.Texture = item.Texture;
-		backgroundVisual.Visible = true;
-		equipVisual.Visible = true;
+		_equipVisual.Texture = item.Texture;
+		_backgroundVisual.Visible = true;
+		_equipVisual.Visible = true;
 	}
 }

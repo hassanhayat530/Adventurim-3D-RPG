@@ -355,99 +355,75 @@ slotsType = "Player Inventory"
 
 [node name="InvUISlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 1
 
 [node name="InvUISlot2" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 2
 
 [node name="InvUISlot3" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 3
 
 [node name="InvUISlot4" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 4
 
 [node name="InvUISlot5" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 5
 
 [node name="InvUISlot6" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 6
 
 [node name="InvUISlot7" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 7
 
 [node name="InvUISlot8" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 8
 
 [node name="InvUISlot9" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 9
 
 [node name="InvUISlot10" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 10
 
 [node name="InvUISlot11" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 11
 
 [node name="InvUISlot12" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 12
 
 [node name="InvUISlot13" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 13
 
 [node name="InvUISlot14" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 14
 
 [node name="InvUISlot15" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 15
 
 [node name="InvUISlot16" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 16
 
 [node name="InvUISlot17" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 17
 
 [node name="InvUISlot18" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 18
 
 [node name="InvUISlot19" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 19
 
 [node name="InvUISlot20" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 20
 
 [node name="InvUISlot21" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 21
 
 [node name="InvUISlot22" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 22
 
 [node name="InvUISlot23" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 23
 
 [node name="InvUISlot24" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ut0it")]
 layout_mode = 2
-number = 24
 
 [node name="Label" type="Label" parent="NinePatchRect"]
 layout_mode = 0
@@ -478,8 +454,8 @@ offset_left = 1325.0
 offset_top = 186.0
 offset_right = 1500.0
 offset_bottom = 361.0
-equipmentType = "Head"
-nullTexture = ExtResource("6_5ngkl")
+EquipmentType = "Head"
+NullTexture = ExtResource("6_5ngkl")
 
 [node name="ChestSlot" parent="Equipment" instance=ExtResource("6_adfqm")]
 layout_mode = 0
@@ -487,8 +463,8 @@ offset_left = 1325.0
 offset_top = 453.0
 offset_right = 1500.0
 offset_bottom = 628.0
-equipmentType = "Chest"
-nullTexture = ExtResource("7_lef5l")
+EquipmentType = "Chest"
+NullTexture = ExtResource("7_lef5l")
 
 [node name="HandsSlot" parent="Equipment" instance=ExtResource("6_adfqm")]
 layout_mode = 0
@@ -496,8 +472,8 @@ offset_left = 1039.0
 offset_top = 453.0
 offset_right = 1214.0
 offset_bottom = 628.0
-equipmentType = "Hands"
-nullTexture = ExtResource("9_en4go")
+EquipmentType = "Hands"
+NullTexture = ExtResource("9_en4go")
 
 [node name="WeaponSlot" parent="Equipment" instance=ExtResource("6_adfqm")]
 layout_mode = 0
@@ -505,8 +481,8 @@ offset_left = 1606.0
 offset_top = 453.0
 offset_right = 1781.0
 offset_bottom = 628.0
-equipmentType = "Weapon"
-nullTexture = ExtResource("11_qc5xd")
+EquipmentType = "Weapon"
+NullTexture = ExtResource("11_qc5xd")
 
 [node name="LegsSlot" parent="Equipment" instance=ExtResource("6_adfqm")]
 layout_mode = 0
@@ -514,8 +490,8 @@ offset_left = 1325.0
 offset_top = 741.0
 offset_right = 1500.0
 offset_bottom = 916.0
-equipmentType = "Legs"
-nullTexture = ExtResource("8_qc5xd")
+EquipmentType = "Legs"
+NullTexture = ExtResource("8_qc5xd")
 
 [node name="Ring1Slot" parent="Equipment" instance=ExtResource("6_adfqm")]
 layout_mode = 0
@@ -523,8 +499,8 @@ offset_left = 1039.0
 offset_top = 741.0
 offset_right = 1214.0
 offset_bottom = 916.0
-equipmentType = "Ring1"
-nullTexture = ExtResource("10_lef5l")
+EquipmentType = "Ring1"
+NullTexture = ExtResource("10_lef5l")
 
 [node name="Ring2Slot" parent="Equipment" instance=ExtResource("6_adfqm")]
 layout_mode = 0
@@ -532,8 +508,8 @@ offset_left = 1606.0
 offset_top = 741.0
 offset_right = 1781.0
 offset_bottom = 916.0
-equipmentType = "Ring2"
-nullTexture = ExtResource("10_lef5l")
+EquipmentType = "Ring2"
+NullTexture = ExtResource("10_lef5l")
 
 [node name="Label2" type="Label" parent="Equipment"]
 layout_mode = 0

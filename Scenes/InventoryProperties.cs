@@ -21,7 +21,7 @@ public partial class InventoryProperties : GridContainer
 	{
 		for (int i = 0; i < childSlots.Length; ++i)
 		{
-			childSlots[i].slotType = slotsType;
+			childSlots[i].SlotType = slotsType;
 		}
 	}
 }

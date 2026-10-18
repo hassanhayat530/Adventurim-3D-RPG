@@ -2,8 +2,8 @@ using Godot;
 
 public partial class Tooltip : PanelContainer
 {
-    static Vector2 OFFSET = Vector2.One * 60f;
-    Tween opacityTween = null;
+    private static Vector2 OFFSET = Vector2.One * 60f;
+    private Tween opacityTween = null;
     
     // Reference to the RichTextLabel child
     private RichTextLabel richTextLabel;
@@ -18,10 +18,9 @@ public partial class Tooltip : PanelContainer
     // Method to set tooltip content
     public void SetContent(string content)
     {
-        if (richTextLabel != null)
-        {
-            richTextLabel.Text = content;
-        }
+        if (richTextLabel == null) return;
+        richTextLabel.Text = content;
+        Callable.From(ResetSize).CallDeferred(); // shrink/grow panel to the new content
     }
 
     public override void _Input(InputEvent @event)

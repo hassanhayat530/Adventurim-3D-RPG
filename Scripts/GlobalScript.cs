@@ -117,7 +117,7 @@ public partial class GlobalScript : Node
         for (int i = 0; i < equipmentSlots.Length; ++i)
         {
             EquipmentSlot currEquipmentSlot = equipmentSlots[i];
-            currEquipmentSlot.fill(Equipment[currEquipmentSlot.equipmentType]);
+            currEquipmentSlot.Fill(Equipment[currEquipmentSlot.EquipmentType]);
         }
     }
 

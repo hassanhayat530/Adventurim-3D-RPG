@@ -25,7 +25,7 @@ An early prototype of a 3D dungeon-crawler RPG built in Godot with C#. It is ins
 - **Inventory:** 24 slots filled at the first free space. Hover over an item to see its stats, and click equipment to equip it in the matching slot.
 - **Class-based loot:** light armor for rogues and sorcerers, heavy armor for soldiers, and daggers, staffs, and swords for rogues, sorcerers, and soldiers respectively. Merchant stock improves with player level.
 - **Dungeons:** an early low-level dungeon that can be explored, with no loot or monsters yet.
-- **Scenario generation (experimental):** a preview button in the main menu that generates a scenario with an AI model. It needs an API key in your system environment variables (tested with Claude). Once started, the only way to leave it is to close the game.
+- **Scenario generation (experimental):** a preview button in the main menu that generates a scenario with an AI model. It needs an API key in your system environment variables. Name it ANTHROPIC_API_KEY (tested with Claude). Once started, the only way to leave it is to close the game.
 
 ## Controls
 

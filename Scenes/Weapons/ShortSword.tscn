@@ -3103,6 +3103,7 @@ animationPlayer = NodePath("AnimationPlayer")
 
 [node name="Warhammer_002" parent="." index="0"]
 transform = Transform3D(3.80676e-06, -3.87238e-06, -0.829, -1.06066, -1.06066, 2.56232e-08, -1.06065, 1.06066, -3.00097e-06, 0.0952043, -0.242089, -0.063701)
+cast_shadow = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_i1411")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
@@ -3470,5 +3471,6 @@ bones/49/rotation = Quaternion(0.733881, 0.227756, -0.0241113, 0.639504)
 bones/49/scale = Vector3(1, 0.999999, 1)
 
 [node name="arms" type="MeshInstance3D" parent="arms_armature/Skeleton3D" index="0"]
+cast_shadow = 0
 mesh = SubResource("ArrayMesh_fv4f0")
 skin = SubResource("Skin_i1411")

@@ -1,28 +1,32 @@
-[gd_scene load_steps=12 format=3 uid="uid://c7k0t5klpl16n"]
+[gd_scene load_steps=18 format=3 uid="uid://c7k0t5klpl16n"]
 
 [ext_resource type="Script" uid="uid://c8tqhwce31yap" path="res://Scripts/InnUi.cs" id="1_nvnmu"]
 [ext_resource type="FontFile" uid="uid://d4drnk6af7833" path="res://fonts/alagard.ttf" id="2_nvnmu"]
 [ext_resource type="Texture2D" uid="uid://djmvyfujogdqq" path="res://images/backgrounds/inn_bg.png" id="2_ovloh"]
-[ext_resource type="Texture2D" uid="uid://btv5bedshff75" path="res://images/inventory/inventory_bar.png" id="3_ovloh"]
 [ext_resource type="PackedScene" uid="uid://bcckj8xpuaoxk" path="res://Scenes/SceneTransition.tscn" id="4_180ql"]
+[ext_resource type="Texture2D" uid="uid://crpl1t7b8j26m" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/4 Buttons/10.png" id="4_f4goi"]
+[ext_resource type="Texture2D" uid="uid://buh1h30pcmfdl" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/4 Buttons/11.png" id="5_vdsj7"]
+[ext_resource type="Texture2D" uid="uid://cix3b0e3crani" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Content/4 Buttons/12.png" id="6_gnlfw"]
 [ext_resource type="AudioStream" uid="uid://djenv86m1763e" path="res://sounds/music/NES_TheOldTowerInn.mp3" id="6_ovloh"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f4goi"]
 texture = ExtResource("2_ovloh")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vdsj7"]
-content_margin_bottom = 4.0
-texture = ExtResource("3_ovloh")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3lsm0"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gnlfw"]
-content_margin_bottom = 4.0
-texture = ExtResource("3_ovloh")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j8coo"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3lsm0"]
-texture = ExtResource("3_ovloh")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vwusg"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j8coo"]
-texture = ExtResource("3_ovloh")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_do0hd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pcs2g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ojfvk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kkuam"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ev62d"]
 
 [node name="InnUI" type="Control"]
 layout_mode = 3
@@ -75,11 +79,53 @@ theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_nvnmu")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/focus = SubResource("StyleBoxTexture_vdsj7")
-theme_override_styles/hover = SubResource("StyleBoxTexture_gnlfw")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_3lsm0")
-theme_override_styles/normal = SubResource("StyleBoxTexture_j8coo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3lsm0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_j8coo")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vwusg")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_do0hd")
 text = "Spend the night"
+
+[node name="Sprite2D" type="Sprite2D" parent="MenuButtons/NextDay"]
+show_behind_parent = true
+position = Vector2(28, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("4_f4goi")
+
+[node name="Sprite2D2" type="Sprite2D" parent="MenuButtons/NextDay"]
+show_behind_parent = true
+position = Vector2(85, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("5_vdsj7")
+
+[node name="Sprite2D3" type="Sprite2D" parent="MenuButtons/NextDay"]
+show_behind_parent = true
+position = Vector2(142, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("5_vdsj7")
+
+[node name="Sprite2D4" type="Sprite2D" parent="MenuButtons/NextDay"]
+show_behind_parent = true
+position = Vector2(199, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("5_vdsj7")
+
+[node name="Sprite2D5" type="Sprite2D" parent="MenuButtons/NextDay"]
+show_behind_parent = true
+position = Vector2(256, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("5_vdsj7")
+
+[node name="Sprite2D6" type="Sprite2D" parent="MenuButtons/NextDay"]
+show_behind_parent = true
+position = Vector2(313, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("5_vdsj7")
+
+[node name="Sprite2D7" type="Sprite2D" parent="MenuButtons/NextDay"]
+show_behind_parent = true
+position = Vector2(370, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("6_gnlfw")
 
 [node name="Leave" type="Button" parent="MenuButtons"]
 layout_mode = 1
@@ -100,11 +146,53 @@ theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_nvnmu")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/focus = SubResource("StyleBoxTexture_vdsj7")
-theme_override_styles/hover = SubResource("StyleBoxTexture_gnlfw")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_3lsm0")
-theme_override_styles/normal = SubResource("StyleBoxTexture_j8coo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pcs2g")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ojfvk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_kkuam")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ev62d")
 text = "[Leave]"
+
+[node name="Sprite2D" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(28, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("4_f4goi")
+
+[node name="Sprite2D2" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(85, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("5_vdsj7")
+
+[node name="Sprite2D3" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(142, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("5_vdsj7")
+
+[node name="Sprite2D4" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(199, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("5_vdsj7")
+
+[node name="Sprite2D5" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(256, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("5_vdsj7")
+
+[node name="Sprite2D6" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(313, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("5_vdsj7")
+
+[node name="Sprite2D7" type="Sprite2D" parent="MenuButtons/Leave"]
+show_behind_parent = true
+position = Vector2(370, 42)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("6_gnlfw")
 
 [node name="SceneTransition" parent="." instance=ExtResource("4_180ql")]
 visible = false

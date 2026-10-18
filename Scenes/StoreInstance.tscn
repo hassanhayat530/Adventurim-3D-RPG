@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://bgi67l84fpgc1"]
+[gd_scene load_steps=6 format=3 uid="uid://bgi67l84fpgc1"]
 
 [ext_resource type="Script" uid="uid://c0erxsb5yr3au" path="res://Inventory/InventoryInstance.cs" id="1_x0wuh"]
-[ext_resource type="Resource" uid="uid://dh1bmfv7b1ps7" path="res://Inventory/StoreInventory.tres" id="2_44il0"]
 [ext_resource type="Texture2D" uid="uid://dthdtktp7epfc" path="res://addons/UI addons/Humble Gift v1.0 - Paper UI/SpriteSheet/Paper UI SpriteSheet.png" id="3_44il0"]
 [ext_resource type="PackedScene" uid="uid://0v6m5fm0cbv1" path="res://Scenes/InvUISlot.tscn" id="4_8fr75"]
 [ext_resource type="Script" uid="uid://davfn0nxvvudm" path="res://Scenes/InventoryProperties.cs" id="4_44il0"]
@@ -14,7 +13,6 @@ anchors_preset = 0
 offset_right = 684.0
 offset_bottom = 440.0
 script = ExtResource("1_x0wuh")
-inventory = ExtResource("2_44il0")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 1
@@ -27,6 +25,27 @@ patch_margin_left = 5
 patch_margin_top = 5
 patch_margin_right = 5
 patch_margin_bottom = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="NinePatchRect"]
+position = Vector2(114.073, 88.3513)
+scale = Vector2(1.02339, 0.998821)
+texture = ExtResource("3_44il0")
+region_enabled = true
+region_rect = Rect2(2394, 88, 176, 137)
+
+[node name="Sprite2D2" type="Sprite2D" parent="NinePatchRect"]
+position = Vector2(25.3495, 129.253)
+scale = Vector2(0.0928627, 0.393415)
+texture = ExtResource("3_44il0")
+region_enabled = true
+region_rect = Rect2(2394, 88, 176, 137)
+
+[node name="Sprite2D3" type="Sprite2D" parent="NinePatchRect"]
+position = Vector2(202.129, 99.9146)
+scale = Vector2(0.0928627, 0.829142)
+texture = ExtResource("3_44il0")
+region_enabled = true
+region_rect = Rect2(2394, 88, 176, 137)
 
 [node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
 layout_mode = 1
@@ -47,27 +66,6 @@ theme_override_constants/v_separation = 7
 columns = 4
 script = ExtResource("4_44il0")
 slotsType = "Merchant"
-
-[node name="Sprite2D" type="Sprite2D" parent="NinePatchRect/GridContainer"]
-position = Vector2(89.8977, 30.589)
-scale = Vector2(1.19404, 0.998821)
-texture = ExtResource("3_44il0")
-region_enabled = true
-region_rect = Rect2(2394, 88, 176, 137)
-
-[node name="Sprite2D2" type="Sprite2D" parent="NinePatchRect/GridContainer"]
-position = Vector2(-13.6209, 71.4911)
-scale = Vector2(0.108348, 0.393415)
-texture = ExtResource("3_44il0")
-region_enabled = true
-region_rect = Rect2(2394, 88, 176, 137)
-
-[node name="Sprite2D3" type="Sprite2D" parent="NinePatchRect/GridContainer"]
-position = Vector2(192.638, 42.1523)
-scale = Vector2(0.108348, 0.829142)
-texture = ExtResource("3_44il0")
-region_enabled = true
-region_rect = Rect2(2394, 88, 176, 137)
 
 [node name="InvUISlot" parent="NinePatchRect/GridContainer" instance=ExtResource("4_8fr75")]
 layout_mode = 2

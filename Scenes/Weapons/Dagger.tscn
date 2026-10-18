@@ -20,4 +20,5 @@ script = ExtResource("2_vq8jr")
 
 [node name="Dagger_V14" parent="." index="0"]
 transform = Transform3D(1, 0, 0, 0, -0.78992, 0.61321, 0, -0.61321, -0.78992, 0.0490397, -0.0353596, -0.101799)
+cast_shadow = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_flqku")

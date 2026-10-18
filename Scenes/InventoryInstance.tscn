@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://dvx3o81np4p64"]
+[gd_scene load_steps=6 format=3 uid="uid://dvx3o81np4p64"]
 
 [ext_resource type="Script" uid="uid://c0erxsb5yr3au" path="res://Inventory/InventoryInstance.cs" id="1_pqn7c"]
-[ext_resource type="Resource" uid="uid://4hjp5qs0jerd" path="res://Inventory/PlayerInventory.tres" id="2_6e36m"]
 [ext_resource type="PackedScene" uid="uid://0v6m5fm0cbv1" path="res://Scenes/InvUISlot.tscn" id="3_6e36m"]
 [ext_resource type="Texture2D" uid="uid://dthdtktp7epfc" path="res://addons/UI addons/Humble Gift v1.0 - Paper UI/SpriteSheet/Paper UI SpriteSheet.png" id="3_tn3ef"]
 [ext_resource type="Script" uid="uid://davfn0nxvvudm" path="res://Scenes/InventoryProperties.cs" id="4_6e36m"]
@@ -18,7 +17,6 @@ offset_bottom = -186.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_pqn7c")
-inventory = ExtResource("2_6e36m")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 1
@@ -65,99 +63,75 @@ script = ExtResource("4_6e36m")
 
 [node name="InvUISlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 1
 
 [node name="InvUISlot2" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 2
 
 [node name="InvUISlot3" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 3
 
 [node name="InvUISlot4" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 4
 
 [node name="InvUISlot5" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 5
 
 [node name="InvUISlot6" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 6
 
 [node name="InvUISlot7" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 7
 
 [node name="InvUISlot8" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 8
 
 [node name="InvUISlot9" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 9
 
 [node name="InvUISlot10" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 10
 
 [node name="InvUISlot11" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 11
 
 [node name="InvUISlot12" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 12
 
 [node name="InvUISlot13" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 13
 
 [node name="InvUISlot14" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 14
 
 [node name="InvUISlot15" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 15
 
 [node name="InvUISlot16" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 16
 
 [node name="InvUISlot17" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 17
 
 [node name="InvUISlot18" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 18
 
 [node name="InvUISlot19" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 19
 
 [node name="InvUISlot20" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 20
 
 [node name="InvUISlot21" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 21
 
 [node name="InvUISlot22" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 22
 
 [node name="InvUISlot23" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 23
 
 [node name="InvUISlot24" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6e36m")]
 layout_mode = 2
-number = 24
 
 [node name="Label" type="Label" parent="NinePatchRect"]
 layout_mode = 0

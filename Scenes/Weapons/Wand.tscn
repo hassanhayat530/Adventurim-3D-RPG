@@ -13,10 +13,13 @@ script = ExtResource("2_5twc2")
 
 [node name="Wand01_LOD0" parent="." index="0"]
 transform = Transform3D(0.299332, -0.00681151, 0.0188127, 0.0126693, 0.28285, -0.0991722, -0.0154856, 0.0997459, 0.282508, 0.0505867, -0.0573188, -0.0362695)
+cast_shadow = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_5twc2")
 
 [node name="Wand01_LOD1" parent="." index="1"]
 visible = false
+cast_shadow = 0
 
 [node name="Wand01_LOD2" parent="." index="2"]
 visible = false
+cast_shadow = 0

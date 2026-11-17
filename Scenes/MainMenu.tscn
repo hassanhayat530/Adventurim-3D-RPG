@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://c7g8ytmqhhjk"]
+[gd_scene format=3 uid="uid://c7g8ytmqhhjk"]
 
 [ext_resource type="Script" uid="uid://mchacdkpjcjt" path="res://Scripts/MainMenu.cs" id="1_koqhg"]
 [ext_resource type="Texture2D" uid="uid://c7a8mlsru30kg" path="res://images/backgrounds/main_menu_bg.jpg" id="2_koqhg"]
@@ -11,39 +11,35 @@
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ce3w2"]
 texture = ExtResource("2_koqhg")
-expand_margin_left = 114.0
-expand_margin_top = 93.0
-expand_margin_right = 93.0
-expand_margin_bottom = 93.0
 modulate_color = Color(0.95158, 0.95158, 0.95158, 1)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ce3w2"]
-content_margin_bottom = 7.0
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yhxw7"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n45e2"]
 content_margin_top = 10.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_trj04"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yhxw7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ce3w2"]
+content_margin_bottom = 7.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_opfnp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vtepg"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_16hvj"]
 content_margin_bottom = 7.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vtepg"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_trj04"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_opfnp"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cp0ys"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vr1f0"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5egv6"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t1dhk"]
 content_margin_bottom = 7.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5egv6"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vr1f0"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cp0ys"]
-
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=1032902208]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -52,122 +48,113 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_koqhg")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=459695702]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 116.0
-offset_top = 105.0
-offset_right = -224.0
-offset_bottom = -166.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(1.08, 1.08)
+
+[node name="Panel" type="Panel" parent="PanelContainer" unique_id=153555693]
+layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_ce3w2")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1514440744]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -689.0
-offset_top = -151.0
-offset_right = -290.0
-offset_bottom = 97.0
-grow_horizontal = 2
+anchors_preset = -1
+anchor_left = 0.14
+anchor_top = 0.396
+anchor_right = 0.14
+anchor_bottom = 0.52
 grow_vertical = 2
-scale = Vector2(0.76, 1)
+scale = Vector2(0.7, 0.921)
 theme_override_constants/separation = 30
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1942427524]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_colors/font_color = Color(0.995961, 0.717269, 0.418538, 1)
-theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
+theme_override_colors/font_focus_color = Color(0, 0.5921569, 0.65882355, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_fonts/font = ExtResource("3_loo7a")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/focus = SubResource("StyleBoxEmpty_ce3w2")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_yhxw7")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_n45e2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yhxw7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ce3w2")
 text = "New Game"
 
-[node name="Button4" type="Button" parent="VBoxContainer"]
+[node name="Button4" type="Button" parent="VBoxContainer" unique_id=1263174439]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_colors/font_color = Color(0.995961, 0.717269, 0.418538, 1)
 theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_fonts/font = ExtResource("3_loo7a")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/focus = SubResource("StyleBoxEmpty_ce3w2")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_yhxw7")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_n45e2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yhxw7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ce3w2")
 text = "Continue"
 
-[node name="Button2" type="Button" parent="VBoxContainer"]
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=206600927]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_colors/font_color = Color(0.995961, 0.717269, 0.418538, 1)
 theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_fonts/font = ExtResource("3_loo7a")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/focus = SubResource("StyleBoxEmpty_trj04")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_16hvj")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_vtepg")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_opfnp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vtepg")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_16hvj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_trj04")
 text = "Options"
 
-[node name="Button5" type="Button" parent="VBoxContainer"]
+[node name="Button5" type="Button" parent="VBoxContainer" unique_id=741609438]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_colors/font_color = Color(0.995961, 0.717269, 0.418538, 1)
 theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_fonts/font = ExtResource("3_loo7a")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/focus = SubResource("StyleBoxEmpty_vr1f0")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_t1dhk")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_5egv6")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_cp0ys")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5egv6")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_t1dhk")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vr1f0")
 text = "Scenario   Generation"
 
-[node name="Button3" type="Button" parent="VBoxContainer"]
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1266191039]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_colors/font_color = Color(0.995961, 0.717269, 0.418538, 1)
 theme_override_colors/font_focus_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_fonts/font = ExtResource("3_loo7a")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/focus = SubResource("StyleBoxEmpty_vr1f0")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_t1dhk")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_5egv6")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_cp0ys")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5egv6")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_t1dhk")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vr1f0")
 text = "Exit"
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=405328770]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.172
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 0.172
 offset_left = -272.0
-offset_top = -373.0
 offset_right = 272.0
-offset_bottom = -260.0
+offset_bottom = 113.0
 grow_horizontal = 2
-grow_vertical = 2
 theme_override_colors/font_color = Color(0.995961, 0.717269, 0.418538, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_y = 10
@@ -177,18 +164,18 @@ text = "Adventurim"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BGPlayer" type="AudioStreamPlayer2D" parent="."]
+[node name="BGPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1922024061]
 stream = ExtResource("5_rrcx7")
 autoplay = true
 
-[node name="HoverPLayer" type="AudioStreamPlayer2D" parent="."]
+[node name="HoverPLayer" type="AudioStreamPlayer2D" parent="." unique_id=588290762]
 stream = ExtResource("6_fh7cp")
 bus = &"UI"
 
-[node name="PressPlayer" type="AudioStreamPlayer2D" parent="."]
+[node name="PressPlayer" type="AudioStreamPlayer2D" parent="." unique_id=955876376]
 stream = ExtResource("7_8e205")
 
-[node name="SceneTransition" parent="." instance=ExtResource("8_7467j")]
+[node name="SceneTransition" parent="." unique_id=1470592200 instance=ExtResource("8_7467j")]
 visible = false
 
 [connection signal="mouse_entered" from="VBoxContainer/Button" to="HoverPLayer" method="play"]

@@ -15,6 +15,7 @@ public partial class LLMService : Node
 
     public struct ScenarioData
     {
+        public string Title;
         public string Narrative;
         public System.Collections.Generic.List<ScenarioChoice> Choices;
     }
@@ -52,11 +53,12 @@ public partial class LLMService : Node
         // prompt to put in the body of the request
         string prompt = @"
         You are generating a short interactive scenario for a fantasy RPG.
-        Setting: a tense encounter in a market town.
+        Setting: a tense encounter while exploring a decrepit dungeon.
 
         Respond with ONLY a raw JSON object, no markdown code fences, no explanation text before or after it.
         The JSON must exactly match this shape:
         {
+        ""title"": ""short title of the scenario (2-4 words)"",
         ""narrative"": ""2-4 sentences of scene description"",
         ""choices"": [
             {""id"": ""short_snake_case_id"", ""label"": ""short button text""}
@@ -131,10 +133,12 @@ public partial class LLMService : Node
         Godot.Collections.Dictionary scenarioDict = scenarioJson.Data.AsGodotDictionary();
         ScenarioData scenario = new()
         {
+            Title = scenarioDict["title"].AsString(),
             Narrative = scenarioDict["narrative"].AsString(),
             Choices = new System.Collections.Generic.List<ScenarioChoice>()
         };
 
+        GD.Print("Title: " + scenario.Title);
         GD.Print("Narrative: " + scenario.Narrative);
         GD.Print("\nChoices:");
 

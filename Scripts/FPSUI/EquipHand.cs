@@ -4,13 +4,14 @@ using System.ComponentModel;
 
 public partial class EquipHand : Panel
 {
-	[Export] public string Hand { get; set; } = "Right";
+	[Export] public string Hand { get; set; } = "RightHand";
 	[Export] public Hand HandNode { get; set; }
 	private Sprite2D _itemDisplay;
 	private InventoryUi _inventoryUi;
 
 	public override void _Ready()
 	{
+		HandNode = GetNode<Hand>("../../../../HeadOriginalPosition/Head/CameraSmooth/Camera3D/" + Hand);
 		_itemDisplay = GetNode<Sprite2D>("CenterContainer/Panel/ItemDisplay");
 		UpdateHand();
 		_inventoryUi = GetNode<InventoryUi>("../InventoryUI");
@@ -20,7 +21,7 @@ public partial class EquipHand : Panel
 	public void UpdateHand()
 	{
 		// Get the item in the hand and update the display
-		InventoryItem itemHeld = Hand == "Right" ? GlobalScript.Instance.Equipment["Weapon"] : GlobalScript.Instance.Equipment["Ring1"];
+		InventoryItem itemHeld = Hand == "RightHand" ? GlobalScript.Instance.Equipment["Weapon"] : GlobalScript.Instance.Equipment["Ring1"];
 
 		// If there is no item, hide the display
 		if (itemHeld == null)
@@ -35,7 +36,7 @@ public partial class EquipHand : Panel
 		{
 			_itemDisplay.Visible = true;
 			
-			if (Hand == "Right")
+			if (Hand == "RightHand")
 			{
 				HandNode.equip(itemHeld.Scene);
 			}

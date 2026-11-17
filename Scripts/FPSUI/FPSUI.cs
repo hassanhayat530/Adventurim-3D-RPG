@@ -2,7 +2,7 @@ using Godot;
 using System;
 using System.Collections;
 
-public partial class FPSUI : CanvasLayer
+public partial class FPSUI : Control
 {
 	private Panel _portrait;
 	private Panel _border;
@@ -10,7 +10,7 @@ public partial class FPSUI : CanvasLayer
 	private Vector2 _healthBarOriginalScale;
 	private Panel _manaBar;
 	private Vector2 _manaBarOriginalScale;
-	private Panel _experienceBar;
+	[Export] private Panel _experienceBar;
 	private Vector2 _experienceBarOriginalScale;
 	private StyleBoxTexture _portraitStyleBox;
 	private StyleBoxTexture _borderStyleBox;
@@ -21,7 +21,6 @@ public partial class FPSUI : CanvasLayer
 		_border = GetNode<Panel>("Border");
 		_healthBar = GetNode<Panel>("Health");
 		_manaBar = GetNode<Panel>("Mana");
-		_experienceBar = GetNode<Panel>("experience");
 
 		_healthBarOriginalScale = _healthBar.Scale;
 		_manaBarOriginalScale = _manaBar.Scale;

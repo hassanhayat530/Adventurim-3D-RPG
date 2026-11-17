@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://ccaj2b38wq83h"]
+[gd_scene format=3 uid="uid://ccaj2b38wq83h"]
 
 [ext_resource type="Texture2D" uid="uid://dfuc2kaovbjrd" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Updated Paper Book/Sprites/Book Desk/5.png" id="1_u6nar"]
 [ext_resource type="Texture2D" uid="uid://cvedh3fyhrnrf" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Adventure Book/SpriteSheet/Book UI System SpriteSheet.png" id="2_b7y7e"]
@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://bpgntkidb7pb8" path="res://images/portraits/sorcerer_border.png" id="12_m52j2"]
 [ext_resource type="Script" uid="uid://cilj6vr3n3kof" path="res://Scripts/ToolTipInteract.cs" id="14_gbkpn"]
 [ext_resource type="Texture2D" uid="uid://bddto7qf1bw8q" path="res://addons/UI addons/Super Asset Bundle #2 - Adventure Time v1.5/Adventure Book/SpriteSheet/Book SpriteSheet.png" id="14_m52j2"]
-[ext_resource type="PackedScene" uid="uid://dsqbeyyp55evt" path="res://Scenes/prefabs/Tooltip.tscn" id="15_hkprm"]
+[ext_resource type="PackedScene" uid="uid://dsqbeyyp55evt" path="res://Scenes/prefabs/tooltip.tscn" id="15_hkprm"]
 [ext_resource type="Script" uid="uid://b5v6dw3gvohoa" path="res://Scripts/Character Creation/ClassLabel.cs" id="16_arhgj"]
 [ext_resource type="Script" uid="uid://cxfl2m5oq1l16" path="res://Scripts/Character Creation/SexLabel.cs" id="18_gswci"]
 [ext_resource type="Script" uid="uid://ccj0ivvn5w1tx" path="res://Scripts/Character Creation/AcceptButton.cs" id="19_lpe55"]
@@ -32,6 +32,8 @@ texture = ExtResource("1_u6nar")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_064nn"]
 texture = ExtResource("2_b7y7e")
 region_rect = Rect2(457, 1011, 298, 153)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jlws2"]
 
 [sub_resource type="Gradient" id="Gradient_d478l"]
 interpolation_mode = 1
@@ -63,62 +65,62 @@ point_count = 3
 offsets = PackedFloat32Array(0, 0.165789, 0.539474, 0.857895, 1)
 colors = PackedColorArray(0.952941, 0.894118, 0.631373, 1, 0.216624, 0.204958, 0.170862, 1, 0, 0, 0, 1, 0.39267, 0.369908, 0.30345, 1, 0.952941, 0.894118, 0.631373, 1)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o1e07"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vxaqg"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6l7rh"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vxaqg"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o1e07"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ngtf6"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nnylw"]
+texture = ExtResource("14_m52j2")
+region_rect = Rect2(821, 4180, 6, 9)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vxaqg"]
+texture = ExtResource("14_m52j2")
+region_rect = Rect2(853, 4181, 6, 8)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_osmak"]
 texture = ExtResource("14_m52j2")
 region_rect = Rect2(821, 4180, 6, 9)
 modulate_color = Color(0.568973, 0.568973, 0.568973, 1)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vxaqg"]
-texture = ExtResource("14_m52j2")
-region_rect = Rect2(853, 4181, 6, 8)
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nnylw"]
-texture = ExtResource("14_m52j2")
-region_rect = Rect2(821, 4180, 6, 9)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_84sbo"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ngtf6"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w3lgn"]
 texture = ExtResource("14_m52j2")
 region_rect = Rect2(853, 4181, 6, 8)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wfg75"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_84sbo"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0juv8"]
 texture = ExtResource("14_m52j2")
 region_rect = Rect2(853, 4181, 6, 8)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ixv47"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wfg75"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dfdox"]
 texture = ExtResource("14_m52j2")
 region_rect = Rect2(853, 4181, 6, 8)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w3lgn"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ixv47"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wfg75"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o1e07"]
 texture = ExtResource("14_m52j2")
-region_rect = Rect2(767, 4203, 37, 21)
-modulate_color = Color(0.489622, 0.489622, 0.489622, 1)
+region_rect = Rect2(812, 4203, 36, 21)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6l7rh"]
 texture = ExtResource("14_m52j2")
 texture_margin_top = 10.0
 region_rect = Rect2(768, 4203, 36, 21)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o1e07"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wfg75"]
 texture = ExtResource("14_m52j2")
-region_rect = Rect2(812, 4203, 36, 21)
+region_rect = Rect2(767, 4203, 37, 21)
+modulate_color = Color(0.489622, 0.489622, 0.489622, 1)
 
-[node name="Control" type="Control"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w3lgn"]
+
+[node name="Control" type="Control" unique_id=1300806011]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -126,42 +128,131 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel2" type="Panel" parent="."]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1451237585]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TablePanel" type="Panel" parent="PanelContainer" unique_id=1555607489]
+layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_fer3t")
 
-[node name="Panel" type="Panel" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -54.0
-offset_bottom = -54.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="SheetPanel" type="Panel" parent="PanelContainer" unique_id=1753221549]
+layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_064nn")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="DecorationsMarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=2069170591]
+layout_mode = 2
+theme_override_constants/margin_top = 10
+
+[node name="Decorations" type="Control" parent="PanelContainer/DecorationsMarginContainer" unique_id=1315238715]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="PanelContainer/DecorationsMarginContainer/Decorations" unique_id=741386016]
+position = Vector2(954, 180)
+scale = Vector2(5.99523, 5.99523)
+texture = ExtResource("14_m52j2")
+region_enabled = true
+region_rect = Rect2(495, 4466, 271, 15)
+
+[node name="Sprite2D2" type="Sprite2D" parent="PanelContainer/DecorationsMarginContainer/Decorations" unique_id=2118275617]
+position = Vector2(651, 535)
+scale = Vector2(4.5, 6.4)
+texture = ExtResource("2_b7y7e")
+region_enabled = true
+region_rect = Rect2(3712, 2632, 23, 96)
+
+[node name="Sprite2D8" type="Sprite2D" parent="PanelContainer/DecorationsMarginContainer/Decorations" unique_id=821862838]
+visible = false
+top_level = true
+position = Vector2(696, 86.5)
+scale = Vector2(4.5, 8.05)
+texture = ExtResource("2_b7y7e")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(460.1, 1232, 21, 20)
+
+[node name="Sprite2D9" type="Sprite2D" parent="PanelContainer/DecorationsMarginContainer/Decorations" unique_id=1785189868]
+visible = false
+top_level = true
+position = Vector2(1200, 87.5)
+scale = Vector2(4.5, 7.95)
+texture = ExtResource("2_b7y7e")
+region_enabled = true
+region_rect = Rect2(460.1, 1232, 21, 20)
+
+[node name="Sprite2D3" type="Sprite2D" parent="PanelContainer/DecorationsMarginContainer/Decorations" unique_id=1810368120]
+position = Vector2(673, 210)
+scale = Vector2(4.5, 6.4)
+texture = ExtResource("2_b7y7e")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(460.1, 1232, 21, 20)
+
+[node name="Sprite2D4" type="Sprite2D" parent="PanelContainer/DecorationsMarginContainer/Decorations" unique_id=981220318]
+position = Vector2(664, 845)
+scale = Vector2(4.5, 6.4)
+texture = ExtResource("2_b7y7e")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(3670, 2776, 17, 16)
+
+[node name="Sprite2D5" type="Sprite2D" parent="PanelContainer/DecorationsMarginContainer/Decorations" unique_id=215782455]
+position = Vector2(1241.5, 530)
+scale = Vector2(4.5, 6.4)
+texture = ExtResource("2_b7y7e")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(3712, 2632, 23, 96)
+
+[node name="Sprite2D6" type="Sprite2D" parent="PanelContainer/DecorationsMarginContainer/Decorations" unique_id=1068106408]
+position = Vector2(1219.25, 210)
+scale = Vector2(4.5, 6.4)
+texture = ExtResource("2_b7y7e")
+region_enabled = true
+region_rect = Rect2(460.1, 1232, 21, 20)
+
+[node name="Sprite2D7" type="Sprite2D" parent="PanelContainer/DecorationsMarginContainer/Decorations" unique_id=749641990]
+position = Vector2(1227.75, 845)
+scale = Vector2(4.5, 6.4)
+texture = ExtResource("2_b7y7e")
+region_enabled = true
+region_rect = Rect2(3670, 2776, 17, 16)
+
+[node name="PortraitContainer" type="PanelContainer" parent="." unique_id=400300739]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7
+anchor_top = 0.264
+anchor_right = 0.7
+anchor_bottom = 0.264
+offset_left = -64.0
+offset_top = -32.0
+offset_bottom = 32.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(9.5, 10)
+theme_override_styles/panel = SubResource("StyleBoxEmpty_jlws2")
+
+[node name="PortraitBackground" type="TextureRect" parent="PortraitContainer" unique_id=1168012729]
 clip_children = 2
-position = Vector2(1580, 578.499)
-scale = Vector2(10.1563, 10.9219)
+clip_contents = true
+layout_mode = 2
 texture = SubResource("GradientTexture2D_hb6fo")
 
-[node name="Portrait" type="Panel" parent="Sprite2D" node_paths=PackedStringArray("classLabel", "sexLabel")]
-offset_left = -29.8337
-offset_top = -28.0
-offset_right = 31.1663
-offset_bottom = 27.0
-pivot_offset = Vector2(299, 299)
+[node name="Portrait" type="Panel" parent="PortraitContainer/PortraitBackground" unique_id=1767377008 node_paths=PackedStringArray("classLabel", "sexLabel")]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 3.0
+offset_right = 62.0
+offset_bottom = 58.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_vb0d4")
 script = ExtResource("4_lpe55")
-classLabel = NodePath("../../OptionsLabel/ClassLabel")
-sexLabel = NodePath("../../OptionsLabel/SexLabel/Sex")
+classLabel = NodePath("../../../OptionsLabel/ClassLabel")
+sexLabel = NodePath("../../../OptionsLabel/SexLabel/Sex")
 soldierMaleTexture = ExtResource("5_d478l")
 soldierFemaleTexture = ExtResource("6_hb6fo")
 soldierBorderTexture = ExtResource("7_7spba")
@@ -172,21 +263,21 @@ sorcererMaleTexture = ExtResource("10_u6nar")
 sorcererFemaleTexture = ExtResource("11_b7y7e")
 sorcererBorderTexture = ExtResource("12_m52j2")
 
-[node name="Borders" type="Control" parent="."]
+[node name="Borders" type="Control" parent="." unique_id=1194342693]
 visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 2
 
-[node name="LeftBorder" type="Control" parent="Borders"]
+[node name="LeftBorder" type="Control" parent="Borders" unique_id=972590502]
 anchors_preset = 0
 offset_left = 55.0
 offset_top = -29.0
 offset_right = 95.0
 offset_bottom = 11.0
 
-[node name="Panel3" type="Panel" parent="Borders/LeftBorder"]
+[node name="Panel3" type="Panel" parent="Borders/LeftBorder" unique_id=631004080]
 layout_mode = 0
 offset_left = 540.0
 offset_top = 245.0
@@ -195,7 +286,7 @@ offset_bottom = 699.0
 scale = Vector2(0.929794, 1.62721)
 theme_override_styles/panel = SubResource("StyleBoxTexture_72u3b")
 
-[node name="Panel4" type="Panel" parent="Borders/LeftBorder"]
+[node name="Panel4" type="Panel" parent="Borders/LeftBorder" unique_id=1766267908]
 layout_mode = 0
 offset_left = 540.0
 offset_top = 984.0
@@ -204,14 +295,14 @@ offset_bottom = 1438.0
 scale = Vector2(0.929794, 1.62721)
 theme_override_styles/panel = SubResource("StyleBoxTexture_72u3b")
 
-[node name="LeftBorder2" type="Control" parent="Borders"]
+[node name="LeftBorder2" type="Control" parent="Borders" unique_id=745527995]
 anchors_preset = 0
 offset_left = 641.0
 offset_top = -29.0
 offset_right = 681.0
 offset_bottom = 11.0
 
-[node name="Panel3" type="Panel" parent="Borders/LeftBorder2"]
+[node name="Panel3" type="Panel" parent="Borders/LeftBorder2" unique_id=1666570691]
 layout_mode = 0
 offset_left = 540.0
 offset_top = 245.0
@@ -220,7 +311,7 @@ offset_bottom = 699.0
 scale = Vector2(0.929794, 1.62721)
 theme_override_styles/panel = SubResource("StyleBoxTexture_72u3b")
 
-[node name="Panel4" type="Panel" parent="Borders/LeftBorder2"]
+[node name="Panel4" type="Panel" parent="Borders/LeftBorder2" unique_id=367186152]
 layout_mode = 0
 offset_left = 540.0
 offset_top = 984.0
@@ -229,13 +320,13 @@ offset_bottom = 1438.0
 scale = Vector2(0.929794, 1.62721)
 theme_override_styles/panel = SubResource("StyleBoxTexture_72u3b")
 
-[node name="UpperBorder" type="Control" parent="Borders"]
+[node name="UpperBorder" type="Control" parent="Borders" unique_id=2100455339]
 anchors_preset = 0
 offset_top = -24.0
 offset_right = 40.0
 offset_bottom = 16.0
 
-[node name="Panel4" type="Panel" parent="Borders/UpperBorder"]
+[node name="Panel4" type="Panel" parent="Borders/UpperBorder" unique_id=982051223]
 layout_mode = 0
 offset_left = 1298.0
 offset_top = 160.0
@@ -245,7 +336,7 @@ rotation = 1.5708
 scale = Vector2(0.929794, 1.62721)
 theme_override_styles/panel = SubResource("StyleBoxTexture_72u3b")
 
-[node name="Panel6" type="Panel" parent="Borders/UpperBorder"]
+[node name="Panel6" type="Panel" parent="Borders/UpperBorder" unique_id=1097291973]
 layout_mode = 0
 offset_left = 560.0
 offset_top = 160.0
@@ -255,7 +346,7 @@ rotation = 1.5708
 scale = Vector2(0.929794, 1.62721)
 theme_override_styles/panel = SubResource("StyleBoxTexture_72u3b")
 
-[node name="Panel5" type="Panel" parent="Borders/UpperBorder"]
+[node name="Panel5" type="Panel" parent="Borders/UpperBorder" unique_id=940694496]
 layout_mode = 0
 offset_left = 2036.0
 offset_top = 160.0
@@ -265,13 +356,13 @@ rotation = 1.5708
 scale = Vector2(0.929794, 1.62721)
 theme_override_styles/panel = SubResource("StyleBoxTexture_72u3b")
 
-[node name="UpperBorder2" type="Control" parent="Borders"]
+[node name="UpperBorder2" type="Control" parent="Borders" unique_id=1742574846]
 anchors_preset = 0
 offset_top = 799.0
 offset_right = 40.0
 offset_bottom = 839.0
 
-[node name="Panel4" type="Panel" parent="Borders/UpperBorder2"]
+[node name="Panel4" type="Panel" parent="Borders/UpperBorder2" unique_id=2098236142]
 layout_mode = 0
 offset_left = 1298.0
 offset_top = 160.0
@@ -281,7 +372,7 @@ rotation = 1.5708
 scale = Vector2(0.929794, 1.62721)
 theme_override_styles/panel = SubResource("StyleBoxTexture_72u3b")
 
-[node name="Panel6" type="Panel" parent="Borders/UpperBorder2"]
+[node name="Panel6" type="Panel" parent="Borders/UpperBorder2" unique_id=1733725734]
 layout_mode = 0
 offset_left = 560.0
 offset_top = 160.0
@@ -291,7 +382,7 @@ rotation = 1.5708
 scale = Vector2(0.929794, 1.62721)
 theme_override_styles/panel = SubResource("StyleBoxTexture_72u3b")
 
-[node name="Panel5" type="Panel" parent="Borders/UpperBorder2"]
+[node name="Panel5" type="Panel" parent="Borders/UpperBorder2" unique_id=1763092453]
 layout_mode = 0
 offset_left = 2036.0
 offset_top = 160.0
@@ -301,84 +392,7 @@ rotation = 1.5708
 scale = Vector2(0.929794, 1.62721)
 theme_override_styles/panel = SubResource("StyleBoxTexture_72u3b")
 
-[node name="Decorations" type="Control" parent="."]
-anchors_preset = 0
-offset_top = 17.0
-offset_right = 40.0
-offset_bottom = 57.0
-
-[node name="Sprite2D" type="Sprite2D" parent="Decorations"]
-position = Vector2(954, 180)
-scale = Vector2(5.99523, 5.99523)
-texture = ExtResource("14_m52j2")
-region_enabled = true
-region_rect = Rect2(495, 4466, 271, 15)
-
-[node name="Sprite2D2" type="Sprite2D" parent="Decorations"]
-position = Vector2(651, 535)
-scale = Vector2(4.5, 6.4)
-texture = ExtResource("2_b7y7e")
-region_enabled = true
-region_rect = Rect2(3712, 2632, 23, 96)
-
-[node name="Sprite2D8" type="Sprite2D" parent="Decorations"]
-visible = false
-top_level = true
-position = Vector2(696, 86.5)
-scale = Vector2(4.5, 8.05)
-texture = ExtResource("2_b7y7e")
-flip_h = true
-region_enabled = true
-region_rect = Rect2(460.1, 1232, 21, 20)
-
-[node name="Sprite2D9" type="Sprite2D" parent="Decorations"]
-visible = false
-top_level = true
-position = Vector2(1200, 87.5)
-scale = Vector2(4.5, 7.95)
-texture = ExtResource("2_b7y7e")
-region_enabled = true
-region_rect = Rect2(460.1, 1232, 21, 20)
-
-[node name="Sprite2D3" type="Sprite2D" parent="Decorations"]
-position = Vector2(673, 210)
-scale = Vector2(4.5, 6.4)
-texture = ExtResource("2_b7y7e")
-flip_h = true
-region_enabled = true
-region_rect = Rect2(460.1, 1232, 21, 20)
-
-[node name="Sprite2D4" type="Sprite2D" parent="Decorations"]
-position = Vector2(664, 845)
-scale = Vector2(4.5, 6.4)
-texture = ExtResource("2_b7y7e")
-flip_h = true
-region_enabled = true
-region_rect = Rect2(3670, 2776, 17, 16)
-
-[node name="Sprite2D5" type="Sprite2D" parent="Decorations"]
-position = Vector2(1241.5, 530)
-scale = Vector2(4.5, 6.4)
-texture = ExtResource("2_b7y7e")
-flip_h = true
-region_enabled = true
-region_rect = Rect2(3712, 2632, 23, 96)
-
-[node name="Sprite2D6" type="Sprite2D" parent="Decorations"]
-position = Vector2(1219.25, 210)
-scale = Vector2(4.5, 6.4)
-texture = ExtResource("2_b7y7e")
-region_enabled = true
-region_rect = Rect2(460.1, 1232, 21, 20)
-
-[node name="Sprite2D7" type="Sprite2D" parent="Decorations"]
-position = Vector2(1227.75, 845)
-scale = Vector2(4.5, 6.4)
-texture = ExtResource("2_b7y7e")
-region_enabled = true
-region_rect = Rect2(3670, 2776, 17, 16)
-
-[node name="Title" type="Label" parent="."]
+[node name="Title" type="Label" parent="." unique_id=1085335014]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -396,7 +410,7 @@ theme_override_font_sizes/font_size = 66
 theme_override_styles/normal = SubResource("StyleBoxEmpty_1rdcj")
 text = "CHARACTER CREATION"
 
-[node name="Sprite2D" type="Sprite2D" parent="Title"]
+[node name="Sprite2D" type="Sprite2D" parent="Title" unique_id=1108699075]
 show_behind_parent = true
 position = Vector2(78.9338, 179.429)
 scale = Vector2(11.602, 6.35714)
@@ -404,7 +418,7 @@ texture = ExtResource("14_m52j2")
 region_enabled = true
 region_rect = Rect2(96, 4631, 33, 24)
 
-[node name="Sprite2D2" type="Sprite2D" parent="Title"]
+[node name="Sprite2D2" type="Sprite2D" parent="Title" unique_id=350349638]
 show_behind_parent = true
 position = Vector2(652.148, 179.429)
 scale = Vector2(11.602, 6.35714)
@@ -412,7 +426,7 @@ texture = ExtResource("14_m52j2")
 region_enabled = true
 region_rect = Rect2(287, 4631, 33, 24)
 
-[node name="Sprite2D3" type="Sprite2D" parent="Title"]
+[node name="Sprite2D3" type="Sprite2D" parent="Title" unique_id=622402673]
 show_behind_parent = true
 position = Vector2(386.077, 179.429)
 scale = Vector2(11.602, 6.35714)
@@ -420,7 +434,7 @@ texture = ExtResource("14_m52j2")
 region_enabled = true
 region_rect = Rect2(130, 4631, 43, 24)
 
-[node name="Sprite2D4" type="Sprite2D" parent="Title"]
+[node name="Sprite2D4" type="Sprite2D" parent="Title" unique_id=1271306568]
 visible = false
 position = Vector2(-3.57143, 194.643)
 scale = Vector2(5.5, 4.36725)
@@ -428,38 +442,7 @@ texture = ExtResource("14_m52j2")
 region_enabled = true
 region_rect = Rect2(98, 4732, 23, 53)
 
-[node name="Sprite2D5" type="Sprite2D" parent="Title"]
-show_behind_parent = true
-position = Vector2(-918.853, 520.592)
-scale = Vector2(9.03057, 4.94816)
-texture = ExtResource("14_m52j2")
-region_enabled = true
-region_rect = Rect2(96, 4631, 33, 24)
-
-[node name="Sprite2D6" type="Sprite2D" parent="Title"]
-show_behind_parent = true
-position = Vector2(-620.638, 520.592)
-scale = Vector2(9.03057, 4.94816)
-texture = ExtResource("14_m52j2")
-region_enabled = true
-region_rect = Rect2(287, 4631, 33, 24)
-
-[node name="Sprite2D7" type="Sprite2D" parent="Title"]
-show_behind_parent = true
-position = Vector2(-768.062, 520.092)
-scale = Vector2(9.03057, 4.94816)
-texture = ExtResource("14_m52j2")
-region_enabled = true
-region_rect = Rect2(130, 4631, 43, 24)
-
-[node name="Sprite2D8" type="Sprite2D" parent="Title"]
-position = Vector2(-996.429, 530.357)
-scale = Vector2(4.61335, 3.43026)
-texture = ExtResource("14_m52j2")
-region_enabled = true
-region_rect = Rect2(98, 4732, 23, 53)
-
-[node name="Sprite2D9" type="Sprite2D" parent="Title"]
+[node name="Sprite2D9" type="Sprite2D" parent="Title" unique_id=744604708]
 show_behind_parent = true
 position = Vector2(216.862, 520.592)
 scale = Vector2(9.03057, 4.94816)
@@ -467,7 +450,7 @@ texture = ExtResource("14_m52j2")
 region_enabled = true
 region_rect = Rect2(96, 4631, 33, 24)
 
-[node name="Sprite2D10" type="Sprite2D" parent="Title"]
+[node name="Sprite2D10" type="Sprite2D" parent="Title" unique_id=1282059722]
 show_behind_parent = true
 position = Vector2(515.076, 520.592)
 scale = Vector2(9.03057, 4.94816)
@@ -475,7 +458,7 @@ texture = ExtResource("14_m52j2")
 region_enabled = true
 region_rect = Rect2(287, 4631, 33, 24)
 
-[node name="Sprite2D11" type="Sprite2D" parent="Title"]
+[node name="Sprite2D11" type="Sprite2D" parent="Title" unique_id=1466510634]
 show_behind_parent = true
 position = Vector2(367.652, 520.092)
 scale = Vector2(9.03057, 4.94816)
@@ -483,28 +466,28 @@ texture = ExtResource("14_m52j2")
 region_enabled = true
 region_rect = Rect2(130, 4631, 43, 24)
 
-[node name="Sprite2D12" type="Sprite2D" parent="Title"]
+[node name="Sprite2D12" type="Sprite2D" parent="Title" unique_id=2115766811]
 position = Vector2(139.286, 530.357)
 scale = Vector2(4.61335, 3.43026)
 texture = ExtResource("14_m52j2")
 region_enabled = true
 region_rect = Rect2(98, 4732, 23, 53)
 
-[node name="Sprite2D13" type="Sprite2D" parent="Title"]
+[node name="Sprite2D13" type="Sprite2D" parent="Title" unique_id=1969729360]
 position = Vector2(951.786, 173.214)
 scale = Vector2(9.14286, 9.14286)
 texture = ExtResource("14_m52j2")
 region_enabled = true
 region_rect = Rect2(568, 4513, 23, 15)
 
-[node name="Sprite2D14" type="Sprite2D" parent="Title"]
+[node name="Sprite2D14" type="Sprite2D" parent="Title" unique_id=1002878246]
 position = Vector2(985.714, 173.214)
 scale = Vector2(9.14286, 9.14286)
 texture = ExtResource("14_m52j2")
 region_enabled = true
 region_rect = Rect2(547, 4516, 9, 9)
 
-[node name="Sprite2D15" type="Sprite2D" parent="Title"]
+[node name="Sprite2D15" type="Sprite2D" parent="Title" unique_id=1654685400]
 position = Vector2(-232.357, 173.929)
 scale = Vector2(9.14286, 9.14286)
 texture = ExtResource("14_m52j2")
@@ -512,7 +495,7 @@ flip_h = true
 region_enabled = true
 region_rect = Rect2(568, 4513, 23, 15)
 
-[node name="Sprite2D16" type="Sprite2D" parent="Title"]
+[node name="Sprite2D16" type="Sprite2D" parent="Title" unique_id=1014574239]
 position = Vector2(-271.429, 173.929)
 scale = Vector2(9.14286, 9.14286)
 texture = ExtResource("14_m52j2")
@@ -520,7 +503,7 @@ flip_h = true
 region_enabled = true
 region_rect = Rect2(547, 4516, 9, 9)
 
-[node name="AttributeLabel" type="Label" parent="."]
+[node name="AttributeLabel" type="Label" parent="." unique_id=776320010]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -539,7 +522,7 @@ text = "Attributes"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ConstitutionLabel" type="Label" parent="AttributeLabel"]
+[node name="ConstitutionLabel" type="Label" parent="AttributeLabel" unique_id=1208754039]
 layout_mode = 0
 offset_left = -16.0
 offset_top = 181.0
@@ -554,7 +537,7 @@ vertical_alignment = 1
 script = ExtResource("14_gbkpn")
 TooltipContent = "Determines your max health"
 
-[node name="Tooltip" parent="AttributeLabel/ConstitutionLabel" instance=ExtResource("15_hkprm")]
+[node name="Tooltip" parent="AttributeLabel/ConstitutionLabel" unique_id=1062556250 instance=ExtResource("15_hkprm")]
 visible = false
 layout_mode = 0
 offset_left = 1191.0
@@ -562,7 +545,7 @@ offset_top = 356.0
 offset_right = 1246.0
 offset_bottom = 407.0
 
-[node name="ConstitutionValue" type="Label" parent="AttributeLabel/ConstitutionLabel"]
+[node name="ConstitutionValue" type="Label" parent="AttributeLabel/ConstitutionLabel" unique_id=1547729419]
 layout_mode = 0
 offset_left = 333.0
 offset_top = 21.0
@@ -576,7 +559,7 @@ text = "10"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="StrengthLabel" type="Label" parent="AttributeLabel"]
+[node name="StrengthLabel" type="Label" parent="AttributeLabel" unique_id=136981402]
 layout_mode = 0
 offset_left = -16.0
 offset_top = 269.0
@@ -591,7 +574,7 @@ vertical_alignment = 1
 script = ExtResource("14_gbkpn")
 TooltipContent = "Determines your damage amount"
 
-[node name="Tooltip" parent="AttributeLabel/StrengthLabel" instance=ExtResource("15_hkprm")]
+[node name="Tooltip" parent="AttributeLabel/StrengthLabel" unique_id=1470493243 instance=ExtResource("15_hkprm")]
 visible = false
 layout_mode = 0
 offset_left = 1191.0
@@ -599,7 +582,7 @@ offset_top = 356.0
 offset_right = 1246.0
 offset_bottom = 407.0
 
-[node name="StrengthValue" type="Label" parent="AttributeLabel/StrengthLabel"]
+[node name="StrengthValue" type="Label" parent="AttributeLabel/StrengthLabel" unique_id=35551061]
 layout_mode = 0
 offset_left = 333.0
 offset_top = 22.0
@@ -613,7 +596,7 @@ text = "15"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="DexterityLabel" type="Label" parent="AttributeLabel"]
+[node name="DexterityLabel" type="Label" parent="AttributeLabel" unique_id=1791572863]
 layout_mode = 0
 offset_left = -16.0
 offset_top = 363.0
@@ -628,7 +611,7 @@ vertical_alignment = 1
 script = ExtResource("14_gbkpn")
 TooltipContent = "Increases the chances of landing a successful hit"
 
-[node name="Tooltip" parent="AttributeLabel/DexterityLabel" instance=ExtResource("15_hkprm")]
+[node name="Tooltip" parent="AttributeLabel/DexterityLabel" unique_id=2111441259 instance=ExtResource("15_hkprm")]
 visible = false
 layout_mode = 0
 offset_left = 1191.0
@@ -636,7 +619,7 @@ offset_top = 356.0
 offset_right = 1246.0
 offset_bottom = 407.0
 
-[node name="DexterityValue" type="Label" parent="AttributeLabel/DexterityLabel"]
+[node name="DexterityValue" type="Label" parent="AttributeLabel/DexterityLabel" unique_id=1251592586]
 layout_mode = 0
 offset_left = 333.0
 offset_top = 21.0
@@ -650,7 +633,7 @@ text = "25"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="IntelligenceLabel" type="Label" parent="AttributeLabel"]
+[node name="IntelligenceLabel" type="Label" parent="AttributeLabel" unique_id=898758278]
 layout_mode = 0
 offset_left = -16.0
 offset_top = 459.0
@@ -665,7 +648,7 @@ vertical_alignment = 1
 script = ExtResource("14_gbkpn")
 TooltipContent = "Increases the max amount of magicka you have"
 
-[node name="Tooltip" parent="AttributeLabel/IntelligenceLabel" instance=ExtResource("15_hkprm")]
+[node name="Tooltip" parent="AttributeLabel/IntelligenceLabel" unique_id=855099035 instance=ExtResource("15_hkprm")]
 visible = false
 layout_mode = 0
 offset_left = 1191.0
@@ -673,7 +656,7 @@ offset_top = 356.0
 offset_right = 1246.0
 offset_bottom = 407.0
 
-[node name="IntelligenceValue" type="Label" parent="AttributeLabel/IntelligenceLabel"]
+[node name="IntelligenceValue" type="Label" parent="AttributeLabel/IntelligenceLabel" unique_id=1145052183]
 layout_mode = 0
 offset_left = 333.0
 offset_top = 20.0
@@ -687,7 +670,7 @@ text = "10"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CharismaLabel" type="Label" parent="AttributeLabel"]
+[node name="CharismaLabel" type="Label" parent="AttributeLabel" unique_id=1098632728]
 layout_mode = 0
 offset_left = -16.0
 offset_top = 544.0
@@ -702,7 +685,7 @@ vertical_alignment = 1
 script = ExtResource("14_gbkpn")
 TooltipContent = "Affects how good you are at bargaining prices"
 
-[node name="Tooltip" parent="AttributeLabel/CharismaLabel" instance=ExtResource("15_hkprm")]
+[node name="Tooltip" parent="AttributeLabel/CharismaLabel" unique_id=1795986755 instance=ExtResource("15_hkprm")]
 visible = false
 layout_mode = 0
 offset_left = 1191.0
@@ -710,7 +693,7 @@ offset_top = 356.0
 offset_right = 1246.0
 offset_bottom = 407.0
 
-[node name="CharismaValue" type="Label" parent="AttributeLabel/CharismaLabel"]
+[node name="CharismaValue" type="Label" parent="AttributeLabel/CharismaLabel" unique_id=2099720206]
 layout_mode = 0
 offset_left = 333.0
 offset_top = 17.0
@@ -724,7 +707,7 @@ text = "20"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="SpeedLabel" type="Label" parent="AttributeLabel"]
+[node name="SpeedLabel" type="Label" parent="AttributeLabel" unique_id=737062291]
 layout_mode = 0
 offset_left = -16.0
 offset_top = 635.0
@@ -739,7 +722,7 @@ vertical_alignment = 1
 script = ExtResource("14_gbkpn")
 TooltipContent = "Affects your movement speed"
 
-[node name="Tooltip" parent="AttributeLabel/SpeedLabel" instance=ExtResource("15_hkprm")]
+[node name="Tooltip" parent="AttributeLabel/SpeedLabel" unique_id=388858810 instance=ExtResource("15_hkprm")]
 visible = false
 layout_mode = 0
 offset_left = 1191.0
@@ -747,7 +730,7 @@ offset_top = 356.0
 offset_right = 1246.0
 offset_bottom = 407.0
 
-[node name="SpeedValue" type="Label" parent="AttributeLabel/SpeedLabel"]
+[node name="SpeedValue" type="Label" parent="AttributeLabel/SpeedLabel" unique_id=1716523081]
 layout_mode = 0
 offset_left = 333.0
 offset_top = 19.0
@@ -761,10 +744,10 @@ text = "25"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Lines" type="Node2D" parent="AttributeLabel"]
+[node name="Lines" type="Node2D" parent="AttributeLabel" unique_id=1178128818]
 position = Vector2(-69, 266)
 
-[node name="Line2D" type="Line2D" parent="AttributeLabel/Lines"]
+[node name="Line2D" type="Line2D" parent="AttributeLabel/Lines" unique_id=1033187444]
 position = Vector2(0, -11)
 points = PackedVector2Array(56, 9, 245.527, 9, 405, 9, 534, 9)
 width_curve = SubResource("Curve_0idpt")
@@ -772,7 +755,7 @@ gradient = SubResource("Gradient_0idpt")
 begin_cap_mode = 2
 end_cap_mode = 2
 
-[node name="Line2D3" type="Line2D" parent="AttributeLabel/Lines"]
+[node name="Line2D3" type="Line2D" parent="AttributeLabel/Lines" unique_id=1699980970]
 position = Vector2(0, 76)
 points = PackedVector2Array(56, 9, 245.527, 9, 405, 9, 534, 9)
 width_curve = SubResource("Curve_0idpt")
@@ -780,7 +763,7 @@ gradient = SubResource("Gradient_0idpt")
 begin_cap_mode = 2
 end_cap_mode = 2
 
-[node name="Line2D4" type="Line2D" parent="AttributeLabel/Lines"]
+[node name="Line2D4" type="Line2D" parent="AttributeLabel/Lines" unique_id=914359162]
 position = Vector2(0, 171)
 points = PackedVector2Array(56, 9, 245.527, 9, 405, 9, 534, 9)
 width_curve = SubResource("Curve_0idpt")
@@ -788,7 +771,7 @@ gradient = SubResource("Gradient_0idpt")
 begin_cap_mode = 2
 end_cap_mode = 2
 
-[node name="Line2D5" type="Line2D" parent="AttributeLabel/Lines"]
+[node name="Line2D5" type="Line2D" parent="AttributeLabel/Lines" unique_id=1936355005]
 position = Vector2(0, 263)
 points = PackedVector2Array(56, 9, 245.527, 9, 405, 9, 534, 9)
 width_curve = SubResource("Curve_0idpt")
@@ -796,7 +779,7 @@ gradient = SubResource("Gradient_0idpt")
 begin_cap_mode = 2
 end_cap_mode = 2
 
-[node name="Line2D6" type="Line2D" parent="AttributeLabel/Lines"]
+[node name="Line2D6" type="Line2D" parent="AttributeLabel/Lines" unique_id=1184774000]
 position = Vector2(0, 350)
 points = PackedVector2Array(56, 9, 245.527, 9, 405, 9, 534, 9)
 width_curve = SubResource("Curve_0idpt")
@@ -804,7 +787,7 @@ gradient = SubResource("Gradient_0idpt")
 begin_cap_mode = 2
 end_cap_mode = 2
 
-[node name="Line2D2" type="Line2D" parent="AttributeLabel/Lines"]
+[node name="Line2D2" type="Line2D" parent="AttributeLabel/Lines" unique_id=1402541035]
 position = Vector2(351, -149)
 rotation = 1.5708
 points = PackedVector2Array(56, 9, 232, 9, 443, 8.99994, 611, 9)
@@ -813,7 +796,7 @@ gradient = SubResource("Gradient_0idpt")
 begin_cap_mode = 2
 end_cap_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="AttributeLabel"]
+[node name="Sprite2D" type="Sprite2D" parent="AttributeLabel" unique_id=327034635]
 visible = false
 position = Vector2(197, 136)
 scale = Vector2(5, 5)
@@ -821,7 +804,7 @@ texture = ExtResource("14_m52j2")
 region_enabled = true
 region_rect = Rect2(376, 4158, 75, 12)
 
-[node name="OptionsLabel" type="Label" parent="."]
+[node name="OptionsLabel" type="Label" parent="." unique_id=1392984191]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -840,7 +823,46 @@ text = "Options"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="NameLabel" type="Label" parent="OptionsLabel"]
+[node name="Sprite2D" type="Sprite2D" parent="OptionsLabel" unique_id=1549422337]
+visible = false
+position = Vector2(197, 136)
+scale = Vector2(5, 5)
+texture = ExtResource("14_m52j2")
+region_enabled = true
+region_rect = Rect2(376, 4158, 75, 12)
+
+[node name="Sprite2D2" type="Sprite2D" parent="OptionsLabel" unique_id=310959468]
+show_behind_parent = true
+position = Vector2(131.44232, 117.531525)
+scale = Vector2(5.0571194, 2.7709696)
+texture = ExtResource("14_m52j2")
+region_enabled = true
+region_rect = Rect2(96, 4631, 33, 24)
+
+[node name="Sprite2D3" type="Sprite2D" parent="OptionsLabel" unique_id=1135502378]
+show_behind_parent = true
+position = Vector2(298.44272, 117.531525)
+scale = Vector2(5.0571194, 2.7709696)
+texture = ExtResource("14_m52j2")
+region_enabled = true
+region_rect = Rect2(287, 4631, 33, 24)
+
+[node name="Sprite2D4" type="Sprite2D" parent="OptionsLabel" unique_id=554500319]
+show_behind_parent = true
+position = Vector2(215.88528, 117.251495)
+scale = Vector2(5.0571194, 2.7709696)
+texture = ExtResource("14_m52j2")
+region_enabled = true
+region_rect = Rect2(130, 4631, 43, 24)
+
+[node name="Sprite2D5" type="Sprite2D" parent="OptionsLabel" unique_id=1997136915]
+position = Vector2(87.999756, 122.99991)
+scale = Vector2(2.583476, 1.9209455)
+texture = ExtResource("14_m52j2")
+region_enabled = true
+region_rect = Rect2(98, 4732, 23, 53)
+
+[node name="NameLabel" type="Label" parent="OptionsLabel" unique_id=27042584]
 layout_mode = 0
 offset_left = -48.0
 offset_top = 223.0
@@ -852,7 +874,7 @@ theme_override_fonts/font = ExtResource("10_b7y7e")
 theme_override_font_sizes/font_size = 21
 text = "Name"
 
-[node name="Line2D" type="Line2D" parent="OptionsLabel/NameLabel"]
+[node name="Line2D" type="Line2D" parent="OptionsLabel/NameLabel" unique_id=435608824]
 position = Vector2(50.5098, 17.1569)
 scale = Vector2(0.372549, 0.490196)
 points = PackedVector2Array(56, 9, 245.527, 9, 405, 9, 534, 9)
@@ -861,24 +883,24 @@ gradient = SubResource("Gradient_0idpt")
 begin_cap_mode = 2
 end_cap_mode = 2
 
-[node name="Name" type="LineEdit" parent="OptionsLabel/NameLabel"]
+[node name="Name" type="LineEdit" parent="OptionsLabel/NameLabel" unique_id=138653783]
 layout_mode = 0
 offset_left = 79.902
 offset_top = -26.4706
 offset_right = 259.902
 offset_bottom = 54.5294
 scale = Vector2(0.941177, 0.941177)
-theme_override_colors/font_placeholder_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(1.34766e-06, 0.593273, 0.658089, 1)
 theme_override_fonts/font = ExtResource("12_fer3t")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_o1e07")
-theme_override_styles/read_only = SubResource("StyleBoxEmpty_6l7rh")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_vxaqg")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_6l7rh")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o1e07")
 placeholder_text = "Enter  name"
 alignment = 1
 max_length = 15
 
-[node name="ClassLabel" type="Label" parent="OptionsLabel" node_paths=PackedStringArray("constitutionValue", "strengthValue", "dexterityValue", "intelligenceValue", "charismaValue", "speedValue")]
+[node name="ClassLabel" type="Label" parent="OptionsLabel" unique_id=1482859754 node_paths=PackedStringArray("constitutionValue", "strengthValue", "dexterityValue", "intelligenceValue", "charismaValue", "speedValue")]
 layout_mode = 0
 offset_left = -48.0
 offset_top = 362.0
@@ -897,7 +919,7 @@ intelligenceValue = NodePath("../../AttributeLabel/IntelligenceLabel/Intelligenc
 charismaValue = NodePath("../../AttributeLabel/CharismaLabel/CharismaValue")
 speedValue = NodePath("../../AttributeLabel/SpeedLabel/SpeedValue")
 
-[node name="Line2D" type="Line2D" parent="OptionsLabel/ClassLabel"]
+[node name="Line2D" type="Line2D" parent="OptionsLabel/ClassLabel" unique_id=379132113]
 position = Vector2(60.7844, 22.0588)
 scale = Vector2(0.340529, 0.448064)
 points = PackedVector2Array(56, 9, 245.527, 9, 405, 9, 534, 9)
@@ -906,31 +928,31 @@ gradient = SubResource("Gradient_0idpt")
 begin_cap_mode = 2
 end_cap_mode = 2
 
-[node name="RightArrow" type="Button" parent="OptionsLabel/ClassLabel"]
+[node name="RightArrow" type="Button" parent="OptionsLabel/ClassLabel" unique_id=1578599696]
 layout_mode = 0
 offset_left = 240.196
 offset_top = 1.96079
 offset_right = 248.196
 offset_bottom = 9.96079
 scale = Vector2(2.5, 2.5)
-theme_override_styles/focus = SubResource("StyleBoxEmpty_ngtf6")
-theme_override_styles/hover = SubResource("StyleBoxTexture_osmak")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_vxaqg")
 theme_override_styles/normal = SubResource("StyleBoxTexture_nnylw")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vxaqg")
+theme_override_styles/hover = SubResource("StyleBoxTexture_osmak")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ngtf6")
 
-[node name="LeftArrow" type="Button" parent="OptionsLabel/ClassLabel"]
+[node name="LeftArrow" type="Button" parent="OptionsLabel/ClassLabel" unique_id=77089307]
 layout_mode = 0
 offset_left = 82.7451
 offset_top = 2.45098
 offset_right = 90.7451
 offset_bottom = 10.451
 scale = Vector2(-2.5, 2.5)
-theme_override_styles/focus = SubResource("StyleBoxEmpty_84sbo")
-theme_override_styles/hover = SubResource("StyleBoxTexture_osmak")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_w3lgn")
 theme_override_styles/normal = SubResource("StyleBoxTexture_nnylw")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_w3lgn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_osmak")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_84sbo")
 
-[node name="Class" type="Label" parent="OptionsLabel/ClassLabel"]
+[node name="Class" type="Label" parent="OptionsLabel/ClassLabel" unique_id=997721513]
 layout_mode = 0
 offset_left = 120.098
 offset_top = -3.92157
@@ -944,7 +966,7 @@ text = "Rogue"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="SexLabel" type="Label" parent="OptionsLabel"]
+[node name="SexLabel" type="Label" parent="OptionsLabel" unique_id=1173667587]
 layout_mode = 0
 offset_left = -48.0
 offset_top = 514.0
@@ -957,7 +979,7 @@ theme_override_font_sizes/font_size = 21
 text = "Sex"
 script = ExtResource("18_gswci")
 
-[node name="Line2D" type="Line2D" parent="OptionsLabel/SexLabel"]
+[node name="Line2D" type="Line2D" parent="OptionsLabel/SexLabel" unique_id=1671952475]
 position = Vector2(60.7844, 22.0588)
 scale = Vector2(0.340529, 0.448064)
 points = PackedVector2Array(56, 9, 245.527, 9, 405, 9, 534, 9)
@@ -966,31 +988,31 @@ gradient = SubResource("Gradient_0idpt")
 begin_cap_mode = 2
 end_cap_mode = 2
 
-[node name="RightArrow" type="Button" parent="OptionsLabel/SexLabel"]
+[node name="RightArrow" type="Button" parent="OptionsLabel/SexLabel" unique_id=1878267572]
 layout_mode = 0
 offset_left = 240.196
 offset_top = 1.96079
 offset_right = 248.196
 offset_bottom = 9.96079
 scale = Vector2(2.5, 2.5)
-theme_override_styles/focus = SubResource("StyleBoxEmpty_wfg75")
-theme_override_styles/hover = SubResource("StyleBoxTexture_osmak")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_0juv8")
 theme_override_styles/normal = SubResource("StyleBoxTexture_nnylw")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_0juv8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_osmak")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wfg75")
 
-[node name="LeftArrow" type="Button" parent="OptionsLabel/SexLabel"]
+[node name="LeftArrow" type="Button" parent="OptionsLabel/SexLabel" unique_id=397978191]
 layout_mode = 0
 offset_left = 82.7451
 offset_top = 2.45098
 offset_right = 90.7451
 offset_bottom = 10.451
 scale = Vector2(-2.5, 2.5)
-theme_override_styles/focus = SubResource("StyleBoxEmpty_ixv47")
-theme_override_styles/hover = SubResource("StyleBoxTexture_osmak")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_dfdox")
 theme_override_styles/normal = SubResource("StyleBoxTexture_nnylw")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_dfdox")
+theme_override_styles/hover = SubResource("StyleBoxTexture_osmak")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ixv47")
 
-[node name="Sex" type="Label" parent="OptionsLabel/SexLabel"]
+[node name="Sex" type="Label" parent="OptionsLabel/SexLabel" unique_id=1127790362]
 layout_mode = 0
 offset_left = 118.137
 offset_top = -1.96078
@@ -1004,32 +1026,24 @@ text = "Male"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="OptionsLabel"]
-visible = false
-position = Vector2(197, 136)
-scale = Vector2(5, 5)
-texture = ExtResource("14_m52j2")
-region_enabled = true
-region_rect = Rect2(376, 4158, 75, 12)
-
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=1133775881]
 layout_mode = 0
 offset_left = 293.0
 offset_top = 791.0
 offset_right = 582.0
 offset_bottom = 943.0
 scale = Vector2(0.559999, 0.559999)
-theme_override_colors/font_hover_color = Color(1, 0.807843, 0.439216, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0.807843, 0.439216, 1)
 theme_override_fonts/font = ExtResource("10_b7y7e")
 theme_override_font_sizes/font_size = 62
-theme_override_styles/focus = SubResource("StyleBoxEmpty_w3lgn")
-theme_override_styles/hover = SubResource("StyleBoxTexture_wfg75")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_6l7rh")
 theme_override_styles/normal = SubResource("StyleBoxTexture_o1e07")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_6l7rh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_wfg75")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w3lgn")
 text = "Accept"
 
-[node name="AcceptButton" type="Label" parent="." node_paths=PackedStringArray("name")]
+[node name="AcceptButton" type="Label" parent="." unique_id=1218460936 node_paths=PackedStringArray("name")]
 visible = false
 layout_mode = 0
 offset_left = 314.0
@@ -1044,18 +1058,18 @@ text = "Accept"
 script = ExtResource("19_lpe55")
 name = NodePath("../OptionsLabel/NameLabel/Name")
 
-[node name="SceneTransition" parent="AcceptButton" instance=ExtResource("23_7spba")]
+[node name="SceneTransition" parent="AcceptButton" unique_id=845725828 instance=ExtResource("23_7spba")]
 visible = false
 
-[node name="BGPlayer" type="AudioStreamPlayer2D" parent="."]
+[node name="BGPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1731647416]
 stream = ExtResource("20_eheue")
 autoplay = true
 
-[node name="HoverPlayer" type="AudioStreamPlayer2D" parent="."]
+[node name="HoverPlayer" type="AudioStreamPlayer2D" parent="." unique_id=84663933]
 stream = ExtResource("21_y0k8x")
 bus = &"UI"
 
-[node name="PressPlayer" type="AudioStreamPlayer2D" parent="."]
+[node name="PressPlayer" type="AudioStreamPlayer2D" parent="." unique_id=644501740]
 stream = ExtResource("22_lpe55")
 
 [connection signal="pressed" from="OptionsLabel/ClassLabel/RightArrow" to="OptionsLabel/ClassLabel" method="OnRightArrowPressed"]

@@ -1,0 +1,255 @@
+[gd_scene format=3 uid="uid://4884crjs40d1"]
+
+[ext_resource type="Texture2D" uid="uid://bq1qtnwam4b6h" path="res://addons/UI addons/Complete_UI_Book_Styles_Pack_Free_v1.0/01_TravelBookLite/Spritesheet/UI_TravelBook_Spritesheet01a.png" id="1_ee2s6"]
+[ext_resource type="Script" uid="uid://dvavwq5k03e5x" path="res://Scripts/FPSUI/FPSUI.cs" id="1_ql01h"]
+[ext_resource type="Texture2D" uid="uid://drkx37hc2oixs" path="res://addons/UI addons/33 Portraits 1/Icons/Icon_33_02.png" id="2_ql01h"]
+[ext_resource type="Texture2D" uid="uid://dhdxrxcxxq1rp" path="res://addons/UI addons/Health Bar Asset Pack 2 by Adwit Rahman/rpg (2).png" id="3_l1epe"]
+[ext_resource type="Texture2D" uid="uid://cref4k1xqplib" path="res://addons/UI addons/CrimsonFantasyGUI/CrimsonFantasyGUI/GUISprite.png" id="4_6uddw"]
+[ext_resource type="Texture2D" uid="uid://3ypet28ub40h" path="res://images/ui/level_bar_hollow.png" id="5_yegx1"]
+[ext_resource type="PackedScene" uid="uid://obedfuflnpht" path="res://Scenes/ui/EquipHand.tscn" id="6_m88k3"]
+[ext_resource type="FontFile" uid="uid://d4drnk6af7833" path="res://fonts/alagard.ttf" id="7_qdsq4"]
+[ext_resource type="PackedScene" uid="uid://b516t4nadjirc" path="res://Scenes/pause_menu.tscn" id="8_252rk"]
+[ext_resource type="PackedScene" uid="uid://d34yo8v1xpeoh" path="res://Scenes/InventoryUI.tscn" id="9_nfb32"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xontf"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dcfmd"]
+texture = ExtResource("1_ee2s6")
+region_rect = Rect2(65, 289, 30, 30)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yuvox"]
+texture = ExtResource("2_ql01h")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kyivn"]
+load_path = "res://.godot/imported/bar2.png-ef94dee4f624028962df2edfac6d8cde.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kyivn"]
+texture = SubResource("CompressedTexture2D_kyivn")
+region_rect = Rect2(0, 0, 896, 32)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1c52p"]
+bg_color = Color(0.815686, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_srad8"]
+texture = ExtResource("3_l1epe")
+region_rect = Rect2(33, 114, 80, 9)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jlws2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1c52p"]
+texture = ExtResource("4_6uddw")
+region_rect = Rect2(97, 112, 62, 16)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bcpqx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_85qcq"]
+bg_color = Color(0.909804, 0.627451, 0.0588235, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tpr04"]
+bg_color = Color(0, 0, 0.662745, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5ehcv"]
+texture = ExtResource("5_yegx1")
+
+[node name="FPSUI" type="Control" unique_id=787123509 node_paths=PackedStringArray("_experienceBar")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_ql01h")
+_experienceBar = NodePath("LevelContainer/LevelBar/PanelContainer/experience")
+
+[node name="BlackBaground" type="Panel" parent="." unique_id=1931985653]
+visible = false
+show_behind_parent = true
+layout_mode = 0
+offset_left = 73.0
+offset_top = 882.335
+offset_right = 81.0
+offset_bottom = 889.335
+scale = Vector2(3.77273, 3.77273)
+theme_override_styles/panel = SubResource("StyleBoxFlat_xontf")
+
+[node name="Border" type="Panel" parent="." unique_id=562022200]
+layout_mode = 0
+offset_left = 121.0
+offset_top = 974.0
+offset_right = 158.0
+offset_bottom = 1002.0
+scale = Vector2(4.25, 5.905)
+pivot_offset = Vector2(20, 20)
+theme_override_styles/panel = SubResource("StyleBoxTexture_dcfmd")
+
+[node name="Portrait" type="Panel" parent="Border" unique_id=1273914340]
+layout_mode = 0
+offset_left = 2.11765
+offset_top = 1.87976
+offset_right = 34.6176
+offset_bottom = 25.8798
+scale = Vector2(1.01882, 1.01882)
+theme_override_styles/panel = SubResource("StyleBoxTexture_yuvox")
+
+[node name="HealthBar" type="Panel" parent="." unique_id=1867478737]
+visible = false
+layout_mode = 0
+offset_left = 227.0
+offset_top = 872.0
+offset_right = 267.0
+offset_bottom = 912.0
+scale = Vector2(6.13555, 2.41162)
+theme_override_styles/panel = SubResource("StyleBoxTexture_kyivn")
+
+[node name="Health" type="Panel" parent="." unique_id=215199079]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 912.0
+offset_right = 287.0
+offset_bottom = 952.0
+scale = Vector2(5.16718, 0.481083)
+theme_override_styles/panel = SubResource("StyleBoxFlat_1c52p")
+
+[node name="HealthHollow" type="Panel" parent="." unique_id=1147767123]
+layout_mode = 0
+offset_left = 222.0
+offset_top = 906.0
+offset_right = 263.9
+offset_bottom = 919.0
+scale = Vector2(6.13555, 2.41162)
+theme_override_styles/panel = SubResource("StyleBoxTexture_srad8")
+
+[node name="ManaBar" type="Panel" parent="." unique_id=1861262806]
+visible = false
+layout_mode = 0
+offset_left = 227.0
+offset_top = 939.0
+offset_right = 267.0
+offset_bottom = 979.0
+scale = Vector2(6.13555, 2.41162)
+theme_override_styles/panel = SubResource("StyleBoxTexture_kyivn")
+
+[node name="LevelContainer" type="PanelContainer" parent="." unique_id=252008616]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.02
+anchor_right = 0.5
+anchor_bottom = 0.02
+offset_left = -205.0
+offset_right = 199.0
+offset_bottom = 93.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_jlws2")
+
+[node name="LevelBar" type="Panel" parent="LevelContainer" unique_id=1026481095]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_1c52p")
+
+[node name="PanelContainer" type="PanelContainer" parent="LevelContainer/LevelBar" unique_id=1344529057]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 16.0
+offset_top = 37.4
+offset_right = 397.0
+offset_bottom = 74.4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bcpqx")
+
+[node name="experience" type="Panel" parent="LevelContainer/LevelBar/PanelContainer" unique_id=319117930]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_85qcq")
+
+[node name="Mana" type="Panel" parent="." unique_id=1380994038]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 979.0
+offset_right = 287.0
+offset_bottom = 1019.0
+scale = Vector2(5.16718, 0.481083)
+theme_override_styles/panel = SubResource("StyleBoxFlat_tpr04")
+
+[node name="ManaHollow" type="Panel" parent="." unique_id=1905118690]
+layout_mode = 0
+offset_left = 222.0
+offset_top = 973.0
+offset_right = 263.9
+offset_bottom = 986.0
+scale = Vector2(6.13555, 2.41162)
+theme_override_styles/panel = SubResource("StyleBoxTexture_srad8")
+
+[node name="levelHollow" type="Panel" parent="." unique_id=1792286802]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 647.0
+offset_top = -28.0
+offset_right = 687.0
+offset_bottom = 12.0
+grow_horizontal = 2
+scale = Vector2(13.12, 5.12)
+theme_override_styles/panel = SubResource("StyleBoxTexture_5ehcv")
+
+[node name="equip1" parent="." unique_id=2048397268 instance=ExtResource("6_m88k3")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.78
+anchor_top = 0.852
+anchor_right = 0.78
+anchor_bottom = 0.852
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(3.76184, 3.76184)
+
+[node name="equip2" parent="." unique_id=146089585 instance=ExtResource("6_m88k3")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.892
+anchor_top = 0.852
+anchor_right = 0.892
+anchor_bottom = 0.852
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(3.76184, 3.76184)
+Hand = "LeftHand"
+
+[node name="InteractionPrompt" type="Label" parent="." unique_id=1575108985]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -11.5
+offset_right = 21.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.36, 2.36)
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("7_qdsq4")
+text = "Open"
+
+[node name="PauseMenu" parent="." unique_id=1171210385 instance=ExtResource("8_252rk")]
+visible = false
+layout_mode = 1
+offset_top = 6.10352e-05
+
+[node name="InventoryUI" parent="." unique_id=1903421098 instance=ExtResource("9_nfb32")]
+layout_mode = 1
+offset_right = 1243.0
+offset_bottom = 742.0
+mouse_filter = 2

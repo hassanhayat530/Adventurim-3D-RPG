@@ -14,7 +14,7 @@ public partial class InteractableArea : Area3D
 	public override void _Ready()
     {
         interactShapeCast = GetNode<ShapeCast3D>("../CharacterBody3D/HeadOriginalPosition/Head/CameraSmooth/Camera3D/InteractShapeCast3D");
-		prompt = GetNode<Label>("../CharacterBody3D/Control/Dithering/InteractionPrompt");
+		prompt = GetNode<Label>("../CharacterBody3D/Control/Dithering/FPSUI/InteractionPrompt");
 		prompt.Visible = false;
 	}
     

@@ -99,3 +99,4 @@ To run the project in Godot, you should do the following:
 - Humble Gift v1.1 : Player UI by Humble Pixel: https://humblepixel.itch.io/pocket-inventory-series-5-player-status/devlog/955031/-humble-gift-v11-player-ui-
 - Super Asset Bundle #2 : Adventure Time: https://humblepixel.itch.io/super-asset-bundle-2-adventure-time
 - Wand by Vulpes Software: https://vulpessoftware.itch.io/asset-wand
+- Skeleton Warrior by MCSTEEG: https://mcsteeg.itch.io/psx-dungeon-skeleton-warrior-pack
